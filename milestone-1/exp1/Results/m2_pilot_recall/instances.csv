@@ -1,0 +1,396 @@
+caption_idx,image_id,caption,object,words,slot,commit,never_settles,early,frcnn,retina,judge
+9821,226154,A green and white bus on street next to dirt area.,bus,bus,5,0,False,0.2936,0.9998,0.9735,present
+3023,68833,"Look in the kitchen shows refrigerator, sink, tv and a microwave",refrigerator,refrigerator,6,12,False,0.2826,0.9989,0.9782,present
+3023,68833,"Look in the kitchen shows refrigerator, sink, tv and a microwave",sink,sink,8,20,False,0.0722,0.0,0.0954,missing
+3023,68833,"Look in the kitchen shows refrigerator, sink, tv and a microwave",tv,tv,10,18,False,0.1195,0.0577,0.0538,missing
+3023,68833,"Look in the kitchen shows refrigerator, sink, tv and a microwave",microwave,microwave,13,7,False,0.1843,0.3771,0.131,ambiguous
+378,7574,A metallic refrigerator freezer sitting inside of a kitchen.,refrigerator,refrigerator,3,8,False,0.2911,0.9987,0.9507,present
+412,7991,A plate on a table is filled with carrots and beans.,carrot,carrots,9,1,False,0.4786,0.9842,0.8823,present
+10592,243344,A cat sitting on top of a metallic refrigerator freezer.,cat,cat,2,0,False,0.2254,0.9982,0.9529,present
+10592,243344,A cat sitting on top of a metallic refrigerator freezer.,refrigerator,refrigerator,9,7,False,0.2771,0.1381,0.1485,missing
+1685,36678,The Big Ben clock tower towering over the city of London.,clock,clock,4,4,False,0.1833,0.999,0.9937,present
+9740,224200,A dog laying on the ground its leash tied to a fire hydrant.,dog,dog,2,6,False,0.1072,0.9994,0.9772,present
+9740,224200,A dog laying on the ground its leash tied to a fire hydrant.,fire hydrant,fire hydrant,14,2,False,0.5512,0.9976,0.991,present
+9802,226058,Some very cute stuffed animals on a couch.,couch,couch,8,11,False,0.4819,0.8547,0.5056,present
+23085,535306,A man riding a skateboard up the side of a ramp.,skateboard,skateboard,5,7,False,0.4053,0.9978,0.9302,present
+18160,420281,A man who is putting a hot dog in his mouth.,hot dog,hot dog,8,5,False,0.4456,0.2907,0.1954,missing
+623,12748,A man holding a baby whose petting a horse.,horse,horse,9,5,False,0.2562,0.3056,0.2726,ambiguous
+2772,63047,a person walking with a bad and a cup,cup,cup,9,14,False,0.1579,0.0,0.0,missing
+20093,464358,A bed and chair sitting next to a window in a bedroom.,bed,bed,2,20,False,0.1961,0.1263,0.1212,missing
+20093,464358,A bed and chair sitting next to a window in a bedroom.,chair,chair,4,4,False,0.2011,0.9963,0.7454,present
+9301,213605,a bus sits parked next to a building,bus,bus,2,0,False,0.4388,0.9974,0.9786,present
+13674,315187,A bus parked in front of a building.,bus,bus,2,1,False,0.3881,0.9998,0.9902,present
+7827,180487,GUY WITH UMBRELLA HAT SITTING A TABLE WITH ANOTHER PERSON,umbrella,umbrella,3,6,False,0.2813,0.9978,0.8022,present
+3665,85665,A decorated kite with tail flies in a gray sky.,kite,kite,3,2,False,0.3479,0.992,0.9097,present
+17879,414340,A clock tower stands on the side of a building.,clock,clock,2,8,False,0.2332,0.9972,0.9891,present
+9522,219283,a big teddy bear sitting next to some boxes,teddy bear,teddy bear,4,4,False,0.5299,0.9992,0.9755,present
+12326,286523,A man talking on his cell phone with his other hand in his ear.,cell phone,cell phone,7,9,False,0.3262,0.9943,0.8644,present
+8482,193245,A crowd of people standing on a field flying kites.,kite,kites,10,17,False,0.2982,0.0,0.3417,ambiguous
+24709,574810,A cat sitting on top of a window ledge in the daytime,cat,cat,2,3,False,0.2762,0.998,0.8928,present
+3275,77460,Many people standing in a field flying kites.,kite,kites,8,14,False,0.3797,0.9883,0.7253,present
+10981,253433,a little teddy bear dressed in some BDSM gear and chains,teddy bear,teddy bear,4,4,False,0.5004,0.911,0.5603,present
+7863,181421,Three people on a canoe in the rain with an umbrella up.,umbrella,umbrella,11,8,False,0.1639,0.9576,0.8099,present
+262,5503,A person relieving themselves in a white toilet.,toilet,toilet,9,0,False,0.4041,0.9983,0.9562,present
+5267,125572,Girl on bicycle on road in front of large building.,bicycle,bicycle,3,5,False,0.3449,0.9992,0.9699,present
+11703,270705,A large bird is sitting on a metal perch.,bird,bird,3,1,False,0.2409,0.9992,0.5667,present
+10261,235057,A giraffe extends its tongue to drink water,giraffe,giraffe,2,2,False,0.7215,0.9991,0.9926,present
+2823,64499,Two zebras stand on concrete in the shade.,zebra,zebras,3,0,False,0.3514,0.9994,0.9629,present
+21614,500270,A young woman on a skateboard in a skate park,skateboard,skateboard,6,3,False,0.3691,0.9989,0.9574,present
+6487,153299,A mother giraffe is standing with a baby giraffe.,giraffe,giraffe,3,3,False,0.575,0.9973,0.9766,present
+3308,78420,A cat curled up by the keyboard of a laptop.,cat,cat,2,0,False,0.3944,0.9811,0.8669,present
+3308,78420,A cat curled up by the keyboard of a laptop.,laptop,laptop,10,4,False,0.236,0.9936,0.5592,present
+16092,371472,A pile of pineapples and bananas are sitting in a market.,banana,bananas,7,4,False,0.2545,0.6514,0.2537,present
+21856,506656,a man pets a horse attached to other horses,horse,horse,5,5,False,0.3222,0.9989,0.8953,present
+410,7977,A boy is doing a trick on his skateboard.,skateboard,skateboard,9,0,False,0.7458,0.998,0.9483,present
+12665,292330,a full size dog is smelling a bat on a ballfield.,dog,dog,4,3,False,0.2815,0.9979,0.9141,present
+10899,251065,The small bathroom has a toilet with a black seat.,toilet,toilet,6,1,False,0.2029,0.995,0.9541,present
+9428,216636,a candle next to a bunt cake on a green plate,cake,cake,8,0,False,0.3684,0.116,0.1851,missing
+18161,420472,Two giraffes are eating a leafy branch together.,giraffe,giraffes,3,4,False,0.4939,0.9996,0.9931,present
+19933,461036,A small black bear is walking through the woods,bear,bear,4,1,False,0.4156,0.9974,0.9787,present
+5379,127624,A city skyline is shown with a subway train coming around the bend.,train,train,9,7,False,0.1384,0.9949,0.818,present
+291,6040,A blue and white train is moving on the rails.,train,train,5,1,False,0.2414,0.9989,0.934,present
+24591,571893,A book filled windowsill in between a kitchen and dining room.,book,book,2,22,False,0.0923,0.312,0.1805,ambiguous
+5743,134886,A low flying airplane over a parked silver van.,airplane,airplane,4,4,False,0.2418,0.9986,0.9841,present
+23571,548555,there is a long hot dog that has toppings on it,hot dog,hot dog,6,0,False,0.7664,0.9819,0.7834,present
+1336,28449,A group of elephants are standing in the trees.,elephant,elephants,4,6,False,0.3918,0.9992,0.9792,present
+18280,424162,"A dog being led down the street, by a woman on a bike.",dog,dog,2,9,False,0.2377,0.9996,0.9548,present
+18280,424162,"A dog being led down the street, by a woman on a bike.",bicycle,bike,14,10,False,0.2261,0.9974,0.8723,present
+21628,500477,An adult sheep is getting shorn by a male farmer.,sheep,sheep,3,12,False,0.4515,0.9998,0.8868,present
+488,9769,A truck with a snow plow attached to the front.,truck,truck,2,0,False,0.398,0.9979,0.7334,present
+4552,107226,Men on bikes are getting pulled by a group of dogs.,bicycle,bikes,3,14,False,0.4205,0.9632,0.5665,present
+4552,107226,Men on bikes are getting pulled by a group of dogs.,dog,dogs,11,6,False,0.1335,0.9997,0.8065,present
+3662,85576,A toilet in a restroom next to a busted toilet paper dispenser.,toilet,toilet,2,0,False,0.2946,0.9963,0.9466,present
+23792,553788,A girl on a bed studying something on her laptop.,bed,bed,5,15,False,0.2753,0.9524,0.6108,present
+23792,553788,A girl on a bed studying something on her laptop.,laptop,laptop,10,5,False,0.29,0.996,0.8663,present
+11669,270122,A man is riding a surfboard in the ocean.,surfboard,surfboard,7,8,False,0.5405,0.9986,0.8776,present
+24488,569917,THERE IS A BATHROOM WITH A SINK AND A MIRROR,sink,sink,7,17,False,0.2437,0.9514,0.4906,present
+23516,547383,Two sheep sit in a field and look towards the camera.,sheep,sheep,2,5,False,0.5128,0.9992,0.9268,present
+19742,458109,a train that is next to a train track,train,train,2,1,False,0.4147,0.9994,0.9923,present
+23366,544306,A large tall tower with a clock on top.,clock,clock,7,5,False,0.2961,0.9983,0.9916,present
+8881,203580,The colorful umbrella sits in front of the lavender building.,umbrella,umbrella,3,6,False,0.2326,0.9977,0.9173,present
+17245,399462,A little girl laughs and runs with a kite in a grassy park.,kite,kite,9,6,False,0.2772,0.9889,0.9823,present
+16232,375278,a black puppy playing with a hand as it stands in a black suitcase,dog,puppy,3,2,False,0.2155,0.9625,0.8631,present
+16232,375278,a black puppy playing with a hand as it stands in a black suitcase,suitcase,suitcase,14,14,False,0.3328,0.0,0.053,missing
+19064,442836,A person trying to throw a frisbee and another trying to block the throw.,frisbee,frisbee,7,7,False,0.4133,0.9953,0.9812,present
+14306,331280,A couple of horses in what appears to be a circus.,horse,horses,4,3,False,0.2244,0.9994,0.8285,present
+18977,441247,a woman in a blue dress some black chairs and another person looking in an oven,chair,chairs,9,5,False,0.2033,0.9954,0.6677,present
+18977,441247,a woman in a blue dress some black chairs and another person looking in an oven,oven,oven,16,4,False,0.3065,0.8062,0.1395,present
+8923,205282,A herd of giraffe standing on to of a grass covered field.,giraffe,giraffe,4,5,False,0.4562,0.9991,0.8751,present
+21981,509014,a bunch of people on skis are in the snow,skis,skis,6,4,False,0.4261,0.8763,0.4824,present
+14659,340272,Several sheep that are grazing near a body of water.,sheep,sheep,2,8,False,0.4367,0.9955,0.7194,present
+17744,410712,a busy road full of street signs and cars,car,cars,9,11,False,0.0928,0.9303,0.6505,present
+12849,296284,A rack with some doughnuts in a glass case.,donut,doughnuts,5,7,False,0.4203,0.9934,0.8298,present
+20802,480122,this is a wood table with bananas on it,banana,bananas,7,4,False,0.3488,0.9942,0.858,present
+14793,343496,a woman walking by a stop sign while holding a bag,stop sign,stop sign,7,6,False,0.5597,0.9998,0.9977,present
+20086,464251,a red and black bird perched on a rail,bird,bird,5,5,False,0.1743,0.9985,0.9958,present
+867,17436,A man sitting on a bench with a church behind him.,bench,bench,6,5,False,0.2973,0.9919,0.4648,present
+7871,181499,A person is holding an HP CD above a laptop computer.,laptop,laptop,10,10,False,0.1904,0.6008,0.3106,present
+9676,223090,A white plate topped with dicked up lettuce next to carrots.,carrot,carrots,12,6,False,0.3102,0.9885,0.7555,present
+2954,67213,A dog competing in a long jump in to water contest,dog,dog,2,7,False,0.215,0.9969,0.9498,present
+20617,475904,Swan floating on a river in front of a boat.,boat,boat,10,16,False,0.1166,0.6262,0.0,present
+24939,580197,Two men in bow ties standing next to steel rafter.,tie,ties,5,12,False,0.4109,0.9998,0.9893,present
+11722,271402,Two young girls with a tennis racket and a scooter.,tennis racket,tennis racket,7,8,False,0.4349,0.9994,0.9041,present
+12211,283717,A microwave sitting on top of a wooden shelf.,microwave,microwave,2,7,False,0.4935,0.9969,0.9301,present
+9659,222735,A remote control on a table with the TV in the background.,remote,remote,2,18,False,0.0878,0.0,0.0596,missing
+9659,222735,A remote control on a table with the TV in the background.,tv,tv,9,16,False,0.2943,0.7498,0.1863,present
+14156,327769,A cat lying down in a sink in a bathroom.,cat,cat,2,2,False,0.3344,0.9981,0.9306,present
+14156,327769,A cat lying down in a sink in a bathroom.,sink,sink,7,2,False,0.3043,0.9356,0.8759,present
+11191,258911,A row of cows standing behind a metal fence.,cow,cows,4,5,False,0.2833,0.9973,0.6419,present
+13859,321118,A pair of hairy objects sitting on a laptop next to a mouse.,laptop,laptop,9,0,False,0.3066,0.9952,0.4581,present
+13859,321118,A pair of hairy objects sitting on a laptop next to a mouse.,mouse,mouse,13,7,False,0.2257,0.0,0.0533,missing
+11527,267169,An elephant drinking from a white square bottle.,elephant,elephant,2,2,False,0.5901,0.9983,0.9962,present
+11527,267169,An elephant drinking from a white square bottle.,bottle,bottle,8,10,False,0.0888,0.0,0.0,missing
+18681,433515,some people in a park flying a kite with a long tail,kite,kite,8,10,False,0.3716,0.9685,0.8324,present
+10461,239843,Two street signs on top of a stop sign.,stop sign,stop sign,9,1,False,0.4999,0.9622,0.969,present
+23250,540928,A cat that is standing on a wood floor.,cat,cat,2,4,False,0.3257,0.9994,0.9613,present
+13481,311392,A black and white cow at market in her stall.,cow,cow,5,6,False,0.3301,0.9828,0.8733,present
+2852,65074,an unmade bed next to a sunny window,bed,bed,4,0,False,0.3664,0.9811,0.9337,present
+17095,396200,Young adults riding on city sidewalk with skateboards.,skateboard,skateboards,9,9,False,0.4122,0.9985,0.8352,present
+17910,414795,A herd of elephants being herded into a river while tourists take photos.,elephant,elephants,4,1,False,0.3923,0.9988,0.9459,present
+4828,114884,A woman is having a smoke while waiting for the bus.,bus,bus,11,13,False,0.3541,0.1763,0.12,missing
+15833,366141,"A room with a couch, chair, table and television in it.",couch,couch,5,15,False,0.3712,0.9885,0.7807,present
+15833,366141,"A room with a couch, chair, table and television in it.",chair,chair,7,16,False,0.1102,0.0,0.0,missing
+15833,366141,"A room with a couch, chair, table and television in it.",tv,television,11,14,False,0.2346,0.9939,0.868,present
+24751,575815,A pizza with pepperoni served on a wooden tray.,pizza,pizza,2,2,False,0.4044,0.9941,0.8033,present
+6887,161799,A person is doing skateboard tricks on a rail.,skateboard,skateboard,5,16,False,0.4923,0.9908,0.8272,present
+3887,90284,A young lady swinging a tennis racquet on top of a tennis court.,tennis racket,racquet,8,12,False,0.1925,0.9989,0.864,present
+24534,570688,People on a beach beneath many colorful kites.,kite,kites,8,15,False,0.2675,0.4393,0.2173,ambiguous
+21101,488166,a slice of pizza sitting next to a coffee cup on an outdoor table,pizza,pizza,4,0,False,0.4035,0.9857,0.8378,present
+21101,488166,a slice of pizza sitting next to a coffee cup on an outdoor table,cup,cup,10,13,False,0.1011,0.0,0.0,missing
+15655,361621,A cat sits in a bathroom sink while looking outward.,cat,cat,2,7,False,0.2697,0.9958,0.973,present
+15655,361621,A cat sits in a bathroom sink while looking outward.,sink,sink,7,3,False,0.251,0.9044,0.7119,present
+21416,494634,a cat that is looking into a computer screen,cat,cat,2,2,False,0.5131,0.9883,0.8928,present
+18416,427034,a person and their dog are browsing on the mac book,dog,dog,5,5,False,0.203,0.9982,0.917,present
+13288,307172,A vegetable pizza seems to be ready to be eaten.,pizza,pizza,3,3,False,0.5876,0.9822,0.6156,present
+9348,214703,"Two people lying on belly on surfboards close to each other, in large watery expanse.",surfboard,surfboards,8,7,False,0.3681,0.9952,0.797,present
+3961,92177,A birthday cake with a island design and theme.,cake,cake,3,2,False,0.3769,0.9899,0.8128,present
+24308,565776,white cabinets silver oven sink and refrigerator,oven,oven,4,21,False,0.1431,0.9774,0.7439,present
+24308,565776,white cabinets silver oven sink and refrigerator,sink,sink,5,10,False,0.2008,0.9851,0.7166,present
+24308,565776,white cabinets silver oven sink and refrigerator,refrigerator,refrigerator,7,16,False,0.1966,0.7845,0.3785,present
+14124,326970,Three people sitting on a wall looking at their cell phones.,cell phone,cell phones,11,17,False,0.2122,0.9606,0.4607,present
+6252,147729,A man holding up his smart phone to take a picture.,cell phone,phone,7,8,False,0.2826,0.9922,0.8186,present
+9406,216296,a couple of guys with tennis rackets waiting on a ball,tennis racket,tennis rackets,8,8,False,0.5781,0.991,0.8211,present
+2245,50896,A bowl filled with lots of oranges on a counter.,bowl,bowl,2,17,False,0.2448,0.9189,0.5953,present
+2245,50896,A bowl filled with lots of oranges on a counter.,orange,oranges,7,2,False,0.4645,0.9609,0.4992,present
+15927,368456,A train car with art painted on its side,train,train,2,13,False,0.2331,0.9995,0.9821,present
+8381,190853,Someone holding a half eaten banana in their hand.,banana,banana,6,1,False,0.3773,0.9865,0.8879,present
+17903,414676,view from below of a clock tower in a building,clock,clock,6,5,False,0.2991,0.9994,0.9591,present
+23288,541664,a number of lego toys near a laptop,laptop,laptop,8,9,False,0.2631,0.9948,0.0884,present
+1080,22589,Two sheep in a caged area with bushes,sheep,sheep,2,4,False,0.4152,0.9993,0.9735,present
+6223,147223,A small city bus with advertising on the side and back,bus,bus,4,2,False,0.3832,0.9996,0.9509,present
+1906,42528,a person lifting a little stool with their feet and a person holding a cell phone,cell phone,cell phone,16,15,False,0.1441,0.0,0.0,missing
+21259,491464,A kid with a baseball bat on a field.,baseball bat,baseball bat,6,11,False,0.5883,0.9675,0.5043,present
+17127,396580,a small boat floating down a river by a house,boat,boat,3,2,False,0.1952,0.9995,0.9764,present
+9197,211120,Three stuffed teddy bears are set on a toy picnic scene.,teddy bear,teddy bears,4,0,False,0.4601,0.9988,0.9236,present
+3866,90062,A black and white cow with horns in front of a woodpile.,cow,cow,5,11,False,0.1939,0.0,0.0,missing
+1245,25424,A tennis player hits the ball up from the racket.,sports ball,ball,6,10,False,0.1626,0.0,0.0541,missing
+1245,25424,A tennis player hits the ball up from the racket.,tennis racket,racket,10,10,False,0.136,0.9991,0.9729,present
+8144,186632,The large bathroom has four sinks and a chandelier.,sink,sinks,6,15,False,0.1698,0.9786,0.5159,present
+5970,140439,A clear vase sits on a table and holds long stemmed tulips.,vase,vase,3,5,False,0.1994,0.9952,0.9729,present
+17065,395388,People looking at sheep in a series of indoor pens.,sheep,sheep,4,10,False,0.4481,0.9992,0.9276,present
+2891,66135,A train comes to a stop on the tracks next to the sidewalk.,train,train,2,7,False,0.2239,0.9981,0.9804,present
+5033,119828,A black cat sitting on a table in front of a laptop.,cat,cat,3,0,False,0.2797,0.9942,0.9714,present
+5033,119828,A black cat sitting on a table in front of a laptop.,laptop,laptop,12,4,False,0.2403,0.9665,0.3204,present
+16255,375763,The herd of sheep is standing on the grass.,sheep,sheep,4,6,False,0.5208,0.9989,0.9239,present
+5666,133418,A man holding a tennis racquet on a tennis court.,tennis racket,racquet,7,11,False,0.3097,0.9989,0.8944,present
+9013,206831,A dog holding a donut like toy in its mouth,dog,dog,2,7,False,0.2688,0.999,0.9199,present
+22771,528524,two shorn sheep walking between some bushes,sheep,sheep,4,5,False,0.2687,0.9996,0.9538,present
+5872,138492,A dog catching a purple Frisbee in it's mouth on a green grass covered field.,dog,dog,2,2,False,0.1109,0.9981,0.9667,present
+5872,138492,A dog catching a purple Frisbee in it's mouth on a green grass covered field.,frisbee,frisbee,6,2,False,0.1283,0.9972,0.9874,present
+21082,486479,White dog sticking his nose out from under red and white striped bed ruffle.,dog,dog,2,1,False,0.117,0.9974,0.9774,present
+21082,486479,White dog sticking his nose out from under red and white striped bed ruffle.,bed,bed,13,17,False,0.168,0.624,0.2758,present
+17785,411774,A woman is sitting holding a bug swatter shaped like a tennis racket.,tennis racket,tennis racket,14,10,False,0.1909,0.3805,0.0,ambiguous
+21481,496854,The woman holds an umbrella for the bride and groom.,umbrella,umbrella,5,3,False,0.2245,0.9988,0.7793,present
+13522,312192,"A plate with pizza, lettuce and ham sit on a plate white we see hands holding silverware and a bottle of wine with glasses.",pizza,pizza,4,7,False,0.2042,0.9925,0.8476,present
+13522,312192,"A plate with pizza, lettuce and ham sit on a plate white we see hands holding silverware and a bottle of wine with glasses.",bottle,bottle,22,6,False,0.0317,0.9985,0.7233,present
+24157,562561,A small dog is looking at a larger barking dog.,dog,dog,3,7,False,0.3056,0.9977,0.9541,present
+18144,419974,A man slices meat in his kitchen while his dog begs from the floor.,dog,dog,10,11,False,0.0668,0.9473,0.7518,present
+14418,334399,A man stands with his arms crossed as he looks at a clock.,clock,clock,13,18,False,0.2407,0.0,0.0,missing
+1235,25393,Two men standing on the street wearing a suit and tie,tie,tie,11,16,False,0.1516,0.8896,0.5784,present
+9140,210273,A highway of traffic with several transit buses riding down it.,bus,buses,8,4,False,0.2253,0.9909,0.5756,present
+4478,105455,A tall tower with a clock on top.,clock,clock,6,5,False,0.29,0.9939,0.9719,present
+1278,26564,a desk with a laptop some keyboards and some books,laptop,laptop,5,14,False,0.2936,0.6052,0.22,present
+1278,26564,a desk with a laptop some keyboards and some books,keyboard,keyboards,7,11,False,0.2693,0.0505,0.23,missing
+1278,26564,a desk with a laptop some keyboards and some books,book,books,10,7,False,0.1936,0.9928,0.8594,present
+12566,290592,this is a group of sheep on the grass,sheep,sheep,6,2,False,0.5851,0.9993,0.9356,present
+11125,256916,Four pans of pizza set on a long table.,pizza,pizza,4,2,False,0.4684,0.9859,0.8021,present
+9465,217614,A giraffe stands in the brush near trees.,giraffe,giraffe,2,4,False,0.4292,0.999,0.9823,present
+24369,567011,A man on a surfboard riding a wave.,surfboard,surfboard,6,8,False,0.4533,0.9965,0.8917,present
+2995,68286,Two twin beds pushed together with white blankets and pillows on top of them.,bed,beds,3,10,False,0.2032,0.9928,0.9543,present
+11641,269682,A traffic light over a street with a sign that reads K.,traffic light,traffic light,3,0,False,0.6155,0.9886,0.8358,present
+98,1761,two jets are flying over a bridge and some water,airplane,jets,2,5,False,0.314,0.9634,0.7763,present
+16952,392818,"A dog is wearing a harness that reads ""Outward Hound"".",dog,dog,2,7,False,0.279,0.9478,0.6779,present
+7895,181816,a bench with a statue stting on one side of it,bench,bench,2,4,False,0.3698,0.9696,0.7932,present
+21303,492110,A man sitting at a desk on a laptop computer.,laptop,laptop,9,2,False,0.2587,0.9944,0.8751,present
+6006,141328,a large bowl full of pasta with many other foods,bowl,bowl,3,18,False,0.2369,0.7656,0.7419,present
+4934,117645,A person on a snowy slope on a snowboard.,snowboard,snowboard,9,7,False,0.4251,0.9542,0.9129,present
+7943,182805,A woman holding an umbrella sitting on a blanket next to two dogs.,umbrella,umbrella,5,7,False,0.1829,0.9755,0.8142,present
+7943,182805,A woman holding an umbrella sitting on a blanket next to two dogs.,dog,dogs,13,8,False,0.1376,0.9967,0.9258,present
+19824,459467,A grey and black plane on a runway with trees in the background.,airplane,plane,5,2,False,0.1118,0.9966,0.8512,present
+4258,99428,Recording devices and cellphones are stacked on a laptop.,laptop,laptop,10,17,False,0.2831,0.9751,0.5524,present
+7028,163746,Two almost identical photos with some minor cropping show two young girls standing on the coast with people in the water in the background as a plane flies overhead,airplane,plane,28,18,False,0.0366,0.9984,0.8271,present
+2463,55299,A bird that is sitting on a rock near the water.,bird,bird,2,10,False,0.2349,0.991,0.9933,present
+23832,554595,A man sits on a shore with his surfboard.,surfboard,surfboard,10,3,False,0.6047,0.9995,0.7666,present
+1350,28809,very ripe bananas placed on a purple basket,banana,bananas,3,1,False,0.3535,0.9878,0.7919,present
+20736,478721,Two men are carrying a kite through a parking lot.,kite,kite,6,7,False,0.3204,0.8418,0.1282,present
+1671,36494,This crowded restaurant has an enormous clock on the wall,clock,clock,7,1,False,0.3476,0.9994,0.9281,present
+12173,283037,A speed detector displays the current speed of a car,car,car,10,13,False,0.1409,0.0,0.0852,missing
+16613,383606,A person taking a picture inside a bathroom with a blue sink and a brown door,sink,sink,12,4,False,0.1401,0.8964,0.6033,present
+9088,209613,These sheep are being watched by three dogs.,sheep,sheep,2,6,False,0.5664,0.9987,0.9657,present
+9088,209613,These sheep are being watched by three dogs.,dog,dogs,8,9,False,0.1771,0.0,0.0,missing
+22121,512648,a cow in a field standing in the shade of a tree,cow,cow,2,6,False,0.2285,0.9998,0.9935,present
+16624,383676,Giraffes inside of their habitat at a zoo,giraffe,giraffes,2,7,False,0.5954,0.9997,0.9881,present
+3536,82821,A variety of paddle boats on the water near a park.,boat,boats,5,4,False,0.4498,0.9938,0.8839,present
+19735,458054,A row of white toilets sitting on top of a dirt ground.,toilet,toilets,5,0,False,0.2897,0.9968,0.9679,present
+14495,335658,On a desk sits a keyboard and mouse.,keyboard,keyboard,6,13,False,0.2805,0.9787,0.4926,present
+14495,335658,On a desk sits a keyboard and mouse.,mouse,mouse,8,6,False,0.3305,0.9988,0.9916,present
+14363,332901,Two sheep that are inside of a gate.,sheep,sheep,2,5,False,0.4528,0.999,0.9453,present
+9237,212573,2 people (a very tall person in a jacket and kilt and a short old man) standing in the rain under a very small black umbrella on a city corner,umbrella,umbrella,28,3,False,0.1178,0.9959,0.9069,present
+21841,506279,Stemmed glass of amber liquid on a counter,wine glass,glass,3,10,False,0.1563,0.0,0.4645,ambiguous
+18797,436883,A small public bus in a Hispanic country,bus,bus,4,2,False,0.438,1.0,0.9781,present
+11821,273711,"A table topped with plates, bowls and containers of food.",bowl,bowls,7,12,False,0.1656,0.9919,0.8441,present
+126,2157,A nicely set dining table filled with food and a cake topped with berries.,cake,cake,11,12,False,0.1068,0.6402,0.5355,present
+20984,484404,The inside of an empty public bus with black seats.,bus,bus,7,15,False,0.4454,0.4191,0.1982,ambiguous
+7283,168974,a small child sitting playing with a cell phone,cell phone,cell phone,9,20,False,0.2845,0.9154,0.2088,present
+8743,199977,An airplane is letting off white smoke against a blue sky.,airplane,airplane,2,9,False,0.1919,0.9836,0.8723,present
+6028,142092,A pizza with lots of cheese on a flat brown surface.,pizza,pizza,2,1,False,0.4944,0.9659,0.7334,present
+7471,172946,A group of people standing with remotes in hand.,remote,remotes,8,13,False,0.3846,0.3043,0.3418,ambiguous
+603,12576,An elderly woman seated at a table holding three pizzas.,pizza,pizzas,10,3,False,0.305,0.6225,0.4142,present
+11001,253819,A man that is jumping in the air with a skateboard.,skateboard,skateboard,11,10,False,0.4954,0.9988,0.9695,present
+10348,236730,The head and shoulders of a zebra in silhouette.,zebra,zebra,7,8,False,0.5963,0.9987,0.9897,present
+7833,180560,A lady holding a cake with candles on it while a lady near her is making gestures with her fingers.,cake,cake,5,2,False,0.2003,0.0,0.0,missing
+12300,285894,A group of children looking at two giraffes in an enclosure.,giraffe,giraffes,9,6,False,0.5223,0.9965,0.9832,present
+5818,136715,A sheriff riding a motorcycle in a parade.,motorcycle,motorcycle,5,5,False,0.3553,0.9983,0.7357,present
+18444,427338,A person riding a motorcycle in an abandoned stone building,motorcycle,motorcycle,5,0,False,0.2007,0.9994,0.9377,present
+2809,64359,Zebras and giraffes together in a zoo cage.,zebra,zebras,2,8,False,0.3938,0.9995,0.9928,present
+2809,64359,Zebras and giraffes together in a zoo cage.,giraffe,giraffes,5,7,False,0.2083,0.0,0.0632,missing
+15455,357567,a bathroom with a toilet and a blue striped shower curtain.,toilet,toilet,5,0,False,0.1016,0.9982,0.8967,present
+6072,143556,People on motorcycles riding across a bridge,motorcycle,motorcycles,3,2,False,0.28,0.9996,0.9252,present
+24149,562443,A group of zebras eating in a n enclosure,zebra,zebras,5,7,False,0.6465,0.9997,0.9663,present
+6037,142324,A group of people riding motorcycles and bikes down a city street.,motorcycle,motorcycles,6,3,False,0.2788,0.9963,0.8353,present
+6037,142324,A group of people riding motorcycles and bikes down a city street.,bicycle,bikes,8,6,False,0.1814,0.0,0.1091,missing
+16559,382122,Large brick building with a clock tower at its height.,clock,clock,6,10,False,0.1419,0.9983,0.9903,present
+1628,34760,"A bathroom with a shower, toilet, and sink.",toilet,toilet,7,3,False,0.1883,0.9963,0.9508,present
+1628,34760,"A bathroom with a shower, toilet, and sink.",sink,sink,10,5,False,0.1257,0.9638,0.6448,present
+23525,547519,A brown bear walking across a forest surrounded by trees..,bear,bear,3,3,False,0.2415,0.9988,0.9944,present
+16247,375493,a person standing next to a yellow fire hydrant,fire hydrant,fire hydrant,10,0,False,0.7176,0.9988,0.989,present
+9490,218091,"Hotel room scene, efficiency, queen bed, sofa, table/desk, TV, in brown tone room.",bed,bed,8,13,False,0.0635,0.9955,0.7812,present
+9490,218091,"Hotel room scene, efficiency, queen bed, sofa, table/desk, TV, in brown tone room.",couch,sofa,10,15,False,0.0751,0.2636,0.206,missing
+9490,218091,"Hotel room scene, efficiency, queen bed, sofa, table/desk, TV, in brown tone room.",tv,tv,16,16,False,0.0583,0.0,0.2515,missing
+8673,198510,A man is seen walking on tracks next to a train.,train,train,11,6,False,0.2316,0.4195,0.0,ambiguous
+14597,338560,A blue fire hydrant posed on a street corner in a city.,fire hydrant,fire hydrant,5,0,False,0.3847,0.9964,0.9243,present
+3421,80273,A person is riding down a hill on a snowboard.,snowboard,snowboard,10,5,False,0.5931,0.7902,0.5246,present
+6370,150649,A man riding a skateboard up the side of a ramp.,skateboard,skateboard,5,7,False,0.4053,0.9978,0.9302,present
+20958,483667,A man with a top hat and a red tie.,tie,tie,10,4,False,0.2764,0.9901,0.9759,present
+5470,129135,A bench sit in front of a blue and yellow train.,bench,bench,2,6,False,0.2436,0.9658,0.5277,present
+5470,129135,A bench sit in front of a blue and yellow train.,train,train,11,1,False,0.267,0.9988,0.9777,present
+12887,297085,A cat sitting in front of a flat screen TV.,cat,cat,2,3,False,0.3058,0.9984,0.9766,present
+12887,297085,A cat sitting in front of a flat screen TV.,tv,tv,10,6,False,0.2451,0.2543,0.1796,missing
+16748,386352,A tennis player swinging a racket at a public tennis match.,tennis racket,racket,6,10,False,0.1415,0.9681,0.9107,present
+23191,538067,The adjacent farm land hills attest to the height of the soaring kite.,kite,kite,14,19,False,0.1807,0.0,0.0,missing
+2038,46048,A girl sitting on a bed in a room,bed,bed,6,2,False,0.343,0.9942,0.8709,present
+2947,67180,This woman is sitting on a bench and looking in the right direction.,bench,bench,7,11,False,0.4094,0.5671,0.3279,present
+7784,179653,The clock is at the top of the pole on the fence.,clock,clock,2,2,False,0.1926,0.9994,0.9911,present
+13357,308631,An old with motorcycle with people standing beside it.,motorcycle,motorcycle,4,3,False,0.4989,0.999,0.7402,present
+17122,396568,An orange train is going down the tracks.,train,train,3,2,False,0.2948,0.9904,0.8919,present
+23543,547886,Four riders are on horses on the beach.,horse,horses,5,4,False,0.22,0.9994,0.8453,present
+3358,79034,A blue fire hydrant in a clearing of trees,fire hydrant,fire hydrant,5,0,False,0.3343,0.9962,0.3929,present
+23949,558073,Cat messing around in the white bathtub.,cat,cat,1,6,False,0.3227,0.9961,0.9737,present
+18357,425925,City street with focal view to building with maroon steeple and clocks under a standing platform.,clock,clocks,13,8,False,0.1187,0.9768,0.5996,present
+989,20059,A pair of zebras grazing on grass in a zoo.,zebra,zebras,5,4,False,0.5635,0.9997,0.9964,present
+5146,122745,A stop sign is lit up in the dark of night.,stop sign,stop sign,3,0,False,0.6347,0.6001,0.8844,present
+6021,141821,A close-up of a misshapen piece of pizza and a can of soda.,pizza,pizza,12,0,False,0.4763,0.9708,0.8308,present
+5601,132375,a glass vase with three pink flowers and a drink,vase,vase,3,0,False,0.2669,0.9996,0.9736,present
+6801,159684,A high speed train is seen in the station.,train,train,4,7,False,0.4399,0.9981,0.9751,present
+10743,246963,A group of people on motorcycles stopped at a stop sign.,motorcycle,motorcycles,6,1,False,0.2357,0.9829,0.6872,present
+10743,246963,A group of people on motorcycles stopped at a stop sign.,stop sign,stop sign,11,5,False,0.4691,0.0533,0.0,missing
+23031,534270,Two people in ridiculous looking umbrella hats.,umbrella,umbrella,6,1,False,0.3859,0.987,0.7871,present
+103,1818,a baby zebra nursing from an adult zebra,zebra,zebra,3,5,False,0.7471,0.9999,0.9936,present
+10755,247806,A brick clock tower ascending towards the heavens,clock,clock,3,3,False,0.2089,0.9987,0.9928,present
+8933,205324,A pair of men playing frisbee with each other on a field.,frisbee,frisbee,6,12,False,0.4141,0.9109,0.9527,present
+9056,208363,a group of people sitting together eating pizza,pizza,pizza,8,3,False,0.4318,0.9833,0.7794,present
+5121,122046,A woman is sitting in a chair with an umbrella.,chair,chair,7,9,False,0.3082,0.751,0.4007,present
+5121,122046,A woman is sitting in a chair with an umbrella.,umbrella,umbrella,10,6,False,0.3674,0.9979,0.7516,present
+8577,195165,A bathroom with a lot of items near the sink and counter.,sink,sink,10,15,False,0.2415,0.9836,0.5471,present
+3209,74733,A view of a bunch of pizzas sitting on a table.,pizza,pizzas,7,10,False,0.5751,0.9948,0.9233,present
+23722,552371,Some horses standing near each other in a fenced in area,horse,horses,2,12,False,0.295,0.9978,0.9545,present
+4806,113867,The tower of the building has a clock displayed on it.,clock,clock,8,0,False,0.2243,0.9992,0.9956,present
+20123,464872,zebras race along in a grassy field in front of some trees,zebra,zebras,2,4,False,0.3489,0.9995,0.9512,present
+9405,216277,An partially eaten apply and a cell phone set on a table.,cell phone,cell phone,8,6,False,0.2949,0.9804,0.7561,present
+7370,171050,A fire hydrant on a side walk in front of a building.,fire hydrant,fire hydrant,4,0,False,0.5853,0.9995,0.9901,present
+3150,73326,An open refrigerator including bottles of various food.,refrigerator,refrigerator,3,11,False,0.66,0.9868,0.8959,present
+3150,73326,An open refrigerator including bottles of various food.,bottle,bottles,5,16,False,0.0937,0.9128,0.4047,present
+9584,221281,"Three giraffes, one young, in a natural looking habitat.",giraffe,giraffes,3,6,False,0.7044,0.9996,0.9711,present
+10858,250127,A woman that is holding an umbrella near a building.,umbrella,umbrella,7,3,False,0.3967,0.9657,0.7032,present
+13625,314034,A herd of cattle is near a flock of birds swimming in the water.,bird,birds,10,10,False,0.1447,0.9602,0.315,present
+22106,512403,Vase full of feathers sitting on a table next to a floral drape.,vase,vase,1,17,False,0.148,0.9939,0.7464,present
+6708,157390,A bowl of cut up raw carrots and broccoli.,bowl,bowl,2,14,False,0.1612,0.584,0.4706,present
+6708,157390,A bowl of cut up raw carrots and broccoli.,carrot,carrots,7,0,False,0.5333,0.9503,0.6474,present
+6708,157390,A bowl of cut up raw carrots and broccoli.,broccoli,broccoli,9,4,False,0.2251,0.9573,0.4114,present
+18155,420230,A large elephants walks along toward the camera.,elephant,elephants,3,0,False,0.5053,0.9995,0.9635,present
+4901,116825,A cat leans over a desk and paws at an army knife.,cat,cat,2,6,False,0.3237,0.9897,0.8739,present
+4901,116825,A cat leans over a desk and paws at an army knife.,knife,knife,12,4,False,0.2178,0.425,0.2791,ambiguous
+7137,166287,A couple of cows and some birds flying in the sky.,cow,cows,4,6,False,0.3038,0.6968,0.0,present
+7137,166287,A couple of cows and some birds flying in the sky.,bird,birds,7,7,False,0.141,0.998,0.9336,present
+5598,132329,Four bottles sit in an otherwise empty refrigerator.,bottle,bottles,2,21,False,0.1756,0.944,0.5837,present
+5598,132329,Four bottles sit in an otherwise empty refrigerator.,refrigerator,refrigerator,8,6,False,0.6444,0.9666,0.9197,present
+16716,385205,A very cute cat laying on a rug.,cat,cat,4,3,False,0.4167,0.9857,0.8302,present
+16272,376264,a desk with a laptop a tea pot and a cup,laptop,laptop,5,8,False,0.3028,0.3829,0.0866,ambiguous
+16272,376264,a desk with a laptop a tea pot and a cup,cup,cup,11,5,False,0.0682,0.3679,0.8276,present
+17176,397639,A large white sheep next to a small black one,sheep,sheep,4,2,False,0.6678,0.9975,0.9583,present
+12895,297147,A black and silver motorcycle outside on the road.,motorcycle,motorcycle,5,2,False,0.2887,0.9996,0.9868,present
+1715,37740,A wooden desk with a laptop computer sitting on it.,laptop,laptop,6,3,False,0.2494,0.9748,0.4495,present
+24345,566436,A person sitting on a bench in a park.,bench,bench,6,3,False,0.402,0.945,0.5782,present
+6177,146358,A bride and groom near their wedding cake.,cake,cake,8,3,False,0.3506,0.9979,0.7728,present
+17224,398810,A cat staring out a window at another cat.,cat,cat,2,3,False,0.3313,0.9975,0.9265,present
+4778,113051,A boat in the water next to a rail in a tunnel.,boat,boat,2,4,False,0.2157,0.8593,0.9476,present
+5785,135902,A red train parked under a sheltered station area.,train,train,3,5,False,0.1804,0.9993,0.9865,present
+17327,401991,two dogs laying in a bed with thick covers,dog,dogs,2,4,False,0.2462,0.9975,0.7817,present
+17327,401991,two dogs laying in a bed with thick covers,bed,bed,6,16,False,0.2671,0.9313,0.5972,present
+9857,226883,The horse is grazing in the back yard of this home.,horse,horse,2,7,False,0.2335,0.9991,0.9607,present
+18963,440507,a blue suitcase sits on the floor in front of 2 pair of shoes,suitcase,suitcase,3,1,False,0.2841,0.9914,0.6181,present
+1834,40036,A person jumping a horse over a wooden obstacle.,horse,horse,5,9,False,0.2284,0.9992,0.8651,present
+15686,363072,this trains station has a white building in the background,train,trains,2,2,False,0.1146,0.9791,0.8442,present
+7308,170099,A man in shirt and tie standing by a photograph.,tie,tie,6,5,False,0.2967,0.9969,0.4958,present
+22648,525083,a kitchen with a wooden floor and a microwave oven,microwave,microwave,9,15,False,0.2157,0.2604,0.6341,present
+14964,346968,A woman in a blue uniform holding a cell phone up to her ear.,cell phone,cell phone,10,6,False,0.2144,0.9398,0.3236,present
+5579,131444,A man in a suit and tie wearing a hat.,tie,tie,7,11,False,0.2716,0.4637,0.1011,ambiguous
+7858,181303,A little boy standing on a field with a kite over his head.,kite,kite,10,10,False,0.326,0.8813,0.5693,present
+19976,462629,A bunch of old refrigerators in front of an open door.,refrigerator,refrigerators,6,7,False,0.5631,0.9995,0.9561,present
+11743,271997,A photograph portrait of a male teen in coat and tie.,tie,tie,11,3,False,0.2192,0.9852,0.9549,present
+18565,430377,A woman posing on skis with a ski lift in the background.,skis,skis,5,5,False,0.2838,0.9884,0.4022,present
+11231,259830,A moped is parked next to bicycles on a sidewalk.,bicycle,bicycles,8,9,False,0.1802,0.8263,0.5675,present
+9366,215072,Two people sit closely together on chairs under an umbrella.,chair,chairs,7,8,False,0.2041,0.2751,0.4343,ambiguous
+9366,215072,Two people sit closely together on chairs under an umbrella.,umbrella,umbrella,10,1,False,0.321,0.9499,0.7669,present
+20202,466339,A cat is sitting on the carpet in front of a door.,cat,cat,2,1,False,0.2953,0.9995,0.9886,present
+24041,560279,A toilet in a tiled stall with rainbow streaks around the room.,toilet,toilet,2,2,False,0.2321,0.9951,0.9755,present
+18675,433374,Elephants are standing on a muddy bank next to water.,elephant,elephants,1,1,False,0.5187,0.9995,0.9712,present
+10446,239627,A white kitchen sink filled with dishes and eating utensils.,sink,sink,4,3,False,0.2024,0.9717,0.6434,present
+12207,283520,Two men stand in the woods as one of them throws a Frisbee.,frisbee,frisbee,13,12,False,0.1594,0.9967,0.9825,present
+8603,196141,A batter hits the ball in a baseball game.,sports ball,ball,5,15,False,0.2688,0.9752,0.9175,present
+8429,192047,An all white bathroom consisting of a mirror and sink view.,sink,sink,10,7,False,0.0877,0.9809,0.665,present
+7386,171382,A man doing a leap on a skateboard on a city sidewalk.,skateboard,skateboard,8,9,False,0.3504,0.9981,0.8661,present
+8179,187144,A white bus is pulled up to a sidewalk.,bus,bus,3,0,False,0.4432,0.9997,0.9829,present
+20038,463618,Woman holding child who is looking at white bird in cage.,bird,bird,9,10,False,0.0994,0.996,0.8385,present
+17397,403122,A woman about to serve a tennis ball at a tennis court.,sports ball,ball,8,17,False,0.181,0.0,0.0776,missing
+10613,243989,A group of young men holding skateboards in front of a building.,skateboard,skateboards,8,12,False,0.465,0.9949,0.7005,present
+10696,245576,An orange cat sitting on top of a computer desk.,cat,cat,3,0,False,0.271,0.9983,0.9657,present
+2452,55150,Two children in a stroller among cars in a rental lot.,car,cars,7,7,False,0.1269,0.998,0.8989,present
+21288,491757,A cat sitting on top of a bed on the comforter,cat,cat,2,3,False,0.3246,0.998,0.9137,present
+21288,491757,A cat sitting on top of a bed on the comforter,bed,bed,8,4,False,0.2008,0.9812,0.5541,present
+21584,499622,A police officer is riding a motorcycle down the street.,motorcycle,motorcycle,7,0,False,0.2556,0.9996,0.8831,present
+23626,550322,Scissors and other utensils in a cup sitting on a desk.,scissors,scissors,1,5,False,0.4206,0.9992,0.9644,present
+23626,550322,Scissors and other utensils in a cup sitting on a desk.,cup,cup,8,3,False,0.1032,0.4943,0.1181,ambiguous
+15270,353518,A harbor with boats washed up in the low tide,boat,boats,4,8,False,0.1837,0.9981,0.8473,present
+14766,343076,Cat lying on top of a shelf with its front leg hanging down.,cat,cat,1,1,False,0.2757,0.9975,0.9347,present
+8499,193494,Child's bed and colorful quilt surrounded by blue plastic walls.,bed,bed,3,13,False,0.157,0.983,0.7357,present
+13388,309452,A colorful bird sits on a tree branch.,bird,bird,3,0,False,0.1295,0.9961,0.9916,present
+8829,202001,A WOMAN IS LOOKING AT A CELL PHONE,cell phone,cell phone,8,3,False,0.5667,0.9996,0.9178,present
+13541,312278,Suitcases on top of a carrier onto of a vehicle.,suitcase,suitcases,2,7,False,0.3181,0.9434,0.6789,present
+10142,232348,A streamlined modern toaster on a kitchen counter top.,toaster,toaster,5,4,False,0.4009,0.997,0.7884,present
+14194,328337,young male preparing to throw a white plastic Frisbee,frisbee,frisbee,9,4,False,0.3562,0.9223,0.1645,present
+3075,70254,A green and yellow train traveling past a platform.,train,train,5,1,False,0.1819,0.9993,0.9947,present
+16406,378099,A computer keyboard sitting next to a mouse on a wooden table.,keyboard,keyboard,4,13,False,0.2093,0.0,0.1185,missing
+16406,378099,A computer keyboard sitting next to a mouse on a wooden table.,mouse,mouse,9,2,False,0.2315,0.9992,0.9959,present
+9128,210099,A cat sitting on a chair outside in the sun.,cat,cat,2,2,False,0.3283,0.9968,0.9578,present
+9128,210099,A cat sitting on a chair outside in the sun.,chair,chair,6,7,False,0.24,0.919,0.5452,present
+1311,27768,A bus which is part of the Metropolitan Transit System.,bus,bus,2,0,False,0.4494,0.9997,0.9752,present
+24847,578489,Several children watch while a girl in a pink sweatshirt plays with a Wii remote while another person with a little girl on their lap snuggle in a chair in the background.,remote,remote,15,12,False,0.0481,0.0,0.089,missing
+13091,302165,A herd of cows laying on dry grass.,cow,cows,4,8,False,0.3112,0.9995,0.944,present
+1794,39484,A street full of cars that are driving and parked and a group of people sitting outside eating.,car,cars,5,13,False,0.1363,0.7149,0.2181,present
+14209,328683,A parking meter with a set of different colored papers wrapped around it.,parking meter,parking meter,3,3,False,0.5285,0.6461,0.0993,present
+22219,514979,A very large elephant standing next to a baby elephant.,elephant,elephant,4,0,False,0.5302,0.9996,0.987,present
+4767,112798,a cat is laying on a table near a laptop and papers,cat,cat,2,0,False,0.3808,0.9988,0.9757,present
+4767,112798,a cat is laying on a table near a laptop and papers,laptop,laptop,10,4,False,0.2494,0.9885,0.3708,present
+14351,332455,The neon purple toilet with lid lifted is in the bathroom with brown tile.,toilet,toilet,4,6,False,0.1267,0.9959,0.8976,present
+17184,397681,"There are 25 pictures of carrots varying in size, shape and color.",carrot,carrots,7,3,False,0.6622,0.9933,0.6858,present
+16931,391722,A man serving another man a cake with candles on it.,cake,cake,7,0,False,0.3224,0.9943,0.6922,present
+6733,157807,Cat standing on a toilet seat looking at the person taking the photo.,cat,cat,1,2,False,0.2609,0.9969,0.9057,present
+6733,157807,Cat standing on a toilet seat looking at the person taking the photo.,toilet,toilet,5,1,False,0.2552,0.9774,0.903,present
+8289,189451,A piece of cake and a knife on a plate.,cake,cake,4,0,False,0.4403,0.9978,0.8492,present
+8289,189451,A piece of cake and a knife on a plate.,knife,knife,7,6,False,0.1899,0.3535,0.4546,ambiguous
+13241,306136,A bus stopped in front of a building with the Apple logo on it.,bus,bus,2,2,False,0.2904,0.9998,0.9556,present
+15127,350122,A busy bus station with ramp going downstairs.,bus,bus,3,15,False,0.1965,0.0,0.0,missing
+19760,458410,A living room with an old fashioned TV and a couch.,tv,tv,8,15,False,0.1594,0.5873,0.4936,present
+19760,458410,A living room with an old fashioned TV and a couch.,couch,couch,11,13,False,0.1745,0.9987,0.9228,present
+4098,96001,A table with an umbrella and other things,umbrella,umbrella,5,8,False,0.4198,0.9468,0.7056,present
+4124,96960,A polar bear swimming in water near a rock wall.,bear,bear,3,0,False,0.3232,0.9997,0.9878,present
+11633,269316,A group of men playing a game of frisbee.,frisbee,frisbee,9,13,False,0.4504,0.9982,0.9109,present
+14842,344100,A white plate on a table topped with a sandwich.,sandwich,sandwich,10,2,False,0.4222,0.9962,0.781,present
+1031,21503,Crackers with spread on table with remote in background,remote,remote,7,4,False,0.1111,0.9877,0.9316,present
+5813,136633,A market street with various goods on display under an umbrella.,umbrella,umbrella,11,13,False,0.1812,0.9259,0.6166,present
+2962,67315,A man in a shirt and tie standing up.,tie,tie,7,1,False,0.3559,0.9959,0.5736,present
+7561,174371,Six females gathered around a cell phone smiling.,cell phone,cell phone,7,12,False,0.3473,0.9865,0.6694,present
+7324,170278,A dog sleeps on a bed with some blankets.,dog,dog,2,0,False,0.2249,0.9325,0.7088,present
+7324,170278,A dog sleeps on a bed with some blankets.,bed,bed,6,17,False,0.1347,0.4252,0.4431,ambiguous
+3386,79588,A courtyard with people walking about it next to clock tower.,clock,clock,10,17,False,0.1095,0.0,0.0,missing
+24397,567886,A teddy bear and sandals lie strewn at someone's feet.,teddy bear,teddy bear,3,3,False,0.3199,0.9981,0.9375,present
+12034,279541,Several different kinds of pizzas displayed on a buffet line.,pizza,pizzas,5,11,False,0.3695,0.9977,0.7902,present
+8886,203629,The man is giving a thumbs up while on his phone.,cell phone,phone,11,11,False,0.5365,0.0,0.0,missing
+10418,238866,A rack topped with glazed donuts sitting side by side.,donut,donuts,6,9,False,0.4167,0.9985,0.9244,present
+19818,459437,A row of sheep by a wooden fence with a guy holding a bowl.,sheep,sheep,4,1,False,0.3657,0.999,0.9248,present
+19818,459437,A row of sheep by a wooden fence with a guy holding a bowl.,bowl,bowl,14,19,False,0.0475,0.0,0.0,missing
+20634,476258,A man on a long exposure picture riding an electric skateboard.,skateboard,skateboard,11,5,False,0.4203,0.9994,0.9473,present
+16617,383621,A large commercial airplane taking off into the sky,airplane,airplane,4,3,False,0.2818,0.9676,0.9728,present
+21208,490470,A large body of water with three boats floating on top of it.,boat,boats,8,1,False,0.2223,0.9703,0.8235,present
+18446,427500,a yellow and brown fire hydrant on the side of the road,fire hydrant,fire hydrant,7,0,False,0.4593,0.9973,0.9883,present

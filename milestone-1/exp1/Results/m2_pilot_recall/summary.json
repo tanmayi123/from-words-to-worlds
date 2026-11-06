@@ -1,0 +1,76 @@
+{
+  "settings": {
+    "split": "dev_500",
+    "steps": 30,
+    "guidance": 7.5,
+    "seed": 0,
+    "scheduler": "DDIM",
+    "present_th": 0.5,
+    "missing_th": 0.3,
+    "commit_r": 0.8,
+    "early_steps": 3,
+    "bootstrap": 2000,
+    "predicts_bar": 0.65
+  },
+  "captions_painted": 334,
+  "instances": 395,
+  "judge_counts": {
+    "present": 342,
+    "missing": 36,
+    "ambiguous": 17
+  },
+  "missing_rate": 0.095,
+  "detectors_disagree": 39,
+  "median_commit": {
+    "present": 5.0,
+    "missing": 13.0
+  },
+  "never_settles": {
+    "present": 0,
+    "missing": 0
+  },
+  "missing_by_object": {
+    "tv": 3,
+    "cup": 2,
+    "cake": 2,
+    "remote": 2,
+    "bus": 2,
+    "cell phone": 2,
+    "sports ball": 2,
+    "clock": 2,
+    "keyboard": 2,
+    "sink": 1,
+    "refrigerator": 1,
+    "hot dog": 1,
+    "bed": 1,
+    "suitcase": 1,
+    "mouse": 1
+  },
+  "commit": {
+    "auroc": 0.817,
+    "ci95": [
+      0.735,
+      0.885
+    ],
+    "within_class_auroc": 0.82,
+    "within_class_ci95": [
+      0.683,
+      0.927
+    ],
+    "verdict": "PREDICTS"
+  },
+  "early": {
+    "auroc": 0.761,
+    "ci95": [
+      0.657,
+      0.847
+    ],
+    "within_class_auroc": 0.756,
+    "within_class_ci95": [
+      0.598,
+      0.891
+    ],
+    "verdict": "PREDICTS"
+  },
+  "minutes": 26.1
+}

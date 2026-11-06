@@ -1,0 +1,41 @@
+prompt_id,seed,source,edited,usable,base_has_new,k0_success,window_close,close_censored,commit_07,commit_08,commit_09
+0,0,a cat sitting on a wooden bench,a dog sitting on a wooden bench,True,False,True,21,False,2,4,7
+0,1,a cat sitting on a wooden bench,a dog sitting on a wooden bench,True,False,True,18,False,0,0,3
+1,0,a dog lying on a couch next to a lamp,a cat lying on a couch next to a lamp,True,False,True,21,False,6,7,9
+1,1,a dog lying on a couch next to a lamp,a cat lying on a couch next to a lamp,False,True,True,30,True,2,3,8
+2,0,a red umbrella on a sandy beach,a red kite on a sandy beach,False,False,False,0,False,4,5,7
+2,1,a red umbrella on a sandy beach,a red kite on a sandy beach,False,False,False,0,False,0,1,2
+3,0,a horse standing in a green field,a cow standing in a green field,True,False,True,24,False,3,5,8
+3,1,a horse standing in a green field,a cow standing in a green field,True,False,True,9,False,0,1,3
+4,0,a clock on a brick wall,a stop sign on a brick wall,True,False,True,9,False,0,0,3
+4,1,a clock on a brick wall,a stop sign on a brick wall,True,False,True,3,False,12,18,21
+5,0,a bicycle parked next to a tree,a motorcycle parked next to a tree,True,False,True,9,False,3,5,14
+5,1,a bicycle parked next to a tree,a motorcycle parked next to a tree,True,False,True,12,False,2,6,13
+6,0,a bird perched on a wooden fence,a cat perched on a wooden fence,True,False,True,21,False,0,7,8
+6,1,a bird perched on a wooden fence,a cat perched on a wooden fence,True,False,True,24,False,4,5,8
+7,0,a cup of coffee on a wooden table,a bowl of coffee on a wooden table,False,True,True,30,True,1,8,12
+7,1,a cup of coffee on a wooden table,a bowl of coffee on a wooden table,False,False,False,6,False,2,5,9
+8,0,a car parked on a quiet street,a truck parked on a quiet street,True,False,True,15,False,5,11,17
+8,1,a car parked on a quiet street,a truck parked on a quiet street,True,False,True,15,False,1,2,9
+9,0,a giraffe standing near a tall tree,a elephant standing near a tall tree,True,False,True,12,False,2,3,7
+9,1,a giraffe standing near a tall tree,a elephant standing near a tall tree,True,False,True,24,False,2,3,6
+10,0,a boat on a calm lake at sunset,a bird on a calm lake at sunset,True,False,True,9,False,0,1,7
+10,1,a boat on a calm lake at sunset,a bird on a calm lake at sunset,True,False,True,3,False,16,19,20
+11,0,a vase of flowers on a windowsill,a cup of flowers on a windowsill,True,False,True,6,False,1,2,13
+11,1,a vase of flowers on a windowsill,a cup of flowers on a windowsill,False,False,False,0,False,0,0,4
+12,0,a cow grazing in a field with mountains,a horse grazing in a field with mountains,True,False,True,18,False,3,4,6
+12,1,a cow grazing in a field with mountains,a horse grazing in a field with mountains,True,False,True,21,False,5,5,6
+13,0,a laptop on a desk in a bright office,a book on a desk in a bright office,False,True,True,30,True,6,9,13
+13,1,a laptop on a desk in a bright office,a book on a desk in a bright office,True,False,True,12,False,11,13,17
+14,0,an apple and a banana on a plate,an apple and a orange on a plate,True,False,True,6,False,0,0,12
+14,1,an apple and a banana on a plate,an apple and a orange on a plate,False,False,False,0,False,5,6,9
+15,0,a bench in a park with a dog,a bench in a park with a cat,True,False,True,27,False,0,1,8
+15,1,a bench in a park with a dog,a bench in a park with a cat,True,False,True,30,True,10,11,14
+16,0,a kitchen counter with a bottle,a kitchen counter with a cup,True,False,True,9,False,5,7,10
+16,1,a kitchen counter with a bottle,a kitchen counter with a cup,False,True,False,30,True,11,14,19
+17,0,a city street with a bus,a city street with a truck,True,False,True,30,True,5,7,10
+17,1,a city street with a bus,a city street with a truck,True,False,True,24,False,1,2,6
+18,0,a living room with a chair,a living room with a couch,True,False,True,15,False,0,18,20
+18,1,a living room with a chair,a living room with a couch,False,True,True,30,True,16,20,22
+19,0,a grassy hill with a sheep,a grassy hill with a cow,True,False,True,18,False,5,7,9
+19,1,a grassy hill with a sheep,a grassy hill with a cow,True,False,True,21,False,2,6,11

@@ -1,0 +1,122 @@
+{
+  "settings": {
+    "steps": 30,
+    "guidance": 7.5,
+    "scheduler": "DDIM",
+    "loss_ks": [
+      0,
+      3,
+      6,
+      9,
+      12,
+      15,
+      18
+    ],
+    "repaints": 8,
+    "failures_wanted": 30,
+    "scan_limit": 300,
+    "fail_th": 0.3,
+    "found_th": 0.5,
+    "window_ks": [
+      0,
+      3,
+      6,
+      9,
+      12,
+      15,
+      18
+    ],
+    "edit_th": 0.6,
+    "scene_th": 0.7,
+    "blend_th": 0.3
+  },
+  "loss": {
+    "captions_scanned": 281,
+    "failures": 30,
+    "possible_failures": 23,
+    "prompt_failures_p0_le_1_of_8": 6,
+    "median_survival_by_k": {
+      "0": 0.5,
+      "3": 0.5,
+      "6": 0.375,
+      "9": 0.25,
+      "12": 0.125,
+      "15": 0.125,
+      "18": 0.0
+    },
+    "loss_step_possible": {
+      "median": 15.0,
+      "q1": 10.5,
+      "q3": 19.5,
+      "iqr": 9.0,
+      "not_lost_by_18": 6,
+      "lost_by_6": 0.13043478260869565,
+      "lost_by_9": 0.2608695652173913
+    },
+    "early_warning_spearman": {
+      "rho": 0.366,
+      "ci95": [
+        -0.075,
+        0.743
+      ],
+      "n": 23
+    },
+    "early_warning_works": false,
+    "verdict": "MOMENTS",
+    "minutes": 83.3
+  },
+  "window": {
+    "units": 24,
+    "compared_units": 16,
+    "taken_by_k": {
+      "plain": {
+        "0": 1.0,
+        "3": 0.833,
+        "6": 0.708,
+        "9": 0.542,
+        "12": 0.417,
+        "15": 0.333,
+        "18": 0.042
+      },
+      "masked": {
+        "0": 1.0,
+        "3": 0.833,
+        "6": 0.708,
+        "9": 0.5,
+        "12": 0.417,
+        "15": 0.25,
+        "18": 0.042
+      }
+    },
+    "scene_median_by_k": {
+      "plain": {
+        "0": 0.0,
+        "3": 0.406,
+        "6": 0.701,
+        "9": 0.829,
+        "12": 0.895,
+        "15": 0.931,
+        "18": 0.961
+      },
+      "masked": {
+        "0": 0.451,
+        "3": 0.673,
+        "6": 0.837,
+        "9": 0.901,
+        "12": 0.931,
+        "15": 0.968,
+        "18": 0.982
+      }
+    },
+    "median_latest_plain": 13.5,
+    "median_latest_masked": 12.0,
+    "median_gain": 0.0,
+    "share_gain_ge_0": 0.8125,
+    "by_kind": {
+      "detail": 0.0,
+      "swap": 0.0
+    },
+    "verdict": "NO_GAIN",
+    "minutes": 16.5
+  }
+}

@@ -1,0 +1,31 @@
+fid,image_id,caption,object,words,early_share,commit_08,p0,possible,loss_step,p_k00,p_k03,p_k06,p_k09,p_k12,p_k15,p_k18
+0,274272,A bus traveling on a road next to cars with building in background.,car,cars,0.0908,15,0.5,True,9.0,0.5,0.25,0.375,0.125,0.0,0.0,0.0
+1,136772,A glass bowl of chopped oranges and strawberries,orange,oranges,0.3339,1,1.0,True,,1.0,1.0,1.0,1.0,0.625,0.5,0.375
+2,293858,A sandwich and salad sit on a plate next to a glass of water and a water bottle.,bottle,bottle,0.0669,15,0.625,True,6.0,0.625,0.375,0.125,0.0,0.0,0.0,0.0
+3,490171,A man in a wet suit riding on a surfboard with a dog.,dog,dog,0.1008,14,0.375,True,12.0,0.375,0.375,0.5,0.5,0.125,0.0,0.125
+4,383289,a security officer sitting on a fence while talking on a cell phone and holding onto a segway,cell phone,cell phone,0.1274,13,0.0,False,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+5,29397,Someone in orange pants stands on a wooden bench.,bench,bench,0.2471,10,0.375,True,12.0,0.375,0.25,0.25,0.25,0.0,0.125,0.0
+6,463802,A teddy bear on a television with a tennis player holding a racket.,tennis racket,racket,0.1046,9,0.625,True,18.0,0.625,0.625,0.875,0.625,0.375,0.25,0.0
+7,60823,A bunch of birds that are around cows.,cow,cows,0.5786,6,0.75,True,9.0,0.75,0.5,0.5,0.125,0.0,0.0,0.0
+8,142472,some people some buildings cars and a red double decker bus,car,cars,0.0599,6,0.75,True,9.0,0.75,0.625,0.375,0.0,0.0,0.125,0.0
+9,88970,A man serving a tennis ball on top of a tennis court.,sports ball,ball,0.1535,13,0.375,True,15.0,0.375,0.25,0.625,0.25,0.375,0.125,0.0
+10,80340,A little boy that is standing on a sidewalk with a suitcase.,suitcase,suitcase,0.215,18,0.25,False,12.0,0.25,0.5,0.125,0.375,0.0,0.125,0.0
+11,12062,A sheep inspects a big pile of shaved sheep wool.,sheep,sheep,0.2188,10,0.625,True,12.0,0.625,0.75,0.375,0.375,0.125,0.125,0.0
+12,65736,A woman wearing an Army t-shirt hits a tennis ball,sports ball,ball,0.1458,10,0.875,True,,0.875,0.75,0.625,0.875,0.625,0.625,0.875
+13,493286,The restored old time car is parked near a four engine airplane.,car,car,0.2341,1,0.125,False,12.0,0.125,0.0,0.25,0.25,0.0,0.0,0.125
+14,328430,Woman tennis player returning a tennis ball.,sports ball,ball,0.155,6,0.875,True,18.0,0.875,0.625,0.25,0.5,0.25,0.5,0.125
+15,546717,A woman sitting on a couch in front of a laptop.,couch,couch,0.4035,9,0.75,True,15.0,0.75,0.375,0.625,0.375,0.25,0.0,0.0
+16,393226,A busy intersection with an ice cream truck driving by.,truck,truck,0.43,2,0.75,True,,0.75,1.0,0.625,0.5,0.5,0.375,0.375
+17,294855,A bowl holding a bottle of champagne below a black suitcase.,suitcase,suitcase,0.304,4,0.125,False,18.0,0.125,0.625,0.625,0.375,0.375,0.375,0.0
+18,443844,a person riding a skate board on a bench,bench,bench,0.4241,17,0.5,True,,0.5,0.5,0.125,0.125,0.5,0.125,0.25
+19,52412,A view of several parking lots from an airplane.,airplane,airplane,0.1923,19,0.125,False,6.0,0.125,0.375,0.0,0.0,0.0,0.0,0.0
+20,110042,There is an old toilet sitting under a sign for this picture.,toilet,toilet,0.2523,17,0.0,False,6.0,0.0,0.25,0.0,0.0,0.0,0.0,0.0
+21,116439,a lady wearing a straw hat in a boat with oars,boat,boat,0.1626,11,0.125,False,0.0,0.125,0.0,0.0,0.0,0.0,0.0,0.0
+22,250766,Meat and a salad with knife and fork on a plate.,knife,knife,0.0907,11,0.5,True,12.0,0.5,0.375,0.5,0.25,0.0,0.0,0.125
+23,86220,A white car and a white bus parked parallel from one another.,car,car,0.1639,4,0.625,True,6.0,0.625,0.375,0.0,0.125,0.125,0.125,0.0
+24,229997,A black bear is surrounded by black birds on grass.,bear,bear,0.2563,6,0.875,True,,0.875,0.875,1.0,0.625,0.625,0.75,0.75
+25,560011,a mouse and a keyboard that is sitting on a table,mouse,mouse,0.3956,16,0.875,True,,0.875,0.75,1.0,0.5,0.625,0.5,1.0
+26,328238,A man in a grassy field about to catch a frisbee.,frisbee,frisbee,0.2039,5,0.5,True,15.0,0.5,0.875,0.5,0.625,0.25,0.125,0.125
+27,523229,a handicap toilet with a foreign language written above it,toilet,toilet,0.3196,18,0.375,True,3.0,0.375,0.0,0.0,0.0,0.0,0.0,0.0
+28,292155,An umbrella blocks the sun beside a palm tree.,umbrella,umbrella,0.1749,22,0.5,True,12.0,0.5,0.5,0.375,0.375,0.0,0.0,0.0
+29,101787,An airplane flies high above in the sky with telephone lines in the picture as well.,airplane,airplane,0.1118,14,0.875,True,18.0,0.875,1.0,0.875,0.25,0.25,0.25,0.125

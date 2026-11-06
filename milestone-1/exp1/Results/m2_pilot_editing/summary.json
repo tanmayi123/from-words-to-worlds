@@ -1,0 +1,298 @@
+{
+  "settings": {
+    "steps": 30,
+    "guidance": 7.5,
+    "scheduler": "DDIM",
+    "seeds": [
+      0,
+      1
+    ],
+    "ks": [
+      0,
+      3,
+      6,
+      9,
+      12,
+      15,
+      18,
+      21,
+      24,
+      27
+    ],
+    "drag_ks": [
+      0,
+      3,
+      6,
+      9,
+      12,
+      15,
+      18,
+      21
+    ],
+    "drag_etas": [
+      0.05,
+      0.1,
+      0.2
+    ],
+    "drag_guided_steps": 8,
+    "drag_iters": 3
+  },
+  "parity_mean_abs_pixel_diff": 0.0,
+  "arms": {
+    "swap": {
+      "units": 40,
+      "usable_units": 30,
+      "success_by_k": {
+        "0": 1.0,
+        "3": 0.9333,
+        "6": 0.8667,
+        "9": 0.6667,
+        "12": 0.6,
+        "15": 0.5,
+        "18": 0.4,
+        "21": 0.2333,
+        "24": 0.1,
+        "27": 0.0667
+      },
+      "success_at_k0": 1.0,
+      "commit_spread_08": {
+        "min": 0,
+        "q1": 2.0,
+        "median": 5.0,
+        "q3": 7.0,
+        "max": 19,
+        "iqr": 5.0
+      },
+      "window_close": {
+        "median": 16.5,
+        "censored": 2
+      },
+      "close_minus_commit_08_median": 12.0,
+      "lopo_accuracy": {
+        "0.7": {
+          "per_word": 0.7233,
+          "global": 0.7333,
+          "gain": -0.01
+        },
+        "0.8": {
+          "per_word": 0.6833,
+          "global": 0.7333,
+          "gain": -0.05
+        },
+        "0.9": {
+          "per_word": 0.63,
+          "global": 0.7333,
+          "gain": -0.1033
+        }
+      },
+      "spearman_commit_vs_close": {
+        "0.7": {
+          "rho": 0.055,
+          "ci95": [
+            -0.353,
+            0.485
+          ],
+          "n": 30,
+          "censored": 2
+        },
+        "0.8": {
+          "rho": 0.032,
+          "ci95": [
+            -0.378,
+            0.465
+          ],
+          "n": 30,
+          "censored": 2
+        },
+        "0.9": {
+          "rho": -0.308,
+          "ci95": [
+            -0.639,
+            0.102
+          ],
+          "n": 30,
+          "censored": 2
+        }
+      },
+      "criteria": {
+        "change_works": true,
+        "windows_differ": true,
+        "timing_predicts": false
+      },
+      "verdict": "WEAK",
+      "minutes": 25.0
+    },
+    "detail": {
+      "units": 48,
+      "usable_units": 37,
+      "success_by_k": {
+        "0": 1.0,
+        "3": 0.7297,
+        "6": 0.4595,
+        "9": 0.2703,
+        "12": 0.1892,
+        "15": 0.1351,
+        "18": 0.0541,
+        "21": 0.027,
+        "24": 0.0,
+        "27": 0.0
+      },
+      "success_at_k9": 0.2703,
+      "commit_spread_08": {
+        "min": 0,
+        "q1": 2.0,
+        "median": 4.0,
+        "q3": 5.0,
+        "max": 19,
+        "iqr": 3.0
+      },
+      "window_close": {
+        "median": 6.0,
+        "censored": 0
+      },
+      "close_minus_commit_08_median": 3.0,
+      "lopo_accuracy": {
+        "0.7": {
+          "per_word": 0.8595,
+          "global": 0.8595,
+          "gain": 0.0
+        },
+        "0.8": {
+          "per_word": 0.8378,
+          "global": 0.8595,
+          "gain": -0.0216
+        },
+        "0.9": {
+          "per_word": 0.8432,
+          "global": 0.8595,
+          "gain": -0.0162
+        }
+      },
+      "spearman_commit_vs_close": {
+        "0.7": {
+          "rho": 0.166,
+          "ci95": [
+            -0.172,
+            0.472
+          ],
+          "n": 37,
+          "censored": 0
+        },
+        "0.8": {
+          "rho": 0.105,
+          "ci95": [
+            -0.235,
+            0.417
+          ],
+          "n": 37,
+          "censored": 0
+        },
+        "0.9": {
+          "rho": 0.224,
+          "ci95": [
+            -0.091,
+            0.507
+          ],
+          "n": 37,
+          "censored": 0
+        }
+      },
+      "criteria": {
+        "change_works": false,
+        "windows_differ": true,
+        "timing_predicts": false
+      },
+      "verdict": "NO_STEER",
+      "minutes": 54.9
+    },
+    "drag": {
+      "calibration": [
+        {
+          "eta": 0.05,
+          "moved": 4,
+          "of": 6
+        }
+      ],
+      "eta": 0.05,
+      "units": 24,
+      "usable_units": 23,
+      "success_by_k": {
+        "0": 0.913,
+        "3": 0.8696,
+        "6": 0.6957,
+        "9": 0.7391,
+        "12": 0.8261,
+        "15": 0.7391,
+        "18": 0.6087,
+        "21": 0.4783
+      },
+      "success_at_k0": 0.913,
+      "commit_spread_08": {
+        "min": 0,
+        "q1": 1.5,
+        "median": 5.0,
+        "q3": 6.5,
+        "max": 19,
+        "iqr": 5.0
+      },
+      "window_close": {
+        "median": 21.0,
+        "censored": 11
+      },
+      "close_minus_commit_08_median": 18.0,
+      "lopo_accuracy": {
+        "0.7": {
+          "per_word": 0.7228,
+          "global": 0.6957,
+          "gain": 0.0272
+        },
+        "0.8": {
+          "per_word": 0.7391,
+          "global": 0.6957,
+          "gain": 0.0435
+        },
+        "0.9": {
+          "per_word": 0.7283,
+          "global": 0.6957,
+          "gain": 0.0326
+        }
+      },
+      "spearman_commit_vs_close": {
+        "0.7": {
+          "rho": -0.05,
+          "ci95": [
+            -0.489,
+            0.447
+          ],
+          "n": 21,
+          "censored": 10
+        },
+        "0.8": {
+          "rho": -0.253,
+          "ci95": [
+            -0.664,
+            0.246
+          ],
+          "n": 21,
+          "censored": 10
+        },
+        "0.9": {
+          "rho": -0.331,
+          "ci95": [
+            -0.718,
+            0.143
+          ],
+          "n": 21,
+          "censored": 10
+        }
+      },
+      "criteria": {
+        "change_works": true,
+        "windows_differ": true,
+        "timing_predicts": false
+      },
+      "verdict": "WEAK",
+      "minutes": 76.8
+    }
+  }
+}

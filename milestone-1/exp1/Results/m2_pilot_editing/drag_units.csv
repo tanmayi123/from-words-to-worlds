@@ -1,0 +1,25 @@
+prompt_id,seed,prompt,target,usable,box,baseline_in_box,k0_success,window_close,close_censored,commit_07,commit_08,commit_09
+0,0,a cat sitting on a wooden bench,cat,True,"[0.55, 0.25, 0.95, 0.95]",False,True,24,True,2,4,7
+0,1,a cat sitting on a wooden bench,cat,True,"[0.55, 0.25, 0.95, 0.95]",False,True,24,True,0,0,3
+1,0,a dog lying on a couch next to a lamp,dog,True,"[0.05, 0.25, 0.45, 0.95]",False,True,24,True,6,7,9
+1,1,a dog lying on a couch next to a lamp,dog,True,"[0.55, 0.25, 0.95, 0.95]",False,True,24,True,2,3,8
+2,0,a red umbrella on a sandy beach,umbrella,True,"[0.55, 0.25, 0.95, 0.95]",False,True,24,True,4,5,7
+2,1,a red umbrella on a sandy beach,umbrella,True,"[0.05, 0.25, 0.45, 0.95]",False,True,18,False,0,1,2
+3,0,a horse standing in a green field,horse,True,"[0.05, 0.25, 0.45, 0.95]",False,False,18,False,3,5,8
+3,1,a horse standing in a green field,horse,True,"[0.55, 0.25, 0.95, 0.95]",False,True,21,False,0,1,3
+4,0,a clock on a brick wall,clock,True,"[0.05, 0.25, 0.45, 0.95]",False,True,18,False,0,0,3
+4,1,a clock on a brick wall,clock,True,"[0.05, 0.25, 0.45, 0.95]",False,True,18,False,12,18,21
+5,0,a bicycle parked next to a tree,bicycle,True,"[0.05, 0.25, 0.45, 0.95]",False,False,24,True,3,5,14
+5,1,a bicycle parked next to a tree,bicycle,True,"[0.55, 0.25, 0.95, 0.95]",False,True,21,False,2,6,13
+6,0,a bird perched on a wooden fence,bird,True,"[0.05, 0.25, 0.45, 0.95]",False,True,24,True,0,7,8
+6,1,a bird perched on a wooden fence,bird,True,"[0.05, 0.25, 0.45, 0.95]",False,True,24,True,4,5,8
+7,0,a cup of coffee on a wooden table,cup,True,"[0.55, 0.25, 0.95, 0.95]",False,True,15,False,1,8,12
+7,1,a cup of coffee on a wooden table,cup,True,"[0.05, 0.25, 0.45, 0.95]",False,True,18,False,2,5,9
+8,0,a car parked on a quiet street,car,True,"[0.05, 0.25, 0.45, 0.95]",False,True,6,False,5,11,17
+8,1,a car parked on a quiet street,car,True,"[0.55, 0.25, 0.95, 0.95]",False,True,24,True,1,2,9
+9,0,a giraffe standing near a tall tree,giraffe,True,"[0.05, 0.25, 0.45, 0.95]",False,True,24,True,2,3,7
+9,1,a giraffe standing near a tall tree,giraffe,False,"[0.05, 0.25, 0.45, 0.95]",True,True,24,True,2,3,6
+10,0,a boat on a calm lake at sunset,boat,True,"[0.05, 0.25, 0.45, 0.95]",False,True,12,False,0,1,7
+10,1,a boat on a calm lake at sunset,boat,True,"[0.05, 0.25, 0.45, 0.95]",False,True,15,False,16,19,20
+11,0,a vase of flowers on a windowsill,vase,True,"[0.05, 0.25, 0.45, 0.95]",False,True,21,False,1,2,13
+11,1,a vase of flowers on a windowsill,vase,True,"[0.55, 0.25, 0.95, 0.95]",False,True,24,True,0,0,4

@@ -1,0 +1,49 @@
+prompt_id,unit,seed,source,edited,kind,usable,renderable,clip_span,k0_success,window_close,close_censored,commit_07,commit_08,commit_09
+0,0,0,a cat sitting on a wooden bench,a smiling cat sitting on a wooden bench,expression,False,False,-0.0012,False,0,False,2,4,7
+0,0,1,a cat sitting on a wooden bench,a smiling cat sitting on a wooden bench,expression,False,False,0.001,False,0,False,0,0,3
+0,1,0,a cat sitting on a wooden bench,a cat wearing a red hat sitting on a wooden bench,accessory,True,True,0.0977,True,6,False,2,4,7
+0,1,1,a cat sitting on a wooden bench,a cat wearing a red hat sitting on a wooden bench,accessory,True,True,0.1119,True,9,False,0,0,3
+1,2,0,a dog lying on a couch,a dog wearing sunglasses lying on a couch,accessory,True,True,0.0958,True,18,False,3,4,7
+1,2,1,a dog lying on a couch,a dog wearing sunglasses lying on a couch,accessory,True,True,0.1158,True,12,False,1,2,9
+1,3,0,a dog lying on a couch,a black dog lying on a couch,colour,True,True,0.0336,True,6,False,3,4,7
+1,3,1,a dog lying on a couch,a black dog lying on a couch,colour,True,True,0.0471,True,3,False,1,2,9
+2,4,0,a horse standing in a green field,a white horse standing in a green field,colour,True,True,0.0588,True,9,False,3,5,8
+2,4,1,a horse standing in a green field,a white horse standing in a green field,colour,True,True,0.0634,True,3,False,0,1,3
+2,5,0,a horse standing in a green field,a horse with a flower crown standing in a green field,accessory,True,True,0.1195,True,3,False,3,5,8
+2,5,1,a horse standing in a green field,a horse with a flower crown standing in a green field,accessory,True,True,0.1299,True,9,False,0,1,3
+3,6,0,a car parked on a quiet street,a red car parked on a quiet street,colour,True,True,0.0763,True,6,False,5,11,17
+3,6,1,a car parked on a quiet street,a red car parked on a quiet street,colour,True,True,0.0708,True,9,False,1,2,9
+3,7,0,a car parked on a quiet street,a car covered in snow parked on a quiet street,texture,True,True,0.1162,True,18,False,5,11,17
+3,7,1,a car parked on a quiet street,a car covered in snow parked on a quiet street,texture,True,True,0.1465,True,18,False,1,2,9
+4,8,0,a bird perched on a wooden fence,a blue bird perched on a wooden fence,colour,True,True,0.0825,True,24,False,0,7,8
+4,8,1,a bird perched on a wooden fence,a blue bird perched on a wooden fence,colour,True,True,0.0753,True,15,False,4,5,8
+4,9,0,a bird perched on a wooden fence,a bird with an open beak perched on a wooden fence,expression,False,False,0.0078,False,0,False,0,7,8
+4,9,1,a bird perched on a wooden fence,a bird with an open beak perched on a wooden fence,expression,True,True,0.0117,True,15,False,4,5,8
+5,10,0,a cup of coffee on a wooden table,a red cup of coffee on a wooden table,colour,False,False,0.0013,False,0,False,1,8,12
+5,10,1,a cup of coffee on a wooden table,a red cup of coffee on a wooden table,colour,True,True,0.0386,True,3,False,2,5,9
+5,11,0,a cup of coffee on a wooden table,a cup of coffee with latte art on a wooden table,texture,True,True,0.0624,True,3,False,1,8,12
+5,11,1,a cup of coffee on a wooden table,a cup of coffee with latte art on a wooden table,texture,True,True,0.0598,True,6,False,2,5,9
+6,12,0,a bicycle parked next to a tree,a yellow bicycle parked next to a tree,colour,True,True,0.0537,True,9,False,3,5,14
+6,12,1,a bicycle parked next to a tree,a yellow bicycle parked next to a tree,colour,True,True,0.0624,True,3,False,2,6,13
+6,13,0,a bicycle parked next to a tree,a bicycle with a basket parked next to a tree,accessory,False,False,-0.0034,False,0,False,3,5,14
+6,13,1,a bicycle parked next to a tree,a bicycle with a basket parked next to a tree,accessory,True,True,0.0583,True,3,False,2,6,13
+7,14,0,a clock on a brick wall,a golden clock on a brick wall,colour,True,True,0.0287,True,3,False,0,0,3
+7,14,1,a clock on a brick wall,a golden clock on a brick wall,colour,True,True,0.0591,True,6,False,12,18,21
+7,15,0,a clock on a brick wall,a clock with roman numerals on a brick wall,texture,False,False,-0.002,False,0,False,0,0,3
+7,15,1,a clock on a brick wall,a clock with roman numerals on a brick wall,texture,False,False,-0.004,False,0,False,12,18,21
+8,16,0,a giraffe standing near a tall tree,a baby giraffe standing near a tall tree,shape,False,False,0.0055,False,0,False,2,3,7
+8,16,1,a giraffe standing near a tall tree,a baby giraffe standing near a tall tree,shape,False,False,-0.0248,False,0,False,2,3,6
+8,17,0,a giraffe standing near a tall tree,a giraffe eating leaves near a tall tree,pose,False,False,0.0084,False,0,False,2,3,7
+8,17,1,a giraffe standing near a tall tree,a giraffe eating leaves near a tall tree,pose,True,True,0.0355,True,6,False,2,3,6
+9,18,0,a boat on a calm lake at sunset,a red boat on a calm lake at sunset,colour,True,True,0.0354,True,6,False,0,1,7
+9,18,1,a boat on a calm lake at sunset,a red boat on a calm lake at sunset,colour,True,True,0.02,True,12,False,16,19,20
+9,19,0,a boat on a calm lake at sunset,a boat with a white sail on a calm lake at sunset,accessory,True,True,0.0142,True,6,False,0,1,7
+9,19,1,a boat on a calm lake at sunset,a boat with a white sail on a calm lake at sunset,accessory,True,True,0.0179,True,21,False,16,19,20
+10,20,0,a vase of flowers on a windowsill,a blue vase of flowers on a windowsill,colour,True,True,0.01,True,12,False,1,2,13
+10,20,1,a vase of flowers on a windowsill,a blue vase of flowers on a windowsill,colour,True,True,0.0322,True,6,False,0,0,4
+10,21,0,a vase of flowers on a windowsill,a vase of sunflowers on a windowsill,texture,True,True,0.0708,True,12,False,1,2,13
+10,21,1,a vase of flowers on a windowsill,a vase of sunflowers on a windowsill,texture,True,True,0.0529,True,9,False,0,0,4
+11,22,0,a cow grazing in a field with mountains,a brown cow grazing in a field with mountains,colour,True,True,0.0161,True,6,False,3,4,6
+11,22,1,a cow grazing in a field with mountains,a brown cow grazing in a field with mountains,colour,True,True,0.0168,True,6,False,5,5,6
+11,23,0,a cow grazing in a field with mountains,a cow wearing a bell grazing in a field with mountains,accessory,True,True,0.0242,True,3,False,3,4,6
+11,23,1,a cow grazing in a field with mountains,a cow wearing a bell grazing in a field with mountains,accessory,False,False,-0.0012,False,0,False,5,5,6

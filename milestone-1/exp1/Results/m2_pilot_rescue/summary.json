@@ -1,0 +1,117 @@
+{
+  "settings": {
+    "steps": 30,
+    "guidance": 7.5,
+    "base_seed": 0,
+    "failures_wanted": 60,
+    "tries": 4,
+    "rescue_ks": [
+      3,
+      6,
+      9,
+      12
+    ],
+    "present_th": 0.5,
+    "tau_share": 0.5,
+    "bootstrap": 2000,
+    "scheduler": "DDIM"
+  },
+  "base_repaint_max_mean_abs_diff": 0.0,
+  "failures": 34,
+  "lpips_floor_regen_median": 0.794,
+  "tau": 0.397,
+  "by_condition": {
+    "regen": {
+      "fix_at_1": 0.507,
+      "fix_at_T": 0.853,
+      "kept_at_T": 0.0,
+      "median_best_lpips_fixed": 0.76,
+      "median_lpips_all": 0.794,
+      "cost_per_try": 1.0,
+      "median_clipscore": 26.01,
+      "median_sharpness": 841.0
+    },
+    "regen_eta1": {
+      "fix_at_1": 0.493,
+      "fix_at_T": 0.794,
+      "kept_at_T": 0.0,
+      "median_best_lpips_fixed": 0.765,
+      "median_lpips_all": 0.797,
+      "cost_per_try": 1.0,
+      "median_clipscore": 26.27,
+      "median_sharpness": 715.2
+    },
+    "rescue_03": {
+      "fix_at_1": 0.316,
+      "fix_at_T": 0.676,
+      "kept_at_T": 0.029,
+      "median_best_lpips_fixed": 0.538,
+      "median_lpips_all": 0.564,
+      "cost_per_try": 0.9,
+      "median_clipscore": 25.92,
+      "median_sharpness": 944.3
+    },
+    "rescue_06": {
+      "fix_at_1": 0.36,
+      "fix_at_T": 0.706,
+      "kept_at_T": 0.294,
+      "median_best_lpips_fixed": 0.446,
+      "median_lpips_all": 0.463,
+      "cost_per_try": 0.8,
+      "median_clipscore": 25.81,
+      "median_sharpness": 1195.1
+    },
+    "rescue_09": {
+      "fix_at_1": 0.228,
+      "fix_at_T": 0.471,
+      "kept_at_T": 0.353,
+      "median_best_lpips_fixed": 0.355,
+      "median_lpips_all": 0.36,
+      "cost_per_try": 0.7,
+      "median_clipscore": 25.13,
+      "median_sharpness": 1244.0
+    },
+    "rescue_12": {
+      "fix_at_1": 0.169,
+      "fix_at_T": 0.412,
+      "kept_at_T": 0.353,
+      "median_best_lpips_fixed": 0.259,
+      "median_lpips_all": 0.276,
+      "cost_per_try": 0.6,
+      "median_clipscore": 25.21,
+      "median_sharpness": 1142.7
+    }
+  },
+  "best_rescue": "rescue_12",
+  "kept_gain_best_vs_regen": {
+    "diff": 0.353,
+    "ci95": [
+      0.176,
+      0.5
+    ],
+    "n": 34
+  },
+  "fix_gap_regen_minus_best": {
+    "diff": 0.441,
+    "ci95": [
+      0.265,
+      0.618
+    ],
+    "n": 34
+  },
+  "verdict": "TRADE_OFF",
+  "sampler": {
+    "sharpness_ratio_eta1_over_eta0": 0.85,
+    "clipscore_eta1_minus_eta0": {
+      "diff": 0.195,
+      "ci95": [
+        -0.256,
+        0.657
+      ],
+      "n": 34
+    },
+    "verdict": "SAME"
+  },
+  "never_fixed_by_any_condition": 3,
+  "minutes": 41.2
+}
