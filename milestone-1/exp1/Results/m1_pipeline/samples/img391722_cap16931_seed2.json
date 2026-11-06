@@ -1,0 +1,10 @@
+{
+  "image_id": 391722,
+  "caption_idx": 16931,
+  "caption": "A man serving another man a cake with candles on it.",
+  "seed": 2,
+  "steps": 30,
+  "guidance": 7.5,
+  "nsfw_flag": false,
+  "seconds_end_to_end": 2.96
+}

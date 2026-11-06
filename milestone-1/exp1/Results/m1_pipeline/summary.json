@@ -1,0 +1,52 @@
+{
+  "images": 5000,
+  "captions": 25004,
+  "cleaning": {
+    "captions_over_token_limit": 0,
+    "images_short_side_under_256": 42,
+    "captions_whitespace_fixed": 3832,
+    "captions_duplicate_dropped": 10,
+    "images_not_rgb": 10,
+    "images_total": 5000,
+    "captions_total": 25004
+  },
+  "retrieval": {
+    "recall@1": 0.35494320908654614,
+    "recall@5": 0.5993840985442329,
+    "recall@10": 0.7027675571908495,
+    "median_rank": 3.0,
+    "n_captions": 25004,
+    "n_images": 5000,
+    "chance_recall@1": 0.0002
+  },
+  "parity": {
+    "token_states_max_abs_diff": 0.0,
+    "token_states_mean_abs_diff": 0.0,
+    "text_vs_cache_mean_pixel_diff": 0.0
+  },
+  "samples": [
+    {
+      "image_id": 87470,
+      "caption": "A bunch of cows walking on the side of the road"
+    },
+    {
+      "image_id": 190756,
+      "caption": "A man flying through the air while riding a bike."
+    },
+    {
+      "image_id": 234607,
+      "caption": "A couple fighting each other over a wii remote control"
+    },
+    {
+      "image_id": 391722,
+      "caption": "A man serving another man a cake with candles on it."
+    },
+    {
+      "image_id": 574823,
+      "caption": "Baseball player looking to his left while other players stand and sit around talking."
+    }
+  ],
+  "seconds_per_image_end_to_end_mean": 2.98,
+  "timing_note": "30 steps, guidance 7.5, includes VAE decode and safety checker, after one warm-up call",
+  "flagged": 0
+}

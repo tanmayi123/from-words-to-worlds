@@ -1,0 +1,430 @@
+{
+  "recorder_vs_stock_mean_pixel_diff": 0.0,
+  "final_step_drop": {
+    "mean": 0.09323968264189633,
+    "min": 0.0035680532455444336,
+    "max": 0.32475966215133667,
+    "n_words": 44,
+    "note": "r at second-to-last evaluation minus r at last; excluded from commit_step"
+  },
+  "prompts": [
+    {
+      "name": "coco_87470",
+      "prompt": "A bunch of cows walking on the side of the road",
+      "seed": 0,
+      "steps": 30,
+      "start_token_share": 0.892,
+      "commit_steps": {
+        "a": 22,
+        "bunch": 21,
+        "of (1)": 16,
+        "cows": 7,
+        "walking": 6,
+        "on": 4,
+        "the (1)": 6,
+        "side": 15,
+        "of (2)": 4,
+        "the (2)": 7,
+        "road": 5
+      },
+      "final_step_drop": {
+        "bunch": 0.325,
+        "cows": 0.013,
+        "walking": 0.014,
+        "side": 0.057,
+        "road": 0.033
+      },
+      "threshold_sensitivity": {
+        "0.7": {
+          "bunch": 19,
+          "cows": 5,
+          "walking": 4,
+          "side": 10,
+          "road": 3
+        },
+        "0.8": {
+          "bunch": 21,
+          "cows": 7,
+          "walking": 6,
+          "side": 15,
+          "road": 5
+        },
+        "0.9": {
+          "bunch": 24,
+          "cows": 10,
+          "walking": 8,
+          "side": 20,
+          "road": 9
+        }
+      }
+    },
+    {
+      "name": "coco_190756",
+      "prompt": "A man flying through the air while riding a bike.",
+      "seed": 0,
+      "steps": 30,
+      "start_token_share": 0.914,
+      "commit_steps": {
+        "a (1)": 21,
+        "man": 20,
+        "flying": 17,
+        "through": 3,
+        "the": 3,
+        "air": 15,
+        "while": 6,
+        "riding": 6,
+        "a (2)": 7,
+        "bike": 3,
+        ".": 8
+      },
+      "final_step_drop": {
+        "man": 0.155,
+        "flying": 0.13,
+        "air": 0.06,
+        "riding": 0.039,
+        "bike": 0.015
+      },
+      "threshold_sensitivity": {
+        "0.7": {
+          "man": 16,
+          "flying": 13,
+          "air": 10,
+          "riding": 4,
+          "bike": 1
+        },
+        "0.8": {
+          "man": 20,
+          "flying": 17,
+          "air": 15,
+          "riding": 6,
+          "bike": 3
+        },
+        "0.9": {
+          "man": 23,
+          "flying": 22,
+          "air": 20,
+          "riding": 17,
+          "bike": 10
+        }
+      }
+    },
+    {
+      "name": "coco_234607",
+      "prompt": "A couple fighting each other over a wii remote control",
+      "seed": 0,
+      "steps": 30,
+      "start_token_share": 0.9,
+      "commit_steps": {
+        "a (1)": 19,
+        "couple": 18,
+        "fighting": 12,
+        "each": 14,
+        "other": 9,
+        "over": 15,
+        "a (2)": 12,
+        "wii": 8,
+        "remote": 13,
+        "control": 14
+      },
+      "final_step_drop": {
+        "couple": 0.142,
+        "fighting": 0.121,
+        "wii": 0.018,
+        "remote": 0.038,
+        "control": 0.047
+      },
+      "threshold_sensitivity": {
+        "0.7": {
+          "couple": 17,
+          "fighting": 5,
+          "wii": 8,
+          "remote": 11,
+          "control": 12
+        },
+        "0.8": {
+          "couple": 18,
+          "fighting": 12,
+          "wii": 8,
+          "remote": 13,
+          "control": 14
+        },
+        "0.9": {
+          "couple": 21,
+          "fighting": 18,
+          "wii": 12,
+          "remote": 16,
+          "control": 15
+        }
+      }
+    },
+    {
+      "name": "coco_391722",
+      "prompt": "A man serving another man a cake with candles on it.",
+      "seed": 0,
+      "steps": 30,
+      "start_token_share": 0.901,
+      "commit_steps": {
+        "a (1)": 22,
+        "man (1)": 20,
+        "serving": 12,
+        "another": 15,
+        "man (2)": 18,
+        "a (2)": 19,
+        "cake": 0,
+        "with": 10,
+        "candles": 9,
+        "on": 10,
+        "it": 10,
+        ".": 17
+      },
+      "final_step_drop": {
+        "man (1)": 0.157,
+        "serving": 0.06,
+        "man (2)": 0.158,
+        "cake": 0.004,
+        "candles": 0.02
+      },
+      "threshold_sensitivity": {
+        "0.7": {
+          "man (1)": 17,
+          "serving": 10,
+          "man (2)": 16,
+          "cake": 0,
+          "candles": 0
+        },
+        "0.8": {
+          "man (1)": 20,
+          "serving": 12,
+          "man (2)": 18,
+          "cake": 0,
+          "candles": 9
+        },
+        "0.9": {
+          "man (1)": 23,
+          "serving": 19,
+          "man (2)": 22,
+          "cake": 6,
+          "candles": 12
+        }
+      }
+    },
+    {
+      "name": "coco_574823",
+      "prompt": "Baseball player looking to his left while other players stand and sit around talking.",
+      "seed": 0,
+      "steps": 30,
+      "start_token_share": 0.907,
+      "commit_steps": {
+        "baseball": 15,
+        "player": 16,
+        "looking": 15,
+        "to": 20,
+        "his": 18,
+        "left": 19,
+        "while": 18,
+        "other": 19,
+        "players": 17,
+        "stand": 15,
+        "and": 16,
+        "sit": 13,
+        "around": 13,
+        "talking": 18,
+        ".": 18
+      },
+      "final_step_drop": {
+        "baseball": 0.044,
+        "player": 0.085,
+        "looking": 0.105,
+        "left": 0.131,
+        "players": 0.07,
+        "stand": 0.057,
+        "sit": 0.031,
+        "talking": 0.098
+      },
+      "threshold_sensitivity": {
+        "0.7": {
+          "baseball": 13,
+          "player": 13,
+          "looking": 8,
+          "left": 16,
+          "players": 13,
+          "stand": 13,
+          "sit": 9,
+          "talking": 15
+        },
+        "0.8": {
+          "baseball": 15,
+          "player": 16,
+          "looking": 15,
+          "left": 19,
+          "players": 17,
+          "stand": 15,
+          "sit": 13,
+          "talking": 18
+        },
+        "0.9": {
+          "baseball": 20,
+          "player": 21,
+          "looking": 20,
+          "left": 22,
+          "players": 21,
+          "stand": 17,
+          "sit": 15,
+          "talking": 22
+        }
+      }
+    },
+    {
+      "name": "missing_cat",
+      "prompt": "A cat sitting on a wooden bench in a park.",
+      "seed": 2,
+      "steps": 20,
+      "start_token_share": 0.889,
+      "commit_steps": {
+        "a (1)": 14,
+        "cat": 14,
+        "sitting": 14,
+        "on": 13,
+        "a (2)": 15,
+        "wooden": 11,
+        "bench": 1,
+        "in": 3,
+        "a (3)": 11,
+        "park": 11,
+        ".": 11
+      },
+      "final_step_drop": {
+        "cat": 0.113,
+        "sitting": 0.201,
+        "wooden": 0.107,
+        "bench": 0.013,
+        "park": 0.133
+      },
+      "threshold_sensitivity": {
+        "0.7": {
+          "cat": 14,
+          "sitting": 12,
+          "wooden": 9,
+          "bench": 0,
+          "park": 9
+        },
+        "0.8": {
+          "cat": 14,
+          "sitting": 14,
+          "wooden": 11,
+          "bench": 1,
+          "park": 11
+        },
+        "0.9": {
+          "cat": 15,
+          "sitting": 15,
+          "wooden": 13,
+          "bench": 6,
+          "park": 13
+        }
+      }
+    },
+    {
+      "name": "dog_chasing_cat",
+      "prompt": "A dog chasing a cat across a grassy yard.",
+      "seed": 0,
+      "steps": 30,
+      "start_token_share": 0.892,
+      "commit_steps": {
+        "a (1)": 20,
+        "dog": 3,
+        "chasing": 9,
+        "a (2)": 7,
+        "cat": 3,
+        "across": 6,
+        "a (3)": 6,
+        "grassy": 12,
+        "yard": 20,
+        ".": 19
+      },
+      "final_step_drop": {
+        "dog": 0.017,
+        "chasing": 0.039,
+        "cat": 0.011,
+        "across": 0.012,
+        "grassy": 0.113,
+        "yard": 0.142
+      },
+      "threshold_sensitivity": {
+        "0.7": {
+          "dog": 2,
+          "chasing": 6,
+          "cat": 2,
+          "across": 4,
+          "grassy": 8,
+          "yard": 17
+        },
+        "0.8": {
+          "dog": 3,
+          "chasing": 9,
+          "cat": 3,
+          "across": 6,
+          "grassy": 12,
+          "yard": 20
+        },
+        "0.9": {
+          "dog": 8,
+          "chasing": 12,
+          "cat": 10,
+          "across": 10,
+          "grassy": 19,
+          "yard": 23
+        }
+      }
+    },
+    {
+      "name": "red_cube_blue_sphere",
+      "prompt": "A red cube on top of a blue sphere.",
+      "seed": 0,
+      "steps": 30,
+      "start_token_share": 0.887,
+      "commit_steps": {
+        "a (1)": 22,
+        "red": 13,
+        "cube": 7,
+        "on": 8,
+        "top": 17,
+        "of": 15,
+        "a (2)": 5,
+        "blue": 18,
+        "sphere": 3,
+        ".": 4
+      },
+      "final_step_drop": {
+        "red": 0.199,
+        "cube": 0.307,
+        "top": 0.271,
+        "blue": 0.185,
+        "sphere": 0.011
+      },
+      "threshold_sensitivity": {
+        "0.7": {
+          "red": 7,
+          "cube": 5,
+          "top": 9,
+          "blue": 13,
+          "sphere": 1
+        },
+        "0.8": {
+          "red": 13,
+          "cube": 7,
+          "top": 17,
+          "blue": 18,
+          "sphere": 3
+        },
+        "0.9": {
+          "red": 22,
+          "cube": 17,
+          "top": 21,
+          "blue": 23,
+          "sphere": 3
+        }
+      }
+    }
+  ]
+}

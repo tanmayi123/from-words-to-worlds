@@ -1,0 +1,10 @@
+{
+  "image_id": 574823,
+  "caption_idx": 24712,
+  "caption": "Baseball player looking to his left while other players stand and sit around talking.",
+  "seed": 0,
+  "steps": 30,
+  "guidance": 7.5,
+  "nsfw_flag": false,
+  "seconds_end_to_end": 2.98
+}

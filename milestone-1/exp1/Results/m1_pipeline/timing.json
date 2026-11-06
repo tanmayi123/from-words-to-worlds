@@ -1,0 +1,24 @@
+{
+  "gpu": "NVIDIA GeForce RTX 5070 Laptop GPU",
+  "torch": "2.11.0+cu128",
+  "python": "3.11.17",
+  "steps": 30,
+  "guidance": 7.5,
+  "resolution": 512,
+  "dtype": "float16",
+  "includes": "UNet denoising, VAE decode and safety checker; one warm-up call excluded",
+  "n_images": 10,
+  "seconds_per_image": [
+    3.096,
+    2.939,
+    2.986,
+    3.098,
+    3.0,
+    3.061,
+    3.031,
+    3.06,
+    3.002,
+    3.03
+  ],
+  "mean_seconds_per_image": 3.03
+}

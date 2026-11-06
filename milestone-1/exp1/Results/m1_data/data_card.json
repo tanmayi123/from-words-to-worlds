@@ -1,0 +1,44 @@
+{
+  "source": "MS-COCO 2017 validation split (images + captions_val2017.json + instances_val2017.json)",
+  "images": 5000,
+  "captions_after_cleaning": 25004,
+  "captions_per_image": {
+    "min": 4,
+    "median": 5.0,
+    "max": 7
+  },
+  "caption_cleaning": {
+    "captions_over_token_limit": 0,
+    "images_short_side_under_256": 42,
+    "captions_whitespace_fixed": 3832,
+    "captions_duplicate_dropped": 10,
+    "images_not_rgb": 10,
+    "images_total": 5000,
+    "captions_total": 25004
+  },
+  "caption_policy": "whitespace and spacing-before-punctuation repaired; exact duplicates within an image (case-insensitive) dropped; wording, spelling and case never changed",
+  "image_preprocessing": {
+    "converted_to_rgb": 10,
+    "center_crop_then_resize": "512x512, Lanczos, PNG",
+    "mean_fraction_of_image_kept_by_crop": 0.716,
+    "min_fraction_kept": 0.2484
+  },
+  "reference_set": {
+    "rule": "short side >= 256 px",
+    "eligible_images": 4958,
+    "excluded_small_images": 42
+  },
+  "splits": {
+    "seed": 2026,
+    "disjoint_by_image": true,
+    "eval_2000": "Results/m1_data/eval_2000.csv (test set)",
+    "eval_500": "Results/m1_data/eval_500.csv (first 500 rows of eval_2000)",
+    "dev_500": "Results/m1_data/dev_500.csv (choosing settings)",
+    "ref_2000": "Results/m1_data/ref_2000.csv (real reference photos for FID and KID)",
+    "unused_eligible_images": 458
+  },
+  "object_categories": {
+    "images_with_at_least_one_annotated_object": 4952,
+    "images_with_none": 48
+  }
+}

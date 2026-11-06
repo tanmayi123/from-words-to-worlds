@@ -1,0 +1,10 @@
+{
+  "image_id": 87470,
+  "caption_idx": 3730,
+  "caption": "A bunch of cows walking on the side of the road",
+  "seed": 1,
+  "steps": 30,
+  "guidance": 7.5,
+  "nsfw_flag": false,
+  "seconds_end_to_end": 2.93
+}

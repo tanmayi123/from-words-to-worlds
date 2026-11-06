@@ -1,0 +1,10 @@
+{
+  "image_id": 234607,
+  "caption_idx": 10240,
+  "caption": "A couple fighting each other over a wii remote control",
+  "seed": 1,
+  "steps": 30,
+  "guidance": 7.5,
+  "nsfw_flag": false,
+  "seconds_end_to_end": 3.16
+}
