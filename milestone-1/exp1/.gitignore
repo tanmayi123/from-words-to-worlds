@@ -1,0 +1,17 @@
+# data, caches and large intermediate outputs
+data/
+*.npz
+*.npy
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+.pytest_cache/
+*.egg-info/
+
+# LaTeX build files
+*.aux
+*.log
+*.out
+*.fls
+*.fdb_latexmk
+*.synctex.gz
