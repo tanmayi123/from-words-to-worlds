@@ -1,0 +1,8 @@
+{
+  "recall@1": 0.4675,
+  "recall@5": 0.733,
+  "recall@10": 0.84,
+  "median_rank": 2.0,
+  "chance_recall@1": 0.0005,
+  "n": 2000
+}

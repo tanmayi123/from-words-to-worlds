@@ -1,0 +1,278 @@
+{
+  "dataset": "MS-COCO 2017 val",
+  "cleaning": {
+    "captions_whitespace_fixed": 3832,
+    "captions_duplicate_dropped": 10,
+    "images": 5000,
+    "captions_raw": 25014,
+    "captions_kept": 25004
+  },
+  "preprocessing": {
+    "size": 512,
+    "method": "RGB, center crop, Lanczos resize, PNG",
+    "converted_to_rgb": 10,
+    "mean_crop_kept": 0.716,
+    "reference_eligible": 4958
+  },
+  "splits": {
+    "eval_2000": 2000,
+    "dev_500": 500,
+    "real_ref_b_2000": 2000
+  },
+  "text_to_embedding": {
+    "encoder": "stable-diffusion-v1-5/stable-diffusion-v1-5 text_encoder (CLIP ViT-L/14)",
+    "shape": [
+      77,
+      768
+    ],
+    "captions_cached": 2000,
+    "seconds": 18.0,
+    "same_as_clip_text_tower_max_diff": 0.0,
+    "retrieval": {
+      "recall@1": 0.4675,
+      "recall@5": 0.733,
+      "recall@10": 0.84,
+      "median_rank": 2.0,
+      "chance_recall@1": 0.0005,
+      "n": 2000
+    },
+    "image_from_text_vs_cache_mean_pixel_diff": 0.0
+  },
+  "data_checks": {
+    "exif_tagged": 0,
+    "near_duplicate_pairs": 0,
+    "caption_quirks": {
+      "captions": 25004,
+      "repeated_word": 33,
+      "no_final_punctuation": 6234,
+      "starts_lower_case": 3708,
+      "under_5_words": 0,
+      "non_ascii": 0
+    }
+  },
+  "object_labels_eval_2000": {
+    "pairs": 2000,
+    "pairs_naming_a_category": 1793,
+    "pairs_with_a_target": 1692,
+    "pairs_with_a_non_person_target": 1314,
+    "mentions": 2768,
+    "ambiguous": 249,
+    "named_not_in_photo": 192,
+    "cropped_away": 142,
+    "targets": 2291,
+    "top_target_categories": {
+      "person": 791,
+      "dog": 56,
+      "bus": 55,
+      "cat": 53,
+      "train": 49,
+      "pizza": 47,
+      "car": 45,
+      "horse": 42,
+      "elephant": 42,
+      "zebra": 41,
+      "bench": 38,
+      "clock": 36,
+      "surfboard": 33,
+      "umbrella": 33,
+      "giraffe": 33
+    }
+  },
+  "stress_prompts": {
+    "word_order": 40,
+    "counting": 40,
+    "colour_binding": 40,
+    "spatial": 40,
+    "multi_object": 40
+  },
+  "tokens": {
+    "captions": 2000,
+    "over_77_tokens": 0,
+    "median_tokens": 13.0,
+    "max_tokens": 36,
+    "captions_with_a_split_word": 379,
+    "split_words_that_name_targets": [
+      "cellphones",
+      "couches",
+      "giraffes",
+      "hydrant",
+      "hydrants",
+      "parrots",
+      "rackets",
+      "racquet",
+      "scooter",
+      "scooters",
+      "skateboarder",
+      "skateboarders",
+      "skateboards",
+      "skiers",
+      "sofas",
+      "stoplight",
+      "stoves",
+      "suitcases",
+      "surfboard",
+      "surfboards",
+      "televisions",
+      "vases",
+      "womans",
+      "zebras"
+    ]
+  },
+  "samples": {
+    "captions": [
+      "A professional baseball player with his glove out.",
+      "a large room that has both a kitchen and living room",
+      "A large blue lit bridge spanning over a lake.",
+      "a close up of a plate of food on a carpeted floor",
+      "A skater is attempting a rail grind."
+    ],
+    "seeds": [
+      0,
+      1,
+      2
+    ],
+    "steps": 30,
+    "guidance": 7.5,
+    "seconds_per_image": 5.05,
+    "folder": "/content/drive/MyDrive/w2w_praniti/samples"
+  },
+  "environment": {
+    "python": "3.13.16",
+    "torch": "2.11.0+cu130",
+    "gpu": "Tesla T4",
+    "diffusers": "0.42.1",
+    "transformers": "5.22.1"
+  },
+  "text_encoders": {
+    "encoders": [
+      "CLIP ViT-L/14",
+      "BERT-base",
+      "T5-base",
+      "GPT-2"
+    ],
+    "baseline": "TF-IDF words",
+    "tokens": {
+      "CLIP ViT-L/14": {
+        "median tokens": 13.0,
+        "max tokens": 36.0
+      },
+      "BERT-base": {
+        "median tokens": 13.0,
+        "max tokens": 36.0
+      },
+      "T5-base": {
+        "median tokens": 14.0,
+        "max tokens": 41.0
+      },
+      "GPT-2": {
+        "median tokens": 11.0,
+        "max tokens": 34.0
+      }
+    },
+    "cka_vs_clip": {
+      "CLIP ViT-L/14": 1.0,
+      "CLIP (EOS)": 0.791,
+      "BERT-base": 0.528,
+      "T5-base": 0.6,
+      "GPT-2": 0.132,
+      "TF-IDF words": 0.511
+    },
+    "paraphrase_retrieval": {
+      "CLIP ViT-L/14": {
+        "R@1": 0.2145,
+        "R@5": 0.412,
+        "R@10": 0.5215,
+        "median rank": 9.0
+      },
+      "CLIP (EOS)": {
+        "R@1": 0.3395,
+        "R@5": 0.5785,
+        "R@10": 0.693,
+        "median rank": 3.0
+      },
+      "BERT-base": {
+        "R@1": 0.13,
+        "R@5": 0.277,
+        "R@10": 0.3505,
+        "median rank": 29.0
+      },
+      "T5-base": {
+        "R@1": 0.1545,
+        "R@5": 0.31,
+        "R@10": 0.3995,
+        "median rank": 22.0
+      },
+      "GPT-2": {
+        "R@1": 0.0335,
+        "R@5": 0.0945,
+        "R@10": 0.1345,
+        "median rank": 315.0
+      },
+      "TF-IDF words": {
+        "R@1": 0.2,
+        "R@5": 0.3795,
+        "R@10": 0.479,
+        "median rank": 12.0
+      }
+    },
+    "knn_scene_accuracy": {
+      "CLIP ViT-L/14": 0.6995,
+      "CLIP (EOS)": 0.745,
+      "BERT-base": 0.6575,
+      "T5-base": 0.6845,
+      "GPT-2": 0.56,
+      "TF-IDF words": 0.644
+    },
+    "knn_majority_class": 0.299,
+    "word_order_and_colour": {
+      "CLIP ViT-L/14": {
+        "word order: pass rate": 0.0,
+        "word order: margin": -0.14,
+        "colour: pass rate": 0.0,
+        "colour: margin": -0.0611,
+        "word order: cos(orig, swapped)": 0.9135,
+        "colour: cos(orig, swapped)": 0.7608
+      },
+      "CLIP (EOS)": {
+        "word order: pass rate": 0.0,
+        "word order: margin": -0.0381,
+        "colour: pass rate": 0.425,
+        "colour: margin": 0.0059,
+        "word order: cos(orig, swapped)": 0.9685,
+        "colour: cos(orig, swapped)": 0.9604
+      },
+      "BERT-base": {
+        "word order: pass rate": 0.0,
+        "word order: margin": -0.0307,
+        "colour: pass rate": 0.0,
+        "colour: margin": -0.0262,
+        "word order: cos(orig, swapped)": 0.9934,
+        "colour: cos(orig, swapped)": 0.9958
+      },
+      "T5-base": {
+        "word order: pass rate": 0.0,
+        "word order: margin": -0.0557,
+        "colour: pass rate": 0.0,
+        "colour: margin": -0.0295,
+        "word order: cos(orig, swapped)": 0.9794,
+        "colour: cos(orig, swapped)": 0.9796
+      },
+      "GPT-2": {
+        "word order: pass rate": 0.0,
+        "word order: margin": -0.0005,
+        "colour: pass rate": 0.0375,
+        "colour: margin": -0.0004,
+        "word order: cos(orig, swapped)": 0.9998,
+        "colour: cos(orig, swapped)": 0.9997
+      },
+      "TF-IDF words": {
+        "word order: pass rate": 0.5,
+        "word order: margin": 0.0,
+        "colour: pass rate": 0.5,
+        "colour: margin": 0.0,
+        "word order: cos(orig, swapped)": 1.0,
+        "colour: cos(orig, swapped)": 1.0
+      }
+    }
+  }
+}

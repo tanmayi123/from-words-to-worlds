@@ -1,0 +1,7 @@
+,10-NN scene accuracy
+CLIP ViT-L/14,0.6995
+CLIP (EOS),0.745
+BERT-base,0.6575
+T5-base,0.6845
+GPT-2,0.56
+TF-IDF words,0.644

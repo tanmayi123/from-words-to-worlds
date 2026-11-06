@@ -1,0 +1,382 @@
+{
+  "eval_2000": {
+    "pairs": 2000,
+    "pairs_naming_a_category": 1793,
+    "pairs_with_a_target": 1692,
+    "pairs_with_a_non_person_target": 1314,
+    "mentions": 2768,
+    "ambiguous": 249,
+    "named_not_in_photo": 192,
+    "cropped_away": 142,
+    "targets": 2291,
+    "top_target_categories": {
+      "person": 791,
+      "dog": 56,
+      "bus": 55,
+      "cat": 53,
+      "train": 49,
+      "pizza": 47,
+      "car": 45,
+      "horse": 42,
+      "elephant": 42,
+      "zebra": 41,
+      "bench": 38,
+      "clock": 36,
+      "surfboard": 33,
+      "umbrella": 33,
+      "giraffe": 33
+    },
+    "top_unmapped_words": [
+      [
+        "sitting",
+        185
+      ],
+      [
+        "two",
+        152
+      ],
+      [
+        "white",
+        133
+      ],
+      [
+        "standing",
+        129
+      ],
+      [
+        "street",
+        111
+      ],
+      [
+        "holding",
+        96
+      ],
+      [
+        "large",
+        95
+      ],
+      [
+        "tennis",
+        81
+      ],
+      [
+        "group",
+        80
+      ],
+      [
+        "top",
+        78
+      ],
+      [
+        "plate",
+        74
+      ],
+      [
+        "field",
+        71
+      ],
+      [
+        "room",
+        68
+      ],
+      [
+        "red",
+        67
+      ],
+      [
+        "riding",
+        66
+      ],
+      [
+        "blue",
+        64
+      ],
+      [
+        "small",
+        63
+      ],
+      [
+        "sign",
+        61
+      ],
+      [
+        "front",
+        59
+      ],
+      [
+        "playing",
+        57
+      ],
+      [
+        "side",
+        54
+      ],
+      [
+        "young",
+        53
+      ],
+      [
+        "walking",
+        51
+      ],
+      [
+        "bathroom",
+        49
+      ],
+      [
+        "black",
+        48
+      ],
+      [
+        "green",
+        48
+      ],
+      [
+        "three",
+        48
+      ],
+      [
+        "building",
+        46
+      ],
+      [
+        "city",
+        45
+      ],
+      [
+        "road",
+        45
+      ],
+      [
+        "beach",
+        45
+      ],
+      [
+        "food",
+        43
+      ],
+      [
+        "water",
+        43
+      ],
+      [
+        "parked",
+        41
+      ],
+      [
+        "grass",
+        40
+      ],
+      [
+        "wooden",
+        39
+      ],
+      [
+        "kitchen",
+        38
+      ],
+      [
+        "glass",
+        37
+      ],
+      [
+        "picture",
+        36
+      ],
+      [
+        "area",
+        34
+      ]
+    ]
+  },
+  "dev_500": {
+    "pairs": 500,
+    "pairs_naming_a_category": 449,
+    "pairs_with_a_target": 424,
+    "pairs_with_a_non_person_target": 321,
+    "mentions": 674,
+    "ambiguous": 64,
+    "named_not_in_photo": 49,
+    "cropped_away": 41,
+    "targets": 559,
+    "top_target_categories": {
+      "person": 194,
+      "cat": 24,
+      "dog": 17,
+      "train": 13,
+      "tennis racket": 13,
+      "horse": 12,
+      "bus": 12,
+      "umbrella": 11,
+      "motorcycle": 10,
+      "pizza": 10,
+      "clock": 9,
+      "laptop": 9,
+      "giraffe": 9,
+      "skateboard": 9,
+      "cell phone": 8
+    },
+    "top_unmapped_words": [
+      [
+        "two",
+        43
+      ],
+      [
+        "sitting",
+        42
+      ],
+      [
+        "standing",
+        36
+      ],
+      [
+        "tennis",
+        29
+      ],
+      [
+        "white",
+        26
+      ],
+      [
+        "holding",
+        26
+      ],
+      [
+        "black",
+        25
+      ],
+      [
+        "field",
+        22
+      ],
+      [
+        "street",
+        21
+      ],
+      [
+        "large",
+        20
+      ],
+      [
+        "group",
+        20
+      ],
+      [
+        "green",
+        19
+      ],
+      [
+        "top",
+        18
+      ],
+      [
+        "front",
+        18
+      ],
+      [
+        "red",
+        16
+      ],
+      [
+        "building",
+        15
+      ],
+      [
+        "small",
+        15
+      ],
+      [
+        "playing",
+        15
+      ],
+      [
+        "city",
+        14
+      ],
+      [
+        "plate",
+        14
+      ],
+      [
+        "water",
+        14
+      ],
+      [
+        "blue",
+        13
+      ],
+      [
+        "food",
+        13
+      ],
+      [
+        "young",
+        13
+      ],
+      [
+        "wearing",
+        13
+      ],
+      [
+        "grass",
+        12
+      ],
+      [
+        "walking",
+        12
+      ],
+      [
+        "parked",
+        12
+      ],
+      [
+        "sits",
+        12
+      ],
+      [
+        "one",
+        12
+      ],
+      [
+        "desk",
+        11
+      ],
+      [
+        "court",
+        11
+      ],
+      [
+        "flying",
+        10
+      ],
+      [
+        "brown",
+        10
+      ],
+      [
+        "kitchen",
+        10
+      ],
+      [
+        "air",
+        10
+      ],
+      [
+        "window",
+        10
+      ],
+      [
+        "sky",
+        9
+      ],
+      [
+        "trick",
+        9
+      ],
+      [
+        "open",
+        9
+      ]
+    ]
+  }
+}

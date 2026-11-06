@@ -1,0 +1,16 @@
+file,image_id,caption_idx,caption,seed,steps,guidance,scheduler,conditioning
+10993_s0.png,253695,10993,A professional baseball player with his glove out.,0,30,7.5,PNDM,cached CLIP ViT-L/14 states
+10993_s1.png,253695,10993,A professional baseball player with his glove out.,1,30,7.5,PNDM,cached CLIP ViT-L/14 states
+10993_s2.png,253695,10993,A professional baseball player with his glove out.,2,30,7.5,PNDM,cached CLIP ViT-L/14 states
+24511_s0.png,570456,24511,a large room that has both a kitchen and living room,0,30,7.5,PNDM,cached CLIP ViT-L/14 states
+24511_s1.png,570456,24511,a large room that has both a kitchen and living room,1,30,7.5,PNDM,cached CLIP ViT-L/14 states
+24511_s2.png,570456,24511,a large room that has both a kitchen and living room,2,30,7.5,PNDM,cached CLIP ViT-L/14 states
+2116_s0.png,47828,2116,A large blue lit bridge spanning over a lake.,0,30,7.5,PNDM,cached CLIP ViT-L/14 states
+2116_s1.png,47828,2116,A large blue lit bridge spanning over a lake.,1,30,7.5,PNDM,cached CLIP ViT-L/14 states
+2116_s2.png,47828,2116,A large blue lit bridge spanning over a lake.,2,30,7.5,PNDM,cached CLIP ViT-L/14 states
+428_s0.png,8277,428,a close up of a plate of food on a carpeted floor,0,30,7.5,PNDM,cached CLIP ViT-L/14 states
+428_s1.png,8277,428,a close up of a plate of food on a carpeted floor,1,30,7.5,PNDM,cached CLIP ViT-L/14 states
+428_s2.png,8277,428,a close up of a plate of food on a carpeted floor,2,30,7.5,PNDM,cached CLIP ViT-L/14 states
+18369_s0.png,426203,18369,A skater is attempting a rail grind.,0,30,7.5,PNDM,cached CLIP ViT-L/14 states
+18369_s1.png,426203,18369,A skater is attempting a rail grind.,1,30,7.5,PNDM,cached CLIP ViT-L/14 states
+18369_s2.png,426203,18369,A skater is attempting a rail grind.,2,30,7.5,PNDM,cached CLIP ViT-L/14 states

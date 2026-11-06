@@ -1,0 +1,27 @@
+{
+  "exif_orientation": {
+    "tagged_images": 0,
+    "by_value": {},
+    "overlays": null
+  },
+  "near_duplicates": {
+    "pairs": 0,
+    "examples": [],
+    "rule": "256-bit difference hash, Hamming distance <= 12"
+  },
+  "caption_quirks_kept_on_purpose": {
+    "captions": 25004,
+    "repeated_word": 33,
+    "repeated_word_examples": [
+      "Cars are parked on the the street in front of the building.",
+      "A man holding holding a giant remote control.",
+      "a may leading a a boy on a pony with a rope",
+      "View from an airplane looking looking out over large parking lot.",
+      "A dog in a a cage with a bed and bowl"
+    ],
+    "no_final_punctuation": 6234,
+    "starts_lower_case": 3708,
+    "under_5_words": 0,
+    "non_ascii": 0
+  }
+}

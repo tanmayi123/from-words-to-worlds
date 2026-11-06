@@ -1,0 +1,22 @@
+{
+  "seed_eval": 2026,
+  "seed_dev": 2027,
+  "seed_ref": 2028,
+  "seed_stress": 2030,
+  "image_size": 512,
+  "min_short_side": 256,
+  "n_eval": 2000,
+  "n_dev": 500,
+  "n_ref_b": 2000,
+  "min_box_kept": 0.5,
+  "min_cover": 0.005,
+  "clip_id": "openai/clip-vit-large-patch14",
+  "sd_id": "stable-diffusion-v1-5/stable-diffusion-v1-5",
+  "steps": 30,
+  "guidance": 7.5,
+  "sample_seeds": [
+    0,
+    1,
+    2
+  ]
+}

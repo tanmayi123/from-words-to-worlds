@@ -1,0 +1,132 @@
+{
+  "encoders": [
+    "CLIP ViT-L/14",
+    "BERT-base",
+    "T5-base",
+    "GPT-2"
+  ],
+  "baseline": "TF-IDF words",
+  "tokens": {
+    "CLIP ViT-L/14": {
+      "median tokens": 13.0,
+      "max tokens": 36.0
+    },
+    "BERT-base": {
+      "median tokens": 13.0,
+      "max tokens": 36.0
+    },
+    "T5-base": {
+      "median tokens": 14.0,
+      "max tokens": 41.0
+    },
+    "GPT-2": {
+      "median tokens": 11.0,
+      "max tokens": 34.0
+    }
+  },
+  "cka_vs_clip": {
+    "CLIP ViT-L/14": 1.0,
+    "CLIP (EOS)": 0.791,
+    "BERT-base": 0.528,
+    "T5-base": 0.6,
+    "GPT-2": 0.132,
+    "TF-IDF words": 0.511
+  },
+  "paraphrase_retrieval": {
+    "CLIP ViT-L/14": {
+      "R@1": 0.2145,
+      "R@5": 0.412,
+      "R@10": 0.5215,
+      "median rank": 9.0
+    },
+    "CLIP (EOS)": {
+      "R@1": 0.3395,
+      "R@5": 0.5785,
+      "R@10": 0.693,
+      "median rank": 3.0
+    },
+    "BERT-base": {
+      "R@1": 0.13,
+      "R@5": 0.277,
+      "R@10": 0.3505,
+      "median rank": 29.0
+    },
+    "T5-base": {
+      "R@1": 0.1545,
+      "R@5": 0.31,
+      "R@10": 0.3995,
+      "median rank": 22.0
+    },
+    "GPT-2": {
+      "R@1": 0.0335,
+      "R@5": 0.0945,
+      "R@10": 0.1345,
+      "median rank": 315.0
+    },
+    "TF-IDF words": {
+      "R@1": 0.2,
+      "R@5": 0.3795,
+      "R@10": 0.479,
+      "median rank": 12.0
+    }
+  },
+  "knn_scene_accuracy": {
+    "CLIP ViT-L/14": 0.6995,
+    "CLIP (EOS)": 0.745,
+    "BERT-base": 0.6575,
+    "T5-base": 0.6845,
+    "GPT-2": 0.56,
+    "TF-IDF words": 0.644
+  },
+  "knn_majority_class": 0.299,
+  "word_order_and_colour": {
+    "CLIP ViT-L/14": {
+      "word order: pass rate": 0.0,
+      "word order: margin": -0.14,
+      "colour: pass rate": 0.0,
+      "colour: margin": -0.0611,
+      "word order: cos(orig, swapped)": 0.9135,
+      "colour: cos(orig, swapped)": 0.7608
+    },
+    "CLIP (EOS)": {
+      "word order: pass rate": 0.0,
+      "word order: margin": -0.0381,
+      "colour: pass rate": 0.425,
+      "colour: margin": 0.0059,
+      "word order: cos(orig, swapped)": 0.9685,
+      "colour: cos(orig, swapped)": 0.9604
+    },
+    "BERT-base": {
+      "word order: pass rate": 0.0,
+      "word order: margin": -0.0307,
+      "colour: pass rate": 0.0,
+      "colour: margin": -0.0262,
+      "word order: cos(orig, swapped)": 0.9934,
+      "colour: cos(orig, swapped)": 0.9958
+    },
+    "T5-base": {
+      "word order: pass rate": 0.0,
+      "word order: margin": -0.0557,
+      "colour: pass rate": 0.0,
+      "colour: margin": -0.0295,
+      "word order: cos(orig, swapped)": 0.9794,
+      "colour: cos(orig, swapped)": 0.9796
+    },
+    "GPT-2": {
+      "word order: pass rate": 0.0,
+      "word order: margin": -0.0005,
+      "colour: pass rate": 0.0375,
+      "colour: margin": -0.0004,
+      "word order: cos(orig, swapped)": 0.9998,
+      "colour: cos(orig, swapped)": 0.9997
+    },
+    "TF-IDF words": {
+      "word order: pass rate": 0.5,
+      "word order: margin": 0.0,
+      "colour: pass rate": 0.5,
+      "colour: margin": 0.0,
+      "word order: cos(orig, swapped)": 1.0,
+      "colour: cos(orig, swapped)": 1.0
+    }
+  }
+}
