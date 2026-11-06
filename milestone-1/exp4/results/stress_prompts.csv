@@ -1,0 +1,201 @@
+prompt_id,family,prompt,objects,expected,pair_id
+word_order_00,word_order,a bear following a sheep on a grassy hill,"[""bear"", ""sheep""]","{""subject"": ""bear"", ""object"": ""sheep"", ""verb"": ""following""}",wo00
+word_order_01,word_order,a sheep following a bear on a grassy hill,"[""sheep"", ""bear""]","{""subject"": ""sheep"", ""object"": ""bear"", ""verb"": ""following""}",wo00
+word_order_02,word_order,a bear standing next to a sheep in a park,"[""bear"", ""sheep""]","{""subject"": ""bear"", ""object"": ""sheep"", ""verb"": ""standing next to""}",wo01
+word_order_03,word_order,a sheep standing next to a bear in a park,"[""sheep"", ""bear""]","{""subject"": ""sheep"", ""object"": ""bear"", ""verb"": ""standing next to""}",wo01
+word_order_04,word_order,a bird sitting behind a cow on a dirt road,"[""bird"", ""cow""]","{""subject"": ""bird"", ""object"": ""cow"", ""verb"": ""sitting behind""}",wo02
+word_order_05,word_order,a cow sitting behind a bird on a dirt road,"[""cow"", ""bird""]","{""subject"": ""cow"", ""object"": ""bird"", ""verb"": ""sitting behind""}",wo02
+word_order_06,word_order,a cat chasing a dog on a dirt road,"[""cat"", ""dog""]","{""subject"": ""cat"", ""object"": ""dog"", ""verb"": ""chasing""}",wo03
+word_order_07,word_order,a dog chasing a cat on a dirt road,"[""dog"", ""cat""]","{""subject"": ""dog"", ""object"": ""cat"", ""verb"": ""chasing""}",wo03
+word_order_08,word_order,a cat looking at a dog in a park,"[""cat"", ""dog""]","{""subject"": ""cat"", ""object"": ""dog"", ""verb"": ""looking at""}",wo04
+word_order_09,word_order,a dog looking at a cat in a park,"[""dog"", ""cat""]","{""subject"": ""dog"", ""object"": ""cat"", ""verb"": ""looking at""}",wo04
+word_order_10,word_order,a cat chasing an elephant on a dirt road,"[""cat"", ""elephant""]","{""subject"": ""cat"", ""object"": ""elephant"", ""verb"": ""chasing""}",wo05
+word_order_11,word_order,an elephant chasing a cat on a dirt road,"[""elephant"", ""cat""]","{""subject"": ""elephant"", ""object"": ""cat"", ""verb"": ""chasing""}",wo05
+word_order_12,word_order,a cow sitting behind a dog on a dirt road,"[""cow"", ""dog""]","{""subject"": ""cow"", ""object"": ""dog"", ""verb"": ""sitting behind""}",wo06
+word_order_13,word_order,a dog sitting behind a cow on a dirt road,"[""dog"", ""cow""]","{""subject"": ""dog"", ""object"": ""cow"", ""verb"": ""sitting behind""}",wo06
+word_order_14,word_order,a cow sitting behind a giraffe in a backyard,"[""cow"", ""giraffe""]","{""subject"": ""cow"", ""object"": ""giraffe"", ""verb"": ""sitting behind""}",wo07
+word_order_15,word_order,a giraffe sitting behind a cow in a backyard,"[""giraffe"", ""cow""]","{""subject"": ""giraffe"", ""object"": ""cow"", ""verb"": ""sitting behind""}",wo07
+word_order_16,word_order,a dog following a giraffe in a backyard,"[""dog"", ""giraffe""]","{""subject"": ""dog"", ""object"": ""giraffe"", ""verb"": ""following""}",wo08
+word_order_17,word_order,a giraffe following a dog in a backyard,"[""giraffe"", ""dog""]","{""subject"": ""giraffe"", ""object"": ""dog"", ""verb"": ""following""}",wo08
+word_order_18,word_order,an elephant chasing a dog on a dirt road,"[""elephant"", ""dog""]","{""subject"": ""elephant"", ""object"": ""dog"", ""verb"": ""chasing""}",wo09
+word_order_19,word_order,a dog chasing an elephant on a dirt road,"[""dog"", ""elephant""]","{""subject"": ""dog"", ""object"": ""elephant"", ""verb"": ""chasing""}",wo09
+word_order_20,word_order,an elephant sitting behind a horse on a grassy hill,"[""elephant"", ""horse""]","{""subject"": ""elephant"", ""object"": ""horse"", ""verb"": ""sitting behind""}",wo10
+word_order_21,word_order,a horse sitting behind an elephant on a grassy hill,"[""horse"", ""elephant""]","{""subject"": ""horse"", ""object"": ""elephant"", ""verb"": ""sitting behind""}",wo10
+word_order_22,word_order,an elephant chasing a sheep in a field,"[""elephant"", ""sheep""]","{""subject"": ""elephant"", ""object"": ""sheep"", ""verb"": ""chasing""}",wo11
+word_order_23,word_order,a sheep chasing an elephant in a field,"[""sheep"", ""elephant""]","{""subject"": ""sheep"", ""object"": ""elephant"", ""verb"": ""chasing""}",wo11
+word_order_24,word_order,a giraffe sitting behind a bear in a backyard,"[""giraffe"", ""bear""]","{""subject"": ""giraffe"", ""object"": ""bear"", ""verb"": ""sitting behind""}",wo12
+word_order_25,word_order,a bear sitting behind a giraffe in a backyard,"[""bear"", ""giraffe""]","{""subject"": ""bear"", ""object"": ""giraffe"", ""verb"": ""sitting behind""}",wo12
+word_order_26,word_order,a giraffe sitting behind a bear on a dirt road,"[""giraffe"", ""bear""]","{""subject"": ""giraffe"", ""object"": ""bear"", ""verb"": ""sitting behind""}",wo13
+word_order_27,word_order,a bear sitting behind a giraffe on a dirt road,"[""bear"", ""giraffe""]","{""subject"": ""bear"", ""object"": ""giraffe"", ""verb"": ""sitting behind""}",wo13
+word_order_28,word_order,a horse looking at a cow in a field,"[""horse"", ""cow""]","{""subject"": ""horse"", ""object"": ""cow"", ""verb"": ""looking at""}",wo14
+word_order_29,word_order,a cow looking at a horse in a field,"[""cow"", ""horse""]","{""subject"": ""cow"", ""object"": ""horse"", ""verb"": ""looking at""}",wo14
+word_order_30,word_order,a horse standing next to a cow in a backyard,"[""horse"", ""cow""]","{""subject"": ""horse"", ""object"": ""cow"", ""verb"": ""standing next to""}",wo15
+word_order_31,word_order,a cow standing next to a horse in a backyard,"[""cow"", ""horse""]","{""subject"": ""cow"", ""object"": ""horse"", ""verb"": ""standing next to""}",wo15
+word_order_32,word_order,a sheep chasing a bird in a field,"[""sheep"", ""bird""]","{""subject"": ""sheep"", ""object"": ""bird"", ""verb"": ""chasing""}",wo16
+word_order_33,word_order,a bird chasing a sheep in a field,"[""bird"", ""sheep""]","{""subject"": ""bird"", ""object"": ""sheep"", ""verb"": ""chasing""}",wo16
+word_order_34,word_order,a sheep standing next to an elephant on a dirt road,"[""sheep"", ""elephant""]","{""subject"": ""sheep"", ""object"": ""elephant"", ""verb"": ""standing next to""}",wo17
+word_order_35,word_order,an elephant standing next to a sheep on a dirt road,"[""elephant"", ""sheep""]","{""subject"": ""elephant"", ""object"": ""sheep"", ""verb"": ""standing next to""}",wo17
+word_order_36,word_order,a zebra looking at a cow in a park,"[""zebra"", ""cow""]","{""subject"": ""zebra"", ""object"": ""cow"", ""verb"": ""looking at""}",wo18
+word_order_37,word_order,a cow looking at a zebra in a park,"[""cow"", ""zebra""]","{""subject"": ""cow"", ""object"": ""zebra"", ""verb"": ""looking at""}",wo18
+word_order_38,word_order,a zebra looking at an elephant in a field,"[""zebra"", ""elephant""]","{""subject"": ""zebra"", ""object"": ""elephant"", ""verb"": ""looking at""}",wo19
+word_order_39,word_order,an elephant looking at a zebra in a field,"[""elephant"", ""zebra""]","{""subject"": ""elephant"", ""object"": ""zebra"", ""verb"": ""looking at""}",wo19
+counting_00,counting,four boats,"[""boat""]","{""count"": {""boat"": 4}}",
+counting_01,counting,three zebras,"[""zebra""]","{""count"": {""zebra"": 3}}",
+counting_02,counting,five bottles,"[""bottle""]","{""count"": {""bottle"": 5}}",
+counting_03,counting,five books,"[""book""]","{""count"": {""book"": 5}}",
+counting_04,counting,two trucks,"[""truck""]","{""count"": {""truck"": 2}}",
+counting_05,counting,five cups,"[""cup""]","{""count"": {""cup"": 5}}",
+counting_06,counting,three buses,"[""bus""]","{""count"": {""bus"": 3}}",
+counting_07,counting,four bears,"[""bear""]","{""count"": {""bear"": 4}}",
+counting_08,counting,five bowls,"[""bowl""]","{""count"": {""bowl"": 5}}",
+counting_09,counting,four laptops,"[""laptop""]","{""count"": {""laptop"": 4}}",
+counting_10,counting,five zebras,"[""zebra""]","{""count"": {""zebra"": 5}}",
+counting_11,counting,two cats,"[""cat""]","{""count"": {""cat"": 2}}",
+counting_12,counting,five cars,"[""car""]","{""count"": {""car"": 5}}",
+counting_13,counting,four bowls,"[""bowl""]","{""count"": {""bowl"": 4}}",
+counting_14,counting,two cars,"[""car""]","{""count"": {""car"": 2}}",
+counting_15,counting,four clocks,"[""clock""]","{""count"": {""clock"": 4}}",
+counting_16,counting,five boats,"[""boat""]","{""count"": {""boat"": 5}}",
+counting_17,counting,three chairs,"[""chair""]","{""count"": {""chair"": 3}}",
+counting_18,counting,two dogs,"[""dog""]","{""count"": {""dog"": 2}}",
+counting_19,counting,two apples,"[""apple""]","{""count"": {""apple"": 2}}",
+counting_20,counting,two zebras,"[""zebra""]","{""count"": {""zebra"": 2}}",
+counting_21,counting,four books,"[""book""]","{""count"": {""book"": 4}}",
+counting_22,counting,three birds,"[""bird""]","{""count"": {""bird"": 3}}",
+counting_23,counting,three suitcases,"[""suitcase""]","{""count"": {""suitcase"": 3}}",
+counting_24,counting,five bicycles,"[""bicycle""]","{""count"": {""bicycle"": 5}}",
+counting_25,counting,five benches,"[""bench""]","{""count"": {""bench"": 5}}",
+counting_26,counting,four buses,"[""bus""]","{""count"": {""bus"": 4}}",
+counting_27,counting,two buses,"[""bus""]","{""count"": {""bus"": 2}}",
+counting_28,counting,five umbrellas,"[""umbrella""]","{""count"": {""umbrella"": 5}}",
+counting_29,counting,two pizzas,"[""pizza""]","{""count"": {""pizza"": 2}}",
+counting_30,counting,two cows,"[""cow""]","{""count"": {""cow"": 2}}",
+counting_31,counting,four trucks,"[""truck""]","{""count"": {""truck"": 4}}",
+counting_32,counting,four suitcases,"[""suitcase""]","{""count"": {""suitcase"": 4}}",
+counting_33,counting,four bicycles,"[""bicycle""]","{""count"": {""bicycle"": 4}}",
+counting_34,counting,three sheep,"[""sheep""]","{""count"": {""sheep"": 3}}",
+counting_35,counting,three bowls,"[""bowl""]","{""count"": {""bowl"": 3}}",
+counting_36,counting,two chairs,"[""chair""]","{""count"": {""chair"": 2}}",
+counting_37,counting,five backpacks,"[""backpack""]","{""count"": {""backpack"": 5}}",
+counting_38,counting,two backpacks,"[""backpack""]","{""count"": {""backpack"": 2}}",
+counting_39,counting,two cakes,"[""cake""]","{""count"": {""cake"": 2}}",
+colour_binding_00,colour_binding,a yellow book and a white truck,"[""book"", ""truck""]","{""colour"": {""book"": ""yellow"", ""truck"": ""white""}}",
+colour_binding_01,colour_binding,a green bicycle and a white vase,"[""bicycle"", ""vase""]","{""colour"": {""bicycle"": ""green"", ""vase"": ""white""}}",
+colour_binding_02,colour_binding,a white clock and a yellow bench,"[""clock"", ""bench""]","{""colour"": {""clock"": ""white"", ""bench"": ""yellow""}}",
+colour_binding_03,colour_binding,a black laptop and an orange car,"[""laptop"", ""car""]","{""colour"": {""laptop"": ""black"", ""car"": ""orange""}}",
+colour_binding_04,colour_binding,a red chair and an orange bottle,"[""chair"", ""bottle""]","{""colour"": {""chair"": ""red"", ""bottle"": ""orange""}}",
+colour_binding_05,colour_binding,a purple clock and a black boat,"[""clock"", ""boat""]","{""colour"": {""clock"": ""purple"", ""boat"": ""black""}}",
+colour_binding_06,colour_binding,a black backpack and a blue bus,"[""backpack"", ""bus""]","{""colour"": {""backpack"": ""black"", ""bus"": ""blue""}}",
+colour_binding_07,colour_binding,a red cup and a black umbrella,"[""cup"", ""umbrella""]","{""colour"": {""cup"": ""red"", ""umbrella"": ""black""}}",
+colour_binding_08,colour_binding,a white suitcase and an orange bus,"[""suitcase"", ""bus""]","{""colour"": {""suitcase"": ""white"", ""bus"": ""orange""}}",
+colour_binding_09,colour_binding,a yellow pizza and an orange clock,"[""pizza"", ""clock""]","{""colour"": {""pizza"": ""yellow"", ""clock"": ""orange""}}",
+colour_binding_10,colour_binding,a white clock and an orange car,"[""clock"", ""car""]","{""colour"": {""clock"": ""white"", ""car"": ""orange""}}",
+colour_binding_11,colour_binding,an orange umbrella and a red car,"[""umbrella"", ""car""]","{""colour"": {""umbrella"": ""orange"", ""car"": ""red""}}",
+colour_binding_12,colour_binding,a purple laptop and a black pizza,"[""laptop"", ""pizza""]","{""colour"": {""laptop"": ""purple"", ""pizza"": ""black""}}",
+colour_binding_13,colour_binding,a blue cup and a green umbrella,"[""cup"", ""umbrella""]","{""colour"": {""cup"": ""blue"", ""umbrella"": ""green""}}",
+colour_binding_14,colour_binding,a yellow laptop and a white book,"[""laptop"", ""book""]","{""colour"": {""laptop"": ""yellow"", ""book"": ""white""}}",
+colour_binding_15,colour_binding,a green vase and a purple backpack,"[""vase"", ""backpack""]","{""colour"": {""vase"": ""green"", ""backpack"": ""purple""}}",
+colour_binding_16,colour_binding,a blue pizza and a red suitcase,"[""pizza"", ""suitcase""]","{""colour"": {""pizza"": ""blue"", ""suitcase"": ""red""}}",
+colour_binding_17,colour_binding,a yellow clock and a blue suitcase,"[""clock"", ""suitcase""]","{""colour"": {""clock"": ""yellow"", ""suitcase"": ""blue""}}",
+colour_binding_18,colour_binding,an orange chair and a black bowl,"[""chair"", ""bowl""]","{""colour"": {""chair"": ""orange"", ""bowl"": ""black""}}",
+colour_binding_19,colour_binding,a yellow umbrella and a red clock,"[""umbrella"", ""clock""]","{""colour"": {""umbrella"": ""yellow"", ""clock"": ""red""}}",
+colour_binding_20,colour_binding,a yellow bench and a red backpack,"[""bench"", ""backpack""]","{""colour"": {""bench"": ""yellow"", ""backpack"": ""red""}}",
+colour_binding_21,colour_binding,a black laptop and a yellow bowl,"[""laptop"", ""bowl""]","{""colour"": {""laptop"": ""black"", ""bowl"": ""yellow""}}",
+colour_binding_22,colour_binding,a red truck and an orange backpack,"[""truck"", ""backpack""]","{""colour"": {""truck"": ""red"", ""backpack"": ""orange""}}",
+colour_binding_23,colour_binding,a black clock and a yellow pizza,"[""clock"", ""pizza""]","{""colour"": {""clock"": ""black"", ""pizza"": ""yellow""}}",
+colour_binding_24,colour_binding,a blue backpack and a white suitcase,"[""backpack"", ""suitcase""]","{""colour"": {""backpack"": ""blue"", ""suitcase"": ""white""}}",
+colour_binding_25,colour_binding,a black pizza and a purple car,"[""pizza"", ""car""]","{""colour"": {""pizza"": ""black"", ""car"": ""purple""}}",
+colour_binding_26,colour_binding,a blue boat and a green vase,"[""boat"", ""vase""]","{""colour"": {""boat"": ""blue"", ""vase"": ""green""}}",
+colour_binding_27,colour_binding,a black bicycle and a purple bench,"[""bicycle"", ""bench""]","{""colour"": {""bicycle"": ""black"", ""bench"": ""purple""}}",
+colour_binding_28,colour_binding,a purple umbrella and an orange car,"[""umbrella"", ""car""]","{""colour"": {""umbrella"": ""purple"", ""car"": ""orange""}}",
+colour_binding_29,colour_binding,a blue truck and a purple pizza,"[""truck"", ""pizza""]","{""colour"": {""truck"": ""blue"", ""pizza"": ""purple""}}",
+colour_binding_30,colour_binding,a blue boat and a yellow apple,"[""boat"", ""apple""]","{""colour"": {""boat"": ""blue"", ""apple"": ""yellow""}}",
+colour_binding_31,colour_binding,an orange bus and a purple suitcase,"[""bus"", ""suitcase""]","{""colour"": {""bus"": ""orange"", ""suitcase"": ""purple""}}",
+colour_binding_32,colour_binding,a purple clock and a blue chair,"[""clock"", ""chair""]","{""colour"": {""clock"": ""purple"", ""chair"": ""blue""}}",
+colour_binding_33,colour_binding,a red bench and a black bus,"[""bench"", ""bus""]","{""colour"": {""bench"": ""red"", ""bus"": ""black""}}",
+colour_binding_34,colour_binding,a red truck and a black suitcase,"[""truck"", ""suitcase""]","{""colour"": {""truck"": ""red"", ""suitcase"": ""black""}}",
+colour_binding_35,colour_binding,a blue bottle and a black bus,"[""bottle"", ""bus""]","{""colour"": {""bottle"": ""blue"", ""bus"": ""black""}}",
+colour_binding_36,colour_binding,a red car and a blue backpack,"[""car"", ""backpack""]","{""colour"": {""car"": ""red"", ""backpack"": ""blue""}}",
+colour_binding_37,colour_binding,a blue suitcase and a red umbrella,"[""suitcase"", ""umbrella""]","{""colour"": {""suitcase"": ""blue"", ""umbrella"": ""red""}}",
+colour_binding_38,colour_binding,a blue apple and a white umbrella,"[""apple"", ""umbrella""]","{""colour"": {""apple"": ""blue"", ""umbrella"": ""white""}}",
+colour_binding_39,colour_binding,a yellow book and a green truck,"[""book"", ""truck""]","{""colour"": {""book"": ""yellow"", ""truck"": ""green""}}",
+spatial_00,spatial,a bowl to the left of a zebra,"[""bowl"", ""zebra""]","{""relation"": ""left"", ""first"": ""bowl"", ""second"": ""zebra""}",
+spatial_01,spatial,a car to the right of a boat,"[""car"", ""boat""]","{""relation"": ""right"", ""first"": ""car"", ""second"": ""boat""}",
+spatial_02,spatial,an apple to the right of a book,"[""apple"", ""book""]","{""relation"": ""right"", ""first"": ""apple"", ""second"": ""book""}",
+spatial_03,spatial,a pizza to the right of a sheep,"[""pizza"", ""sheep""]","{""relation"": ""right"", ""first"": ""pizza"", ""second"": ""sheep""}",
+spatial_04,spatial,a book on top of an umbrella,"[""book"", ""umbrella""]","{""relation"": ""above"", ""first"": ""book"", ""second"": ""umbrella""}",
+spatial_05,spatial,a bear to the right of a backpack,"[""bear"", ""backpack""]","{""relation"": ""right"", ""first"": ""bear"", ""second"": ""backpack""}",
+spatial_06,spatial,a book to the right of a clock,"[""book"", ""clock""]","{""relation"": ""right"", ""first"": ""book"", ""second"": ""clock""}",
+spatial_07,spatial,an elephant to the right of a boat,"[""elephant"", ""boat""]","{""relation"": ""right"", ""first"": ""elephant"", ""second"": ""boat""}",
+spatial_08,spatial,a chair to the right of a sheep,"[""chair"", ""sheep""]","{""relation"": ""right"", ""first"": ""chair"", ""second"": ""sheep""}",
+spatial_09,spatial,an elephant to the right of a chair,"[""elephant"", ""chair""]","{""relation"": ""right"", ""first"": ""elephant"", ""second"": ""chair""}",
+spatial_10,spatial,a sheep to the left of a clock,"[""sheep"", ""clock""]","{""relation"": ""left"", ""first"": ""sheep"", ""second"": ""clock""}",
+spatial_11,spatial,a book to the right of a vase,"[""book"", ""vase""]","{""relation"": ""right"", ""first"": ""book"", ""second"": ""vase""}",
+spatial_12,spatial,a bottle to the right of a bench,"[""bottle"", ""bench""]","{""relation"": ""right"", ""first"": ""bottle"", ""second"": ""bench""}",
+spatial_13,spatial,a dog to the left of a bottle,"[""dog"", ""bottle""]","{""relation"": ""left"", ""first"": ""dog"", ""second"": ""bottle""}",
+spatial_14,spatial,a zebra on top of a book,"[""zebra"", ""book""]","{""relation"": ""above"", ""first"": ""zebra"", ""second"": ""book""}",
+spatial_15,spatial,a chair to the left of a bench,"[""chair"", ""bench""]","{""relation"": ""left"", ""first"": ""chair"", ""second"": ""bench""}",
+spatial_16,spatial,a bear to the left of a boat,"[""bear"", ""boat""]","{""relation"": ""left"", ""first"": ""bear"", ""second"": ""boat""}",
+spatial_17,spatial,an elephant on top of a truck,"[""elephant"", ""truck""]","{""relation"": ""above"", ""first"": ""elephant"", ""second"": ""truck""}",
+spatial_18,spatial,a pizza below a boat,"[""pizza"", ""boat""]","{""relation"": ""below"", ""first"": ""pizza"", ""second"": ""boat""}",
+spatial_19,spatial,a bottle to the left of a cow,"[""bottle"", ""cow""]","{""relation"": ""left"", ""first"": ""bottle"", ""second"": ""cow""}",
+spatial_20,spatial,a car to the left of an apple,"[""car"", ""apple""]","{""relation"": ""left"", ""first"": ""car"", ""second"": ""apple""}",
+spatial_21,spatial,a horse to the right of a bus,"[""horse"", ""bus""]","{""relation"": ""right"", ""first"": ""horse"", ""second"": ""bus""}",
+spatial_22,spatial,a horse on top of a bowl,"[""horse"", ""bowl""]","{""relation"": ""above"", ""first"": ""horse"", ""second"": ""bowl""}",
+spatial_23,spatial,a giraffe to the left of a bicycle,"[""giraffe"", ""bicycle""]","{""relation"": ""left"", ""first"": ""giraffe"", ""second"": ""bicycle""}",
+spatial_24,spatial,a bicycle to the right of a bear,"[""bicycle"", ""bear""]","{""relation"": ""right"", ""first"": ""bicycle"", ""second"": ""bear""}",
+spatial_25,spatial,a clock to the right of a car,"[""clock"", ""car""]","{""relation"": ""right"", ""first"": ""clock"", ""second"": ""car""}",
+spatial_26,spatial,a cat below a book,"[""cat"", ""book""]","{""relation"": ""below"", ""first"": ""cat"", ""second"": ""book""}",
+spatial_27,spatial,a horse on top of a chair,"[""horse"", ""chair""]","{""relation"": ""above"", ""first"": ""horse"", ""second"": ""chair""}",
+spatial_28,spatial,a sheep below a clock,"[""sheep"", ""clock""]","{""relation"": ""below"", ""first"": ""sheep"", ""second"": ""clock""}",
+spatial_29,spatial,a pizza to the left of a cup,"[""pizza"", ""cup""]","{""relation"": ""left"", ""first"": ""pizza"", ""second"": ""cup""}",
+spatial_30,spatial,a horse on top of a dog,"[""horse"", ""dog""]","{""relation"": ""above"", ""first"": ""horse"", ""second"": ""dog""}",
+spatial_31,spatial,a giraffe to the right of a vase,"[""giraffe"", ""vase""]","{""relation"": ""right"", ""first"": ""giraffe"", ""second"": ""vase""}",
+spatial_32,spatial,a cat to the left of a boat,"[""cat"", ""boat""]","{""relation"": ""left"", ""first"": ""cat"", ""second"": ""boat""}",
+spatial_33,spatial,a bear below a cow,"[""bear"", ""cow""]","{""relation"": ""below"", ""first"": ""bear"", ""second"": ""cow""}",
+spatial_34,spatial,an elephant on top of a book,"[""elephant"", ""book""]","{""relation"": ""above"", ""first"": ""elephant"", ""second"": ""book""}",
+spatial_35,spatial,a dog below a cat,"[""dog"", ""cat""]","{""relation"": ""below"", ""first"": ""dog"", ""second"": ""cat""}",
+spatial_36,spatial,a car to the left of a bench,"[""car"", ""bench""]","{""relation"": ""left"", ""first"": ""car"", ""second"": ""bench""}",
+spatial_37,spatial,a cup on top of a cow,"[""cup"", ""cow""]","{""relation"": ""above"", ""first"": ""cup"", ""second"": ""cow""}",
+spatial_38,spatial,a bench below a car,"[""bench"", ""car""]","{""relation"": ""below"", ""first"": ""bench"", ""second"": ""car""}",
+spatial_39,spatial,a cow to the right of a horse,"[""cow"", ""horse""]","{""relation"": ""right"", ""first"": ""cow"", ""second"": ""horse""}",
+multi_object_00,multi_object,"a horse, a bus and a bottle","[""horse"", ""bus"", ""bottle""]","{""present"": [""horse"", ""bus"", ""bottle""]}",
+multi_object_01,multi_object,"a giraffe, a dog and a chair","[""giraffe"", ""dog"", ""chair""]","{""present"": [""giraffe"", ""dog"", ""chair""]}",
+multi_object_02,multi_object,"a bicycle, a cow and a car","[""bicycle"", ""cow"", ""car""]","{""present"": [""bicycle"", ""cow"", ""car""]}",
+multi_object_03,multi_object,"a laptop, an elephant and a boat","[""laptop"", ""elephant"", ""boat""]","{""present"": [""laptop"", ""elephant"", ""boat""]}",
+multi_object_04,multi_object,"a chair, a suitcase and a truck","[""chair"", ""suitcase"", ""truck""]","{""present"": [""chair"", ""suitcase"", ""truck""]}",
+multi_object_05,multi_object,"a giraffe, a boat and an apple","[""giraffe"", ""boat"", ""apple""]","{""present"": [""giraffe"", ""boat"", ""apple""]}",
+multi_object_06,multi_object,"a cake, a backpack and a bench","[""cake"", ""backpack"", ""bench""]","{""present"": [""cake"", ""backpack"", ""bench""]}",
+multi_object_07,multi_object,"a chair, a laptop and a bottle","[""chair"", ""laptop"", ""bottle""]","{""present"": [""chair"", ""laptop"", ""bottle""]}",
+multi_object_08,multi_object,"a bench, an umbrella and a cake","[""bench"", ""umbrella"", ""cake""]","{""present"": [""bench"", ""umbrella"", ""cake""]}",
+multi_object_09,multi_object,"a bird, a bicycle and a bus","[""bird"", ""bicycle"", ""bus""]","{""present"": [""bird"", ""bicycle"", ""bus""]}",
+multi_object_10,multi_object,"a truck, a bicycle and a laptop","[""truck"", ""bicycle"", ""laptop""]","{""present"": [""truck"", ""bicycle"", ""laptop""]}",
+multi_object_11,multi_object,"an umbrella, a vase and a car","[""umbrella"", ""vase"", ""car""]","{""present"": [""umbrella"", ""vase"", ""car""]}",
+multi_object_12,multi_object,"a bicycle, a bottle and a cup","[""bicycle"", ""bottle"", ""cup""]","{""present"": [""bicycle"", ""bottle"", ""cup""]}",
+multi_object_13,multi_object,"a horse, a book and a car","[""horse"", ""book"", ""car""]","{""present"": [""horse"", ""book"", ""car""]}",
+multi_object_14,multi_object,"a backpack, a sheep and a giraffe","[""backpack"", ""sheep"", ""giraffe""]","{""present"": [""backpack"", ""sheep"", ""giraffe""]}",
+multi_object_15,multi_object,"a backpack, a cake and a clock","[""backpack"", ""cake"", ""clock""]","{""present"": [""backpack"", ""cake"", ""clock""]}",
+multi_object_16,multi_object,"a bench, a zebra and a sheep","[""bench"", ""zebra"", ""sheep""]","{""present"": [""bench"", ""zebra"", ""sheep""]}",
+multi_object_17,multi_object,"a bird, a boat and a cat","[""bird"", ""boat"", ""cat""]","{""present"": [""bird"", ""boat"", ""cat""]}",
+multi_object_18,multi_object,"a bear, a pizza and a bus","[""bear"", ""pizza"", ""bus""]","{""present"": [""bear"", ""pizza"", ""bus""]}",
+multi_object_19,multi_object,"a horse, a bird and a backpack","[""horse"", ""bird"", ""backpack""]","{""present"": [""horse"", ""bird"", ""backpack""]}",
+multi_object_20,multi_object,"a chair, an elephant and an apple","[""chair"", ""elephant"", ""apple""]","{""present"": [""chair"", ""elephant"", ""apple""]}",
+multi_object_21,multi_object,"an umbrella, a cat and a sheep","[""umbrella"", ""cat"", ""sheep""]","{""present"": [""umbrella"", ""cat"", ""sheep""]}",
+multi_object_22,multi_object,"a backpack, a bottle and a bear","[""backpack"", ""bottle"", ""bear""]","{""present"": [""backpack"", ""bottle"", ""bear""]}",
+multi_object_23,multi_object,"a pizza, a backpack and a cat","[""pizza"", ""backpack"", ""cat""]","{""present"": [""pizza"", ""backpack"", ""cat""]}",
+multi_object_24,multi_object,"a horse, a sheep and a cake","[""horse"", ""sheep"", ""cake""]","{""present"": [""horse"", ""sheep"", ""cake""]}",
+multi_object_25,multi_object,"a bird, a backpack and a sheep","[""bird"", ""backpack"", ""sheep""]","{""present"": [""bird"", ""backpack"", ""sheep""]}",
+multi_object_26,multi_object,"a bird, a cat and a suitcase","[""bird"", ""cat"", ""suitcase""]","{""present"": [""bird"", ""cat"", ""suitcase""]}",
+multi_object_27,multi_object,"a bird, a sheep and a truck","[""bird"", ""sheep"", ""truck""]","{""present"": [""bird"", ""sheep"", ""truck""]}",
+multi_object_28,multi_object,"a backpack, a bear and a vase","[""backpack"", ""bear"", ""vase""]","{""present"": [""backpack"", ""bear"", ""vase""]}",
+multi_object_29,multi_object,"a clock, an apple and a suitcase","[""clock"", ""apple"", ""suitcase""]","{""present"": [""clock"", ""apple"", ""suitcase""]}",
+multi_object_30,multi_object,"a bowl, a truck and an apple","[""bowl"", ""truck"", ""apple""]","{""present"": [""bowl"", ""truck"", ""apple""]}",
+multi_object_31,multi_object,"an elephant, an apple and a cup","[""elephant"", ""apple"", ""cup""]","{""present"": [""elephant"", ""apple"", ""cup""]}",
+multi_object_32,multi_object,"an apple, a bear and a chair","[""apple"", ""bear"", ""chair""]","{""present"": [""apple"", ""bear"", ""chair""]}",
+multi_object_33,multi_object,"a bowl, a vase and a bottle","[""bowl"", ""vase"", ""bottle""]","{""present"": [""bowl"", ""vase"", ""bottle""]}",
+multi_object_34,multi_object,"a suitcase, a sheep and a bus","[""suitcase"", ""sheep"", ""bus""]","{""present"": [""suitcase"", ""sheep"", ""bus""]}",
+multi_object_35,multi_object,"a chair, an apple and a bench","[""chair"", ""apple"", ""bench""]","{""present"": [""chair"", ""apple"", ""bench""]}",
+multi_object_36,multi_object,"an umbrella, a cup and a bird","[""umbrella"", ""cup"", ""bird""]","{""present"": [""umbrella"", ""cup"", ""bird""]}",
+multi_object_37,multi_object,"a bottle, a vase and a pizza","[""bottle"", ""vase"", ""pizza""]","{""present"": [""bottle"", ""vase"", ""pizza""]}",
+multi_object_38,multi_object,"a horse, a cup and a sheep","[""horse"", ""cup"", ""sheep""]","{""present"": [""horse"", ""cup"", ""sheep""]}",
+multi_object_39,multi_object,"a backpack, a bird and a bottle","[""backpack"", ""bird"", ""bottle""]","{""present"": [""backpack"", ""bird"", ""bottle""]}",

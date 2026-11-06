@@ -1,0 +1,161 @@
+model,prompt_id,family,prompt,all_present,share_present,count_wanted,count_detected,count_correct
+base,counting_00,counting,four boats,True,1.0,4.0,3.0,False
+base,counting_01,counting,three zebras,True,1.0,3.0,3.0,True
+base,counting_02,counting,five bottles,True,1.0,5.0,4.0,False
+base,counting_03,counting,five books,True,1.0,5.0,5.0,True
+base,counting_04,counting,two trucks,True,1.0,2.0,1.0,False
+base,counting_05,counting,five cups,True,1.0,5.0,3.0,False
+base,counting_06,counting,three buses,True,1.0,3.0,3.0,True
+base,counting_07,counting,four bears,True,1.0,4.0,5.0,False
+base,counting_08,counting,five bowls,True,1.0,5.0,4.0,False
+base,counting_09,counting,four laptops,True,1.0,4.0,4.0,True
+base,counting_10,counting,five zebras,True,1.0,5.0,3.0,False
+base,counting_11,counting,two cats,True,1.0,2.0,2.0,True
+base,counting_12,counting,five cars,True,1.0,5.0,3.0,False
+base,counting_13,counting,four bowls,True,1.0,4.0,5.0,False
+base,counting_14,counting,two cars,True,1.0,2.0,1.0,False
+base,counting_15,counting,four clocks,True,1.0,4.0,1.0,False
+base,counting_16,counting,five boats,True,1.0,5.0,3.0,False
+base,counting_17,counting,three chairs,True,1.0,3.0,3.0,True
+base,counting_18,counting,two dogs,True,1.0,2.0,2.0,True
+base,counting_19,counting,two apples,True,1.0,2.0,3.0,False
+base,counting_20,counting,two zebras,True,1.0,2.0,1.0,False
+base,counting_21,counting,four books,True,1.0,4.0,1.0,False
+base,counting_22,counting,three birds,True,1.0,3.0,3.0,True
+base,counting_23,counting,three suitcases,True,1.0,3.0,3.0,True
+base,counting_24,counting,five bicycles,True,1.0,5.0,2.0,False
+base,counting_25,counting,five benches,True,1.0,5.0,1.0,False
+base,counting_26,counting,four buses,True,1.0,4.0,2.0,False
+base,counting_27,counting,two buses,True,1.0,2.0,1.0,False
+base,counting_28,counting,five umbrellas,True,1.0,5.0,3.0,False
+base,counting_29,counting,two pizzas,True,1.0,2.0,4.0,False
+base,counting_30,counting,two cows,True,1.0,2.0,4.0,False
+base,counting_31,counting,four trucks,True,1.0,4.0,2.0,False
+base,counting_32,counting,four suitcases,True,1.0,4.0,4.0,True
+base,counting_33,counting,four bicycles,True,1.0,4.0,3.0,False
+base,counting_34,counting,three sheep,True,1.0,3.0,6.0,False
+base,counting_35,counting,three bowls,True,1.0,3.0,3.0,True
+base,counting_36,counting,two chairs,True,1.0,2.0,5.0,False
+base,counting_37,counting,five backpacks,True,1.0,5.0,1.0,False
+base,counting_38,counting,two backpacks,True,1.0,2.0,1.0,False
+base,counting_39,counting,two cakes,True,1.0,2.0,3.0,False
+base,multi_object_00,multi_object,"a horse, a bus and a bottle",False,0.3333333333333333,,,
+base,multi_object_01,multi_object,"a giraffe, a dog and a chair",False,0.3333333333333333,,,
+base,multi_object_02,multi_object,"a bicycle, a cow and a car",False,0.6666666666666666,,,
+base,multi_object_03,multi_object,"a laptop, an elephant and a boat",False,0.6666666666666666,,,
+base,multi_object_04,multi_object,"a chair, a suitcase and a truck",False,0.6666666666666666,,,
+base,multi_object_05,multi_object,"a giraffe, a boat and an apple",False,0.6666666666666666,,,
+base,multi_object_06,multi_object,"a cake, a backpack and a bench",False,0.3333333333333333,,,
+base,multi_object_07,multi_object,"a chair, a laptop and a bottle",False,0.6666666666666666,,,
+base,multi_object_08,multi_object,"a bench, an umbrella and a cake",False,0.6666666666666666,,,
+base,multi_object_09,multi_object,"a bird, a bicycle and a bus",False,0.6666666666666666,,,
+base,multi_object_10,multi_object,"a truck, a bicycle and a laptop",False,0.6666666666666666,,,
+base,multi_object_11,multi_object,"an umbrella, a vase and a car",False,0.6666666666666666,,,
+base,multi_object_12,multi_object,"a bicycle, a bottle and a cup",False,0.6666666666666666,,,
+base,multi_object_13,multi_object,"a horse, a book and a car",False,0.6666666666666666,,,
+base,multi_object_14,multi_object,"a backpack, a sheep and a giraffe",False,0.6666666666666666,,,
+base,multi_object_15,multi_object,"a backpack, a cake and a clock",False,0.3333333333333333,,,
+base,multi_object_16,multi_object,"a bench, a zebra and a sheep",False,0.3333333333333333,,,
+base,multi_object_17,multi_object,"a bird, a boat and a cat",True,1.0,,,
+base,multi_object_18,multi_object,"a bear, a pizza and a bus",True,1.0,,,
+base,multi_object_19,multi_object,"a horse, a bird and a backpack",False,0.6666666666666666,,,
+base,multi_object_20,multi_object,"a chair, an elephant and an apple",False,0.3333333333333333,,,
+base,multi_object_21,multi_object,"an umbrella, a cat and a sheep",True,1.0,,,
+base,multi_object_22,multi_object,"a backpack, a bottle and a bear",False,0.6666666666666666,,,
+base,multi_object_23,multi_object,"a pizza, a backpack and a cat",False,0.3333333333333333,,,
+base,multi_object_24,multi_object,"a horse, a sheep and a cake",False,0.6666666666666666,,,
+base,multi_object_25,multi_object,"a bird, a backpack and a sheep",True,1.0,,,
+base,multi_object_26,multi_object,"a bird, a cat and a suitcase",False,0.6666666666666666,,,
+base,multi_object_27,multi_object,"a bird, a sheep and a truck",True,1.0,,,
+base,multi_object_28,multi_object,"a backpack, a bear and a vase",False,0.6666666666666666,,,
+base,multi_object_29,multi_object,"a clock, an apple and a suitcase",False,0.3333333333333333,,,
+base,multi_object_30,multi_object,"a bowl, a truck and an apple",False,0.6666666666666666,,,
+base,multi_object_31,multi_object,"an elephant, an apple and a cup",False,0.3333333333333333,,,
+base,multi_object_32,multi_object,"an apple, a bear and a chair",False,0.6666666666666666,,,
+base,multi_object_33,multi_object,"a bowl, a vase and a bottle",False,0.6666666666666666,,,
+base,multi_object_34,multi_object,"a suitcase, a sheep and a bus",False,0.3333333333333333,,,
+base,multi_object_35,multi_object,"a chair, an apple and a bench",False,0.6666666666666666,,,
+base,multi_object_36,multi_object,"an umbrella, a cup and a bird",True,1.0,,,
+base,multi_object_37,multi_object,"a bottle, a vase and a pizza",False,0.6666666666666666,,,
+base,multi_object_38,multi_object,"a horse, a cup and a sheep",False,0.6666666666666666,,,
+base,multi_object_39,multi_object,"a backpack, a bird and a bottle",False,0.6666666666666666,,,
+lora_600,counting_00,counting,four boats,True,1.0,4.0,2.0,False
+lora_600,counting_01,counting,three zebras,True,1.0,3.0,3.0,True
+lora_600,counting_02,counting,five bottles,True,1.0,5.0,5.0,True
+lora_600,counting_03,counting,five books,True,1.0,5.0,3.0,False
+lora_600,counting_04,counting,two trucks,True,1.0,2.0,1.0,False
+lora_600,counting_05,counting,five cups,True,1.0,5.0,5.0,True
+lora_600,counting_06,counting,three buses,True,1.0,3.0,2.0,False
+lora_600,counting_07,counting,four bears,True,1.0,4.0,2.0,False
+lora_600,counting_08,counting,five bowls,True,1.0,5.0,4.0,False
+lora_600,counting_09,counting,four laptops,True,1.0,4.0,3.0,False
+lora_600,counting_10,counting,five zebras,True,1.0,5.0,3.0,False
+lora_600,counting_11,counting,two cats,True,1.0,2.0,1.0,False
+lora_600,counting_12,counting,five cars,True,1.0,5.0,4.0,False
+lora_600,counting_13,counting,four bowls,True,1.0,4.0,4.0,True
+lora_600,counting_14,counting,two cars,True,1.0,2.0,1.0,False
+lora_600,counting_15,counting,four clocks,True,1.0,4.0,10.0,False
+lora_600,counting_16,counting,five boats,True,1.0,5.0,2.0,False
+lora_600,counting_17,counting,three chairs,True,1.0,3.0,3.0,True
+lora_600,counting_18,counting,two dogs,True,1.0,2.0,2.0,True
+lora_600,counting_19,counting,two apples,True,1.0,2.0,4.0,False
+lora_600,counting_20,counting,two zebras,True,1.0,2.0,2.0,True
+lora_600,counting_21,counting,four books,True,1.0,4.0,4.0,True
+lora_600,counting_22,counting,three birds,True,1.0,3.0,4.0,False
+lora_600,counting_23,counting,three suitcases,True,1.0,3.0,4.0,False
+lora_600,counting_24,counting,five bicycles,True,1.0,5.0,7.0,False
+lora_600,counting_25,counting,five benches,True,1.0,5.0,11.0,False
+lora_600,counting_26,counting,four buses,True,1.0,4.0,3.0,False
+lora_600,counting_27,counting,two buses,True,1.0,2.0,2.0,True
+lora_600,counting_28,counting,five umbrellas,True,1.0,5.0,5.0,True
+lora_600,counting_29,counting,two pizzas,True,1.0,2.0,3.0,False
+lora_600,counting_30,counting,two cows,True,1.0,2.0,2.0,True
+lora_600,counting_31,counting,four trucks,True,1.0,4.0,2.0,False
+lora_600,counting_32,counting,four suitcases,True,1.0,4.0,5.0,False
+lora_600,counting_33,counting,four bicycles,True,1.0,4.0,1.0,False
+lora_600,counting_34,counting,three sheep,True,1.0,3.0,3.0,True
+lora_600,counting_35,counting,three bowls,True,1.0,3.0,3.0,True
+lora_600,counting_36,counting,two chairs,True,1.0,2.0,4.0,False
+lora_600,counting_37,counting,five backpacks,True,1.0,5.0,1.0,False
+lora_600,counting_38,counting,two backpacks,True,1.0,2.0,1.0,False
+lora_600,counting_39,counting,two cakes,True,1.0,2.0,3.0,False
+lora_600,multi_object_00,multi_object,"a horse, a bus and a bottle",False,0.3333333333333333,,,
+lora_600,multi_object_01,multi_object,"a giraffe, a dog and a chair",False,0.3333333333333333,,,
+lora_600,multi_object_02,multi_object,"a bicycle, a cow and a car",False,0.6666666666666666,,,
+lora_600,multi_object_03,multi_object,"a laptop, an elephant and a boat",False,0.6666666666666666,,,
+lora_600,multi_object_04,multi_object,"a chair, a suitcase and a truck",False,0.6666666666666666,,,
+lora_600,multi_object_05,multi_object,"a giraffe, a boat and an apple",False,0.6666666666666666,,,
+lora_600,multi_object_06,multi_object,"a cake, a backpack and a bench",False,0.6666666666666666,,,
+lora_600,multi_object_07,multi_object,"a chair, a laptop and a bottle",False,0.3333333333333333,,,
+lora_600,multi_object_08,multi_object,"a bench, an umbrella and a cake",False,0.6666666666666666,,,
+lora_600,multi_object_09,multi_object,"a bird, a bicycle and a bus",False,0.6666666666666666,,,
+lora_600,multi_object_10,multi_object,"a truck, a bicycle and a laptop",False,0.6666666666666666,,,
+lora_600,multi_object_11,multi_object,"an umbrella, a vase and a car",False,0.6666666666666666,,,
+lora_600,multi_object_12,multi_object,"a bicycle, a bottle and a cup",False,0.6666666666666666,,,
+lora_600,multi_object_13,multi_object,"a horse, a book and a car",False,0.3333333333333333,,,
+lora_600,multi_object_14,multi_object,"a backpack, a sheep and a giraffe",False,0.6666666666666666,,,
+lora_600,multi_object_15,multi_object,"a backpack, a cake and a clock",False,0.3333333333333333,,,
+lora_600,multi_object_16,multi_object,"a bench, a zebra and a sheep",False,0.3333333333333333,,,
+lora_600,multi_object_17,multi_object,"a bird, a boat and a cat",False,0.6666666666666666,,,
+lora_600,multi_object_18,multi_object,"a bear, a pizza and a bus",True,1.0,,,
+lora_600,multi_object_19,multi_object,"a horse, a bird and a backpack",False,0.3333333333333333,,,
+lora_600,multi_object_20,multi_object,"a chair, an elephant and an apple",True,1.0,,,
+lora_600,multi_object_21,multi_object,"an umbrella, a cat and a sheep",False,0.6666666666666666,,,
+lora_600,multi_object_22,multi_object,"a backpack, a bottle and a bear",False,0.6666666666666666,,,
+lora_600,multi_object_23,multi_object,"a pizza, a backpack and a cat",False,0.6666666666666666,,,
+lora_600,multi_object_24,multi_object,"a horse, a sheep and a cake",False,0.6666666666666666,,,
+lora_600,multi_object_25,multi_object,"a bird, a backpack and a sheep",True,1.0,,,
+lora_600,multi_object_26,multi_object,"a bird, a cat and a suitcase",False,0.6666666666666666,,,
+lora_600,multi_object_27,multi_object,"a bird, a sheep and a truck",True,1.0,,,
+lora_600,multi_object_28,multi_object,"a backpack, a bear and a vase",False,0.6666666666666666,,,
+lora_600,multi_object_29,multi_object,"a clock, an apple and a suitcase",False,0.6666666666666666,,,
+lora_600,multi_object_30,multi_object,"a bowl, a truck and an apple",False,0.6666666666666666,,,
+lora_600,multi_object_31,multi_object,"an elephant, an apple and a cup",False,0.3333333333333333,,,
+lora_600,multi_object_32,multi_object,"an apple, a bear and a chair",True,1.0,,,
+lora_600,multi_object_33,multi_object,"a bowl, a vase and a bottle",False,0.6666666666666666,,,
+lora_600,multi_object_34,multi_object,"a suitcase, a sheep and a bus",True,1.0,,,
+lora_600,multi_object_35,multi_object,"a chair, an apple and a bench",False,0.6666666666666666,,,
+lora_600,multi_object_36,multi_object,"an umbrella, a cup and a bird",False,0.6666666666666666,,,
+lora_600,multi_object_37,multi_object,"a bottle, a vase and a pizza",True,1.0,,,
+lora_600,multi_object_38,multi_object,"a horse, a cup and a sheep",False,0.6666666666666666,,,
+lora_600,multi_object_39,multi_object,"a backpack, a bird and a bottle",False,0.6666666666666666,,,

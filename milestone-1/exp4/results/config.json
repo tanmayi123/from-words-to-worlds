@@ -1,0 +1,48 @@
+{
+  "seed_eval": 2026,
+  "seed_dev": 2027,
+  "seed_ref": 2028,
+  "seed_stress": 2030,
+  "image_size": 512,
+  "min_short_side": 256,
+  "n_eval_split": 2000,
+  "n_dev": 500,
+  "n_ref_b": 2000,
+  "min_box_kept": 0.5,
+  "min_cover": 0.005,
+  "clip_id": "openai/clip-vit-large-patch14",
+  "sd_id": "stable-diffusion-v1-5/stable-diffusion-v1-5",
+  "steps": 30,
+  "guidance": 7.5,
+  "main_seed": 0,
+  "det_score": 0.5,
+  "owl_id": "google/owlvit-base-patch32",
+  "owl_threshold": 0.1,
+  "commit_threshold": 0.8,
+  "commit_thresholds_sweep": [
+    0.7,
+    0.8,
+    0.9
+  ],
+  "lora_checkpoints": [
+    150,
+    300,
+    450,
+    600
+  ],
+  "retrain_lora_if_missing": true,
+  "n_boot": 5000,
+  "n_eval": 500,
+  "n_dev_select": 80,
+  "seed_check_n": 100,
+  "seed_check_seeds": [
+    1,
+    2
+  ],
+  "n_timing": 60,
+  "stress_families": [
+    "multi_object",
+    "counting"
+  ],
+  "run_encoder_comparison": true
+}

@@ -1,0 +1,15 @@
+measure,value
+"Retrieval R@1, 5,000 photos / 2,000 photos",35.5% / 46.8%
+Cached embeddings vs raw text (mean pixel diff),0.000
+LoRA checkpoint chosen on dev_500,lora_600
+CLIPScore base → LoRA (eval_500),"26.18 → 26.59, Δ +0.41 [+0.23, +0.58], wins 61%"
+FID vs real_ref_b (real floor / base / LoRA),77.1 / 91.1 / 88.4
+KID ×1000 (real floor / base / LoRA),-0.14 / 5.94 / 5.97
+Inception Score (real / base / LoRA),17.37 / 17.06 / 17.37
+"Object recall, two judges (real / base / LoRA)",98.4% / 93.8% / 94.2%
+Faster R-CNN alone on real photos (its own miss rate),recall 96.5%
+"KID ×1000, LoRA − base (paired bootstrap)","-0.03 [-0.89, +0.94]"
+"Object recall, LoRA − base (two judges / Faster R-CNN only)","+0.00 [-0.02, +0.02] / +0.02 [+0.00, +0.05]"
+"Commit-step shift, LoRA − base (evaluations)","-0.14 [-1.06, +0.80]"
+"Late commit predicts missing object, base (AUC @ r≥0.8, n missing)","[0.8577586206896551, 0.7627118644067797, 0.9446967213114754] (n=6)"
+"Late commit predicts missing object, lora_600 (AUC @ r≥0.8, n missing)","[0.8016949152542372, 0.598917888984757, 0.9376280737704918] (n=5)"

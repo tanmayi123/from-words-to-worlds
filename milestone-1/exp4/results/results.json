@@ -1,0 +1,470 @@
+{
+  "data": {
+    "cleaning": {
+      "captions_whitespace_fixed": 3832,
+      "captions_duplicate_dropped": 10,
+      "images": 5000,
+      "captions_raw": 25014,
+      "captions_kept": 25004
+    }
+  },
+  "data_checks": {
+    "converted_to_rgb": 10,
+    "mean_crop_kept": 0.716,
+    "min_crop_kept": 0.2484,
+    "reference_eligible": 4958,
+    "excluded_small": 42,
+    "exif_tagged": 0,
+    "near_duplicate_pairs": 0
+  },
+  "splits": {
+    "matches_group_files": {
+      "eval_2000": true,
+      "eval_500": true,
+      "dev_500": true,
+      "real_ref_b_2000": true
+    },
+    "n_eval_used": 500,
+    "n_dev_select": 80
+  },
+  "object_labels": {
+    "matches_group_file": true,
+    "targets_eval_used": 568,
+    "captions_with_target": 425,
+    "non_person_targets": 366
+  },
+  "stress_prompts": {
+    "matches_group_file": true,
+    "scored": {
+      "counting": 40,
+      "multi_object": 40
+    }
+  },
+  "retrieval": {
+    "pool_5000": {
+      "R@1": 0.35506318988961766,
+      "R@5": 0.5999040153575428,
+      "R@10": 0.70360742281235,
+      "median_rank": 3.0,
+      "chance_R@1": 0.0002,
+      "n_photos": 5000,
+      "n_captions": 25004
+    },
+    "pool_2000": {
+      "R@1": 0.4675,
+      "R@5": 0.733,
+      "R@10": 0.84,
+      "median_rank": 2.0,
+      "chance_R@1": 0.0005,
+      "n_photos": 2000,
+      "n_captions": 2000
+    }
+  },
+  "same_encoder_max_diff": 0.0,
+  "parity": {
+    "text_vs_cache": 0.0,
+    "praniti_sample_regenerated": null
+  },
+  "lora_source": "Mukul's trained checkpoints (project_2.zip)",
+  "parity_lora_unload": 0.0,
+  "dev_selection": {
+    "table": [
+      {
+        "model": "base",
+        "dev_clipscore": 26.553,
+        "n": 79,
+        "flagged": 1
+      },
+      {
+        "model": "lora_150",
+        "dev_clipscore": 26.558,
+        "n": 79,
+        "flagged": 1
+      },
+      {
+        "model": "lora_300",
+        "dev_clipscore": 26.469,
+        "n": 79,
+        "flagged": 1
+      },
+      {
+        "model": "lora_450",
+        "dev_clipscore": 26.51,
+        "n": 78,
+        "flagged": 2
+      },
+      {
+        "model": "lora_600",
+        "dev_clipscore": 26.605,
+        "n": 78,
+        "flagged": 2
+      }
+    ],
+    "selected": "lora_600"
+  },
+  "clipscore": {
+    "eval": {
+      "base": 26.176959991455078,
+      "lora_600": 26.587797164916992,
+      "delta": 0.4108361601829529,
+      "ci95": [
+        0.23420396447181702,
+        0.5812960863113403
+      ],
+      "win_rate": 0.608433734939759,
+      "n_pairs": 498,
+      "flagged": {
+        "base": 1,
+        "lora_600": 4
+      }
+    },
+    "seed_check": [
+      {
+        "seed": 0,
+        "base": 26.35302734375,
+        "lora_600": 26.871379852294922,
+        "delta": 0.5183547139167786,
+        "ci_low": 0.13372451066970825,
+        "ci_high": 0.912214994430542,
+        "n": 99
+      },
+      {
+        "seed": 1,
+        "base": 26.819725036621094,
+        "lora_600": 27.39914321899414,
+        "delta": 0.5794190168380737,
+        "ci_low": 0.21794763207435608,
+        "ci_high": 0.9517664909362793,
+        "n": 98
+      },
+      {
+        "seed": 2,
+        "base": 26.8595027923584,
+        "lora_600": 26.948476791381836,
+        "delta": 0.08897284418344498,
+        "ci_low": -0.4019124209880829,
+        "ci_high": 0.5816462635993958,
+        "n": 99
+      }
+    ]
+  },
+  "image_quality": {
+    "reference": "real_ref_b_2000",
+    "n": 498,
+    "scores": {
+      "real eval photos (floor)": {
+        "FID": 77.13344655157601,
+        "KID_x1000": -0.14358758926391602,
+        "IS": 17.369878406644187,
+        "IS_std": 2.093547376240511,
+        "backend": "torch-fidelity"
+      },
+      "base": {
+        "FID": 91.09174580801937,
+        "KID_x1000": 5.94226598739624,
+        "IS": 17.055145087961925,
+        "IS_std": 1.131879499626233,
+        "backend": "torch-fidelity"
+      },
+      "lora_600": {
+        "FID": 88.37918538622176,
+        "KID_x1000": 5.9684062004089355,
+        "IS": 17.374002902877805,
+        "IS_std": 1.426259435476102,
+        "backend": "torch-fidelity"
+      }
+    },
+    "kid_x1000_lora_minus_base_ci95": [
+      -0.03238790448589768,
+      -0.8876760470251432,
+      0.9404298455229824
+    ]
+  },
+  "object_recall": {
+    "table": {
+      "real photos": {
+        "targets": 566.0,
+        "judge_A_recall": 0.9646643109540636,
+        "judge_B_recall": 0.9346289752650176,
+        "recall_either": 0.9840989399293286,
+        "recall_non_person": 0.9780821917808219,
+        "missing_rate": 0.015901060070671377,
+        "judges_agree": 0.931095406360424,
+        "kappa": 0.28289259957117746
+      },
+      "base": {
+        "targets": 566.0,
+        "judge_A_recall": 0.8975265017667845,
+        "judge_B_recall": 0.8480565371024735,
+        "recall_either": 0.9381625441696113,
+        "recall_non_person": 0.9232876712328767,
+        "missing_rate": 0.061837455830388695,
+        "judges_agree": 0.8692579505300353,
+        "kappa": 0.4144391007717255
+      },
+      "lora_600": {
+        "targets": 566.0,
+        "judge_A_recall": 0.9222614840989399,
+        "judge_B_recall": 0.872791519434629,
+        "recall_either": 0.941696113074205,
+        "recall_non_person": 0.9205479452054794,
+        "missing_rate": 0.05830388692579505,
+        "judges_agree": 0.911660777385159,
+        "kappa": 0.5229265003371546
+      }
+    },
+    "lora_minus_base": {
+      "present": [
+        0.0035335689045936647,
+        -0.015845070422535135,
+        0.02313167259786475
+      ],
+      "judge_A": [
+        0.02473498233215543,
+        0.0035271816081675236,
+        0.046633287132212764
+      ],
+      "judge_B": [
+        0.02473498233215543,
+        -0.0017421602787456303,
+        0.05226480836236935
+      ]
+    },
+    "note": "CIs resample captions; OWL-ViT false positives are not measured, so judge_A alone is the conservative view"
+  },
+  "stress": [
+    {
+      "family": "counting",
+      "model": "base",
+      "all_present": 1.0,
+      "share_present": 1.0,
+      "count_correct": 0.275,
+      "n": 40
+    },
+    {
+      "family": "counting",
+      "model": "lora_600",
+      "all_present": 1.0,
+      "share_present": 1.0,
+      "count_correct": 0.325,
+      "n": 40
+    },
+    {
+      "family": "multi_object",
+      "model": "base",
+      "all_present": 0.15,
+      "share_present": 0.6333333333333333,
+      "count_correct": null,
+      "n": 40
+    },
+    {
+      "family": "multi_object",
+      "model": "lora_600",
+      "all_present": 0.175,
+      "share_present": 0.6583333333333333,
+      "count_correct": null,
+      "n": 40
+    }
+  ],
+  "word_timing": {
+    "words_paired": 64,
+    "commit_shift_lora_minus_base": [
+      -0.140625,
+      -1.0625248015873017,
+      0.8000819672131136
+    ],
+    "both_never_settle": 0,
+    "never_settle_share": {
+      "base": 0.0,
+      "lora_600": 0.0
+    },
+    "wilcoxon_p": 0.9500889729198767,
+    "share_shift_lora_minus_base": [
+      -0.0032791923731565475,
+      -0.005962144911728813,
+      -0.0007429329456672808
+    ],
+    "prediction_per_model": {
+      "base": {
+        "n_words": 64,
+        "n_missing": 6,
+        "AUC commit@0.7": [
+          0.8347701149425288,
+          0.629833156779661,
+          0.965532883759733
+        ],
+        "AUC commit@0.8": [
+          0.8577586206896551,
+          0.7627118644067797,
+          0.9446967213114754
+        ],
+        "AUC commit@0.9": [
+          0.7988505747126436,
+          0.6589931073025335,
+          0.9128931873211533
+        ],
+        "AUC low attention share": [
+          0.8074712643678161,
+          0.5666666666666667,
+          0.9766384351683807
+        ],
+        "AUC final-step drop": [
+          0.6925287356321839,
+          0.3897750385208012,
+          0.9123941318814277
+        ]
+      },
+      "lora_600": {
+        "n_words": 64,
+        "n_missing": 5,
+        "AUC commit@0.7": [
+          0.8033898305084746,
+          0.6083333333333334,
+          0.9523809523809523
+        ],
+        "AUC commit@0.8": [
+          0.8016949152542372,
+          0.598917888984757,
+          0.9376280737704918
+        ],
+        "AUC commit@0.9": [
+          0.8016949152542372,
+          0.661729797979798,
+          0.9166666666666666
+        ],
+        "AUC low attention share": [
+          0.6983050847457626,
+          0.5166325136612021,
+          0.8649187646370023
+        ],
+        "AUC final-step drop": [
+          0.7762711864406779,
+          0.5904730780101752,
+          0.9323446327683617
+        ]
+      }
+    },
+    "median_commit": {
+      "base": 6.5,
+      "lora_600": 6.0
+    },
+    "step_note": "PNDM records 31 evaluations for 30 steps; evaluation k >= 2 is scheduler step k-1"
+  },
+  "encoders": {
+    "table": {
+      "CLIP ViT-L/14": {
+        "paraphrase R@1": 0.2145,
+        "R@1 low": 0.1965,
+        "R@1 high": 0.233,
+        "10-NN scene": 0.6995,
+        "scene low": 0.679,
+        "scene high": 0.7195,
+        "CKA vs CLIP": 1.0,
+        "CKA low": 1.0,
+        "CKA high": 1.0
+      },
+      "CLIP (EOS)": {
+        "paraphrase R@1": 0.3395,
+        "R@1 low": 0.3185,
+        "R@1 high": 0.36,
+        "10-NN scene": 0.745,
+        "scene low": 0.726,
+        "scene high": 0.7635,
+        "CKA vs CLIP": 0.7915,
+        "CKA low": 0.7922,
+        "CKA high": 0.806
+      },
+      "BERT-base": {
+        "paraphrase R@1": 0.13,
+        "R@1 low": 0.1155,
+        "R@1 high": 0.1455,
+        "10-NN scene": 0.6575,
+        "scene low": 0.6365,
+        "scene high": 0.678,
+        "CKA vs CLIP": 0.5284,
+        "CKA low": 0.5302,
+        "CKA high": 0.5507
+      },
+      "T5-base": {
+        "paraphrase R@1": 0.1545,
+        "R@1 low": 0.139,
+        "R@1 high": 0.1705,
+        "10-NN scene": 0.6845,
+        "scene low": 0.664,
+        "scene high": 0.7045,
+        "CKA vs CLIP": 0.6002,
+        "CKA low": 0.6047,
+        "CKA high": 0.6215
+      },
+      "GPT-2": {
+        "paraphrase R@1": 0.0335,
+        "R@1 low": 0.0255,
+        "R@1 high": 0.0415,
+        "10-NN scene": 0.56,
+        "scene low": 0.5375,
+        "scene high": 0.582,
+        "CKA vs CLIP": 0.1319,
+        "CKA low": 0.1244,
+        "CKA high": 0.1474
+      },
+      "TF-IDF words": {
+        "paraphrase R@1": 0.2,
+        "R@1 low": 0.1825,
+        "R@1 high": 0.217,
+        "10-NN scene": 0.644,
+        "scene low": 0.623,
+        "scene high": 0.665,
+        "CKA vs CLIP": 0.5114,
+        "CKA low": 0.5314,
+        "CKA high": 0.5446
+      }
+    },
+    "triplets": {
+      "CLIP ViT-L/14": {
+        "word order (original test)": 0.0,
+        "word order (fixed: verb synonym)": 1.0,
+        "colour (original test)": 0.0,
+        "colour (fixed: 'and' -> 'along with')": 1.0
+      },
+      "CLIP (EOS)": {
+        "word order (original test)": 0.0,
+        "word order (fixed: verb synonym)": 0.45,
+        "colour (original test)": 0.425,
+        "colour (fixed: 'and' -> 'along with')": 0.725
+      },
+      "BERT-base": {
+        "word order (original test)": 0.0,
+        "word order (fixed: verb synonym)": 0.0,
+        "colour (original test)": 0.0,
+        "colour (fixed: 'and' -> 'along with')": 0.0
+      },
+      "T5-base": {
+        "word order (original test)": 0.0,
+        "word order (fixed: verb synonym)": 0.15,
+        "colour (original test)": 0.0,
+        "colour (fixed: 'and' -> 'along with')": 0.025
+      },
+      "GPT-2": {
+        "word order (original test)": 0.0,
+        "word order (fixed: verb synonym)": 0.35,
+        "colour (original test)": 0.0375,
+        "colour (fixed: 'and' -> 'along with')": 0.25
+      },
+      "TF-IDF words": {
+        "word order (original test)": 0.5,
+        "word order (fixed: verb synonym)": 0.0,
+        "colour (original test)": 0.5,
+        "colour (fixed: 'and' -> 'along with')": 0.0
+      }
+    }
+  },
+  "environment": {
+    "python": "3.13.16",
+    "torch": "2.11.0+cu130",
+    "diffusers": "0.42.1",
+    "transformers": "5.22.1",
+    "peft": "0.21.2",
+    "gpu": "Tesla T4"
+  },
+  "runtime_minutes_this_session": 182.5
+}
