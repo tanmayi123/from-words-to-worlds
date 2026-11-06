@@ -1,10 +1,12 @@
-# Time Travel Inside a Diffusion Model
+# Milestone 1, exp1: the pipeline, word timing and Rewind
 
-**Watching, rewinding and changing Stable Diffusion while it paints.** IE 7615 Deep Learning for AI (course project "From Words to Worlds"), Northeastern University, Fall 2026.
+**Santhoshkumar Chandrasekar** · part of [Time Travel Inside a Diffusion Model](../../README.md), Group 7, IE 7615 Deep Learning for AI, Northeastern University, Fall 2026.
+
+This folder holds Santhoshkumar's runs: the data pipeline and text-to-embedding checks behind Milestone 1, the attention recorder and commit measure, the rewind loop with its Rewind viewer and live tool, and the pilot experiments that shaped the group's proposal. It is self-contained and runs on its own.
 
 ![A cat sitting on a wooden bench: "bench" commits at step 1, "cat" at step 14, and the cat never appears](Results/m1_word_timelines/missing_cat_timeline.png)
 
-Stable Diffusion receives a whole sentence at once but paints it over 30 denoising steps. This repository records what the model does at every step: where each word's attention lands, and what the model's guess of the finished picture looks like. It also lets the painting be rewound to any step and continued with a changed sentence. On top of that it runs a series of experiments on when a picture is decided, when an edit can still take, and when a missing object is lost. Rewind, a viewer and a live tool, makes all of this visible.
+Stable Diffusion receives a whole sentence at once but paints it over 30 denoising steps. This code records what the model does at every step: where each word's attention lands, and what the model's guess of the finished picture looks like. It also lets the painting be rewound to any step and continued with a changed sentence. On top of that it runs a series of experiments on when a picture is decided, when an edit can still take, and when a missing object is lost. Rewind, a viewer and a live tool, makes all of this visible.
 
 ## How the work fits together
 
@@ -133,9 +135,9 @@ docs/           research log, design decisions, data card
 report/         milestone reports (LaTeX sources and PDFs)
 ```
 
-## Team
+## Author and group
 
-Tanmayi Shurpali, Santhoshkumar Chandrasekar, Praniti Sunil Kale, Mukul Sridar Haladhi.
+This folder: Santhoshkumar Chandrasekar. Group 7: Tanmayi Shurpali, Santhoshkumar Chandrasekar, Praniti Sunil Kale, Mukul Sridar Haladhi. The group's README is at the [repository root](../../README.md).
 
 ## License and data terms
 
