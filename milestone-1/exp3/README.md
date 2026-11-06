@@ -1,122 +1,246 @@
-# Milestone 1 · Exp 3 — Evaluation groundwork, text-encoder comparison and re-captioning study
+# Docker Lab 1 (Modified): Multi-Stage, Tested Training and Serving Containers
 
-**Author:** Praniti Sunil Kale · IE 7615 Deep Learning for AI · Northeastern University
+The original lab builds one image that trains a RandomForest on the Iris dataset inside the container and saves the model there (where it is lost when the container exits):
 
-This experiment builds the data and evaluation groundwork the rest of the project is scored with, and adds two studies that need no training:
+```
+docker build -t lab1:v1 .
+docker save lab1:v1 > my_image.tar
+docker run lab1:v1
+```
 
-1. **Milestone 1 pipeline + evaluation sets.** COCO 2017 val prepared with light cleaning; frozen test, dev and real-reference splits; object labels for every test caption with a crop check; 200 stress prompts; a text → embedding cache verified against Stable Diffusion's own output; first samples.
-2. **Text encoders compared without training.** CLIP ViT-L/14 (Stable Diffusion's own encoder), BERT-base, T5-base and GPT-2 on the same 2,000 test captions, plus a TF-IDF word-count baseline.
-3. **Re-captioning study.** Is Stable Diffusion's missing content the fault of the model, the captions, or the 77-token limit? 100 test photos, four captions each (human, short, detailed, detailed fitted to 77 tokens), same seeds, judged against the real photo.
+**Those three commands still work exactly as before.** On top of them, this version changes **how the image is built and how the containers run**:
+
+- A **multi-stage Dockerfile** with shared `base` layers and **two build targets**: a `train` image (the default, like the original) and a `serve` image (a prediction API).
+- A **`test` stage runs the unit tests during the build**, including a **model-quality check**. If a test fails, `docker build` fails and no image is produced.
+- **Build arguments** (`PYTHON_VERSION`, `MIN_ACCURACY`, `N_ESTIMATORS`) and **environment variables** configure the images without editing code.
+- **Docker Compose** runs the two containers in order: `train` saves the model into a **named volume**, and `serve` starts **only after training succeeds** and reads the model from that volume.
+- A **`HEALTHCHECK`** makes Docker report whether the API is actually working (`docker ps` shows `healthy`).
+- A slim base image, pinned dependencies, layer caching, a non-root user and a `.dockerignore`.
 
 ---
 
-## Folder contents
+## 1. How it fits together
 
-```
-milestone1/exp3/
-├── README.md
-├── notebooks/
-│   ├── 01_M1_plus_TextEncoder_Comparison.ipynb   ← Part 1: Milestone 1 pipeline; Part 2: text-encoder comparison (run, with outputs)
-│   └── 02_Recaptioning_FittedCaptions.ipynb      ← re-captioning study, runs from scratch (run, with outputs)
-├── reports/
-│   ├── M1_plus_TextEncoder_Report.pdf            ← every choice, result and figure for notebook 01
-│   └── Recaptioning_FittedCaptions_Report.pdf    ← every result and figure for notebook 02
-├── results/
-│   ├── milestone1_summary.json                   ← every Milestone 1 and text-encoder number in one file
-│   ├── config.json                               ← every setting and seed
-│   ├── manifest.jsonl, captions.csv              ← one row per image / per caption (25,004 captions)
-│   ├── preprocess_log.csv                        ← size, mode, crop share, eligibility per image
-│   ├── data_checks.json                          ← EXIF tags, near-duplicates, caption quirks (counted, never changed)
-│   ├── splits/                                   ← eval_2000, eval_500, dev_500, real_ref_b_2000
-│   ├── groundtruth_eval_2000.csv, groundtruth_dev_500.csv, groundtruth_summary.json  ← object labels + crop check
-│   ├── stress_prompts.csv                        ← 200 prompts with expected answers
-│   ├── split_words.json, retrieval.json          ← tokenizer analysis, caption → photo retrieval
-│   ├── text_encoders/                            ← CKA, paraphrase retrieval, scene clustering, word-order/colour tests
-│   ├── recaptioning/named_read_missing.csv       ← objects named, read by SD, and still missing (for rescue experiments)
-│   └── figures/                                  ← every figure from notebook 01
-└── samples/                                      ← the 15 Milestone 1 sample images + samples.csv (caption, seed, settings)
+```mermaid
+flowchart LR
+    subgraph Dockerfile
+        base[base: python 3.11-slim + pinned deps + non-root user]
+        base --> test[test: pytest + accuracy >= MIN_ACCURACY]
+        test -. must pass .-> train[train target - default]
+        test -. must pass .-> serve[serve target + HEALTHCHECK]
+    end
+    train -- writes model.joblib --> vol[(named volume: model-store)]
+    vol -- read-only --> serve
+    serve -- port 8000 --> user[curl / browser]
 ```
 
 ---
 
-## How to run
+## 2. Changes I made
 
-Both notebooks run in **Google Colab with a T4 GPU** (Runtime → Change runtime type → T4 GPU), then **Run all**. On Colab they mount Google Drive and save everything to `MyDrive/w2w_praniti/`; COCO is downloaded to the Colab disk each session.
+| # | Change | File | What it does / why it matters |
+|---|--------|------|-------------------------------|
+| 1 | **Multi-stage build** | `Dockerfile` | One `base` stage holds the dependencies, and the `test`, `serve` and `train` stages build on it. Shared layers are built once and cached. |
+| 2 | **Two build targets from one Dockerfile** | `Dockerfile` | `--target train` builds the training job and `--target serve` builds the API. `train` is the last stage, so a plain `docker build` still produces the original training image. |
+| 3 | **Tests and a quality gate inside the build** | `Dockerfile` (`test` stage), `tests/test_lab.py` | 7 tests check that training writes the model files, that the API endpoints work and reject bad input, and that **accuracy ≥ `MIN_ACCURACY`**. The `train` and `serve` stages copy a file from the `test` stage, so the tests always run, and a failure stops the build. |
+| 4 | **Build arguments** | `Dockerfile` | `PYTHON_VERSION` (default 3.11), `MIN_ACCURACY` (default 0.85) and `N_ESTIMATORS` (default 100) can be changed with `--build-arg`. |
+| 5 | **Runtime configuration** | `src/main.py` | `MODEL_DIR`, `N_ESTIMATORS` and `TEST_SIZE` are read from environment variables, so you can retrain with different settings without rebuilding (`docker compose run -e ...`). |
+| 6 | **Multi-container setup with Compose** | `docker-compose.yml` | `serve` uses `depends_on: condition: service_completed_successfully`, so it only starts after `train` exits with code 0. |
+| 7 | **Named volume instead of a lost file** | `docker-compose.yml` | The model is saved to the `model-store` volume, which outlives the containers. `serve` mounts it **read-only**. This works the same on Windows, macOS and Linux (no host paths or user IDs needed). |
+| 8 | **Prediction API** | `src/serve.py` | `POST /predict` (one row or a batch, with input validation), `/version` (model metadata) and `/health`, served by `gunicorn`. |
+| 9 | **HEALTHCHECK** | `Dockerfile` (`serve` stage) | Docker calls `/health` every 10 seconds and marks the container `healthy` or `unhealthy`. |
+| 10 | **Smaller, safer image** | `Dockerfile`, `.dockerignore`, `src/requirements.txt` | `python:3.11-slim` instead of the full `python:3.10` image, pinned versions, dependencies installed before the code is copied (better caching), a non-root user, OCI labels, and a trimmed build context. |
 
-| Notebook | What it does | Time on a T4 |
-|---|---|---|
-| `01_M1_plus_TextEncoder_Comparison.ipynb` | Downloads COCO val2017, cleans and preprocesses it, freezes the splits, builds object labels and stress prompts, caches the 77 × 768 CLIP states, checks them, generates the samples; then embeds the test captions with four encoders and compares them | ~35 min |
-| `02_Recaptioning_FittedCaptions.ipynb` | Rebuilds the test split, downloads the 100 photos, captions them with Florence-2, fits the detailed captions to 77 tokens, generates 400 images, scores them against the real photos | ~45 min from scratch, ~15 min when the images are already on Drive |
+`src/main.py` keeps the original job (train a RandomForest on Iris and print `The model training was successful`), and now also saves a `metadata.json` file with the accuracy and settings.
 
-Every random draw uses a fixed seed. Rerunning notebook 01 reproduced every figure and sample image pixel for pixel; rerunning notebook 02 reproduced every number.
+The split is now **stratified** (each flower type is represented equally in the 30-row test set), which gives a test accuracy of **0.90**. The original unstratified split happens to score 1.00 on that particular split. The stratified score is the fairer estimate, and it also leaves room for the quality gate demo in section 6.
 
 ---
 
-## Key choices and why
+## 3. What to install
 
-| Choice | Why |
+| Tool | Version I used | Install |
+|------|----------------|---------|
+| Docker Desktop (includes Docker Compose v2) | 4.x (with **WSL 2** on Windows) | https://www.docker.com/products/docker-desktop |
+| Git | 2.42+ | https://git-scm.com |
+| `curl` | any | Built into Windows 10/11, macOS and Linux |
+
+You do **not** need Python on your machine. Everything runs inside the containers.
+
+Check that Docker is running:
+```bash
+docker --version
+docker compose version
+docker info
+```
+`docker info` must show a **Server** section. If it says it cannot connect, open Docker Desktop and wait for **Engine running**.
+
+On **Windows**, use **Command Prompt** (not PowerShell) for the commands below. PowerShell replaces `curl` with a different command and can corrupt files written with `>`.
+
+---
+
+## 4. Get the code
+
+```bash
+git clone https://github.com/Praniti03/MLOps.git
+cd MLOps/Labs/Docker_Labs/Lab1
+```
+All commands below run from this folder.
+
+---
+
+## 5. The original commands (still work)
+
+```bash
+docker build -t lab1:v1 .
+docker save -o my_image.tar lab1:v1
+docker run --rm lab1:v1
+```
+`docker save -o` is the same as `docker save lab1:v1 > my_image.tar`, but it also works safely in PowerShell.
+
+**Expected output:** the build finishes with the `test` stage listed (`RUN python -m pytest -v tests`). Docker hides each step's output by default, so to see the individual test results and **`7 passed`**, build with:
+```bash
+docker build --no-cache-filter test --progress=plain -t lab1:v1 .
+```
+(`--progress=plain` prints the full log, and `--no-cache-filter test` re-runs the tests even if the image is cached.) Then `docker run` prints:
+```
+Trained RandomForest with 100 trees, test accuracy 0.9000
+Model saved to /models/model.joblib
+The model training was successful
+```
+
+---
+
+## 6. The quality gate: a build that fails on purpose
+
+Raise the required accuracy above what the model reaches:
+```bash
+docker build --build-arg MIN_ACCURACY=0.99 -t lab1:strict .
+```
+**Expected result:** the build **fails** in the `test` stage with `FAILED tests/test_lab.py::test_model_meets_quality_bar` and `Accuracy 0.9 is below MIN_ACCURACY=0.99`. No `lab1:strict` image is created. This is the point: an image whose model is not good enough is never built.
+
+---
+
+## 7. Train and serve with Docker Compose
+
+```bash
+docker compose up --build -d
+```
+This builds both targets, runs `train`, waits for it to finish, then starts `serve` in the background.
+
+Check the containers:
+```bash
+docker compose ps -a
+docker compose logs train
+```
+`train` shows **`Exited (0)`** and its log ends with `The model training was successful`. After about 15 seconds, `serve` shows **`Up ... (healthy)`**.
+
+Call the API.
+
+**Windows (Command Prompt):**
+```cmd
+curl http://localhost:8000/
+curl http://localhost:8000/health
+curl http://localhost:8000/version
+curl -X POST http://localhost:8000/predict -H "Content-Type: application/json" -d "{\"features\": [5.1, 3.5, 1.4, 0.2]}"
+curl -X POST http://localhost:8000/predict -H "Content-Type: application/json" -d "{\"instances\": [[5.1, 3.5, 1.4, 0.2], [6.7, 3.0, 5.2, 2.3]]}"
+curl -X POST http://localhost:8000/predict -H "Content-Type: application/json" -d "{\"features\": [1, 2]}"
+```
+
+**Mac/Linux:**
+```bash
+curl http://localhost:8000/
+curl http://localhost:8000/health
+curl http://localhost:8000/version
+curl -X POST http://localhost:8000/predict -H "Content-Type: application/json" -d '{"features": [5.1, 3.5, 1.4, 0.2]}'
+curl -X POST http://localhost:8000/predict -H "Content-Type: application/json" -d '{"instances": [[5.1, 3.5, 1.4, 0.2], [6.7, 3.0, 5.2, 2.3]]}'
+curl -X POST http://localhost:8000/predict -H "Content-Type: application/json" -d '{"features": [1, 2]}'
+```
+
+**Expected:** `/version` shows `"n_estimators": 100` and `"test_accuracy": 0.9`. The first prediction is `setosa`, the batch returns `setosa` and `virginica`, and the last call returns an **error message** (`Row 0 must be a list of 4 numbers`) because the input is invalid.
+
+### Retrain without rebuilding
+
+Run the training container again with a different setting, then restart the API so it loads the new model from the volume:
+```bash
+docker compose run --rm -e N_ESTIMATORS=300 train
+docker compose restart serve
+curl http://localhost:8000/version
+```
+`/version` now shows **`"n_estimators": 300`** and a new `trained_at` time. Nothing was rebuilt: the volume carried the new model from one container to the other.
+
+### Inspect what Docker created
+
+```bash
+docker images lab1*
+docker volume ls
+docker inspect --format "{{.State.Health.Status}}" lab1-serve-1
+```
+The last command prints `healthy`. If the container name is different, find it with `docker compose ps`.
+
+---
+
+## 8. What a successful run looks like
+
+| Step | Expected result |
+|------|-----------------|
+| `docker build -t lab1:v1 .` | Image built; with `--progress=plain` the test stage shows **7 passed** |
+| `docker run --rm lab1:v1` | `The model training was successful` |
+| `docker build --build-arg MIN_ACCURACY=0.99 ...` | **Build fails** at `test_model_meets_quality_bar` (expected) |
+| `docker compose up --build -d` | `train` → `Exited (0)`, `serve` → `Up (healthy)` |
+| `POST /predict` | `setosa` for `[5.1, 3.5, 1.4, 0.2]`, `400` error for bad input |
+| Retrain with `N_ESTIMATORS=300` | `/version` shows `300` trees |
+
+### Screenshots
+
+| Description | Screenshot |
 |---|---|
-| COCO 2017 val, all 5,000 photos | Every caption has a real photo and labelled boxes, so we can check whether a generated image shows what the caption names |
-| Captions cleaned for spacing only, wording never changed | Changing even a full stop changes the tokens CLIP reads, and so the image |
-| Center crop to 512 × 512, PNG | Matches Stable Diffusion's output size and format; nothing is stretched |
-| Frozen test split (seed 2026) | Every later setting is scored on the same captions |
-| Separate dev split | Settings are chosen on dev and reported on test, so the test set is never tuned on |
-| Second set of 2,000 real photos | FID is only meaningful beside the score real photos get against other real photos at the same N |
-| Object labels with unclear words excluded and a crop check | "An orange cat" contains no fruit, and an object the crop removed cannot fairly count against the model |
-| Captions encoded one at a time, no attention mask | Exactly how the pipeline encodes a prompt; batching changes the images |
+| Build with the test stage: 7 passed | ![tests](assets/build_tests.png) |
+| Original commands: build, save, run | ![original](assets/original_commands.png) |
+| Quality gate: build fails with MIN_ACCURACY=0.99 | ![gate](assets/quality_gate_fail.png) |
+| Compose: train exited (0), serve healthy | ![compose](assets/compose_ps.png) |
+| API calls: predict, batch and validation error | ![predict](assets/predict.png) |
+| Retrained with 300 trees, no rebuild | ![retrain](assets/retrain.png) |
+| Images and volume | ![images](assets/images_volume.png) |
 
 ---
 
-## Results
+## 9. Clean up
 
-### Milestone 1
-
-| Result | Value |
-|---|---|
-| Images, captions after cleaning | 5,000 · 25,004 (3,832 spacing fixes, 10 duplicates dropped) |
-| Frozen splits | 2,000 test · 500 dev · 2,000 real reference |
-| Test captions with a scorable object | 1,692 of 2,000 (2,291 targets) |
-| Image from cached embeddings vs raw text | mean pixel difference **0.000** |
-| Caption → photo retrieval among 2,000 photos | R@1 46.8%, R@10 84.0% (chance 0.05%) |
-| Samples | 5 captions × 3 seeds beside the real photo: objects usually appear; actions and details often do not |
-
-### Text encoders without training (2,000 test captions)
-
-| Representation | CKA with SD's CLIP | Paraphrase R@1 | Scene 10-NN accuracy |
-|---|---|---|---|
-| CLIP ViT-L/14 (EOS vector) | 0.79 | **34.0%** | **74.5%** |
-| CLIP ViT-L/14 (token mean) | 1.00 | 21.4% | 70.0% |
-| TF-IDF words (baseline) | 0.51 | 20.0% | 64.4% |
-| T5-base | 0.60 | 15.5% | 68.5% |
-| BERT-base | 0.53 | 13.0% | 65.8% |
-| GPT-2 | 0.13 | 3.4% | 56.0% |
-
-Only CLIP beats plain word counting at matching paraphrases; T5 is closer to CLIP than BERT is; GPT-2's mean-pooled vectors are nearly identical for every caption. For connectors: a CLIP connector as the control, BERT, and T5 as a stronger third candidate than GPT-2. The word-order / colour triplet test is **not** used for any decision: as built, it measures sentence structure rather than meaning (see the report, Section 18).
-
-### Re-captioning (100 test photos, one seed; 4 blacked-out images left out)
-
-| | Human | Short | Detailed (cut at 77) | Detailed, fitted |
-|---|---|---|---|---|
-| Photo objects named in the part SD reads (no person) | 54.7% | 62.1% | 71.5% | 74.7% |
-| Similarity of image to real photo (CLIP-I) | 0.704 | 0.709 | 0.716 | 0.718 |
-| Object recall (no person; detector on real photos: 91.5%) | 67.7% | 67.7% | 62.6% | 66.0% |
-| Named-object recall: named, read, drawn (no person) | 88.5% | 88.0% | 76.3% | 72.0% |
-
-**With this sample, longer captions gave no detectable gain**, and fitting the detailed captions to 77 tokens changed no measure detectably. Objects that long captions ask for are drawn less reliably (detailed vs human −12.4 points, 95% range −23.9 to −1.3). CLIPScore drops about 4 points just from scoring against a different caption, so models must always be compared against the same reference captions.
-
-`results/recaptioning/named_read_missing.csv`: 79 objects in 73 images that a caption named, Stable Diffusion read, and the detector did not find (74 where the detector finds the object in the real photo). Columns: `image_id, caption_idx, source, seed, caption, missing_object, detector_found_in_real_photo, image_path`. `image_path` points to the author's Drive; the images can be regenerated from the caption and seed.
+```bash
+docker compose down -v
+docker rmi lab1:v1 lab1-train:v2 lab1-serve:v2
+```
+`-v` also deletes the `model-store` volume. You can delete `my_image.tar` as well.
 
 ---
 
-## Notes and known issues
+## 10. Project structure
 
-- **dev_500 and real_ref_b_2000 currently share 353 photos** (neither shares any photo with the test split). The proposal describes three disjoint sets; the reference set will be redrawn to exclude dev photos so the files match. The test and dev splits do not change.
-- The re-captioning study is a pilot (100 photos, one seed); 300 photos and two seeds would narrow the 95% ranges.
-- Object labels come from a hand-built word table and have not been hand-checked.
-- Large generated-image folders are not committed; they are reproducible from the notebooks.
+```
+Lab1/
+├── Dockerfile            # multi-stage: base -> test -> serve / train
+├── docker-compose.yml    # train then serve, sharing a named volume
+├── .dockerignore         # keeps the build context small
+├── src/
+│   ├── main.py           # training job (original entry point, now configurable)
+│   ├── serve.py          # prediction API
+│   └── requirements.txt  # pinned dependencies
+├── tests/
+│   └── test_lab.py       # 7 tests, run inside the Docker build
+├── assets/               # screenshots for this README
+└── ReadMe.md
+```
 
 ---
 
-## Environment
+## 11. Troubleshooting
 
-Google Colab, Tesla T4, Python 3.13, PyTorch 2.11 (CUDA 13), Diffusers 0.42.1, Transformers 5.22.1. Models: `stable-diffusion-v1-5/stable-diffusion-v1-5`, `openai/clip-vit-large-patch14`, `google-bert/bert-base-uncased`, `google-t5/t5-base`, `openai-community/gpt2`, Florence-2-large, torchvision Faster R-CNN ResNet-50 FPN v2.
+| Problem | Fix |
+|---------|-----|
+| `Cannot connect to the Docker daemon` | Open Docker Desktop and wait for **Engine running**. |
+| Build fails at `test_model_meets_quality_bar` | The model is below `MIN_ACCURACY`. This is intended when you pass a high value. Use the default (0.85). |
+| `serve` keeps restarting | It started before a model existed. Run `docker compose down -v` and then `docker compose up --build -d` so `train` runs first. |
+| `port is already allocated` (8000) | Another program uses port 8000. Stop it, or change `"8000:8000"` to `"8001:8000"` in `docker-compose.yml` and use port 8001. |
+| `curl` errors in PowerShell | Use **Command Prompt**, or type `curl.exe` instead of `curl`. |
+| `serve` shows `(health: starting)` | Wait about 15 seconds; the first health check runs after the start period. |
