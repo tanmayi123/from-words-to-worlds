@@ -1,14 +1,14 @@
-# milestone-1 / exp4: Combined evaluation: image quality, two-judge object recall and word timing under LoRA
+# milestone-1 / exp4: Combined evaluation: image quality, calibrated object judges and word timing under LoRA
 
 **Author:** Tanmayi Shurpali · IE 7615 Deep Learning for AI · Northeastern University
 
-Part of From Words to Worlds. This experiment puts the team's Milestone 1 work into one fair setup: Santhosh's pipeline and commit measure, Praniti's splits, labels and stress prompts, and Mukul's LoRA checkpoints. It adds the pieces the project was missing: image-quality scores against a real-photo floor, two calibrated object judges, LoRA checkpoint selection on the development split, and word timing before and after fine-tuning.
+Part of From Words to Worlds. This experiment puts the team's Milestone 1 work into one fair setup: Santhosh's pipeline and commit measure (exp1), Mukul's LoRA checkpoints (exp2), and Praniti's splits, labels and stress prompts (exp3). It adds the pieces the project was missing: image-quality scores against a real-photo floor, two object judges calibrated on real photos, LoRA checkpoint selection on the development split, and word timing before and after fine-tuning.
 
 ## Folder contents
 
 | Folder | Contents |
 |---|---|
-| `notebooks/` | `Tanmayi_Combined_Experiment.ipynb`, run end to end on a Colab T4 with all outputs saved |
+| `notebooks/` | `Tanmayi_exp.ipynb`: the combined evaluation, run end to end on a Colab T4 with all outputs saved · `Tanmayi_Generative_Project_Milestone1.ipynb`: my initial Milestone 1 run (training subset and text → embedding pipeline) |
 | `results/` | `results.json` (every number), `headline.csv`, object recall per model, `word_timing.csv`, `stress_results.csv`, splits and labels |
 | `samples/` | real vs base vs LoRA image grid, word-timing plots, encoder comparison plots |
 | `reports/` | write-up (to come) |
@@ -27,7 +27,7 @@ Part of From Words to Worlds. This experiment puts the team's Milestone 1 work i
 | Image from cached embeddings vs raw text | mean pixel difference 0.000 |
 | Base model before vs after a LoRA load/unload | 0.000 |
 | Attention recorder vs saved image | 0.000 |
-| Retrieval R@1, 5,000 photos / 2,000 photos | 35.5% / 46.8%, matching Santhosh and Praniti exactly |
+| Retrieval R@1, 5,000 photos / 2,000 photos | 35.5% / 46.8%, matching exp1 and exp3 exactly |
 
 ## Results
 
@@ -45,7 +45,7 @@ Part of From Words to Worlds. This experiment puts the team's Milestone 1 work i
 
 The paired KID difference between LoRA and base is −0.03 [−0.89, +0.94], so **fine-tuning did not measurably change realism**.
 
-**Object recall** (566 named objects; Praniti's labels list the targets):
+**Object recall** (566 named objects; exp3's labels list the targets):
 
 | | Real photos | Base | LoRA | LoRA − base |
 |---|---|---|---|---|
@@ -80,19 +80,35 @@ Both models fail most of these, and the differences are within noise at n = 40.
 
 The original word-order and colour tests failed every encoder because sentence structure confounded them. In the fixed versions (only one word swapped for a synonym), CLIP passes 100% of both. BERT passes 0% on both, and T5 0% (word order) and 2.5% (colour). TF-IDF also scores 0%, because a swapped sentence uses exactly the same words.
 
+## Initial Milestone 1 run: training subset and text → embedding pipeline
+
+`notebooks/Tanmayi_Generative_Project_Milestone1.ipynb` was my individual Milestone 1 run, made before the team combined its work. It builds a cleaned training subset from COCO **train2017**, so it never overlaps the val2017 test photos.
+
+| Step | Result |
+|---|---|
+| Source | COCO train2017: 118,287 images, 591,753 captions |
+| Image rules | short side ≥ 400 px, aspect ratio ≤ 2, corrupt and blank files removed, near-duplicates removed with a 256-bit difference hash |
+| Caption cleaning | Unicode and whitespace normalised, repeated words removed, 5–40 words, within CLIP's 77-token limit, duplicates dropped |
+| CLIP alignment filter | worst-aligned 1% of captions and worst 5% of images dropped (CLIP ViT-L/14 score) |
+| Final subset | **3,000 images, 14,899 captions** (4.97 per image), 512 × 512, split 2,400 / 300 / 300 by image |
+| Text → embedding | 77 × 768 CLIP states, matched to Stable Diffusion's own text encoder; **12 of 12 automated checks passed** |
+| Retrieval on its 300 test photos | text → image R@1 71.6%, R@5 94.5% · image → text R@1 88.0% |
+
+Those retrieval numbers come from a small pool of photos the same CLIP model had already filtered, so they aren't comparable to the 35.5% / 46.8% above. The subset is available for the Milestone 2–3 fine-tuning runs.
+
 ## Takeaways
 
-1. Mukul's LoRA gives a **small, seed-dependent CLIPScore gain** (about +0.4) and slightly better object recall by the strict judge, with **no change in image quality** and **no change in word timing**.
-2. **When a word commits predicts whether its object is drawn** (AUROC about 0.8–0.86) in both models. This supports Milestone 2's plan to measure commit steps at scale.
-3. CLIP is the only encoder that keeps word order and colour binding, so BERT and GPT-2 need a well-trained connector to compete (Milestone 2, exp3).
+1. The LoRA gives a **small, seed-dependent CLIPScore gain** (about +0.4) and slightly better object recall by the strict judge, with **no change in image quality** and **no change in word timing**.
+2. **When a word commits predicts whether its object is drawn** (AUROC about 0.8–0.86) in both models. This supports Milestone 2's plan to measure commit steps on all 2,000 test captions.
+3. CLIP is the only encoder that keeps word order and colour binding, so BERT and GPT-2 need a well-trained connector to compete.
 
 ## Limitations
 
 - `eval_500` was used instead of `eval_2000` (free-T4 budget), with one LoRA training run.
 - The word-timing AUROCs rest on few missing objects.
 - CLIPScore uses the same CLIP that conditions the model; FID/KID and object recall are the independent checks.
-- The CKA bootstrap intervals in the notebook sit above the point estimates (duplicate rows in the resampling bias them upward), so only the point estimates (T5 0.60, BERT 0.53, GPT-2 0.13) should be quoted.
+- The notebook's CKA bootstrap intervals are biased upward, so only the point estimates (T5 0.60, BERT 0.53, GPT-2 0.13) should be quoted.
 
 ## How to run
 
-Open `notebooks/Tanmayi_Combined_Experiment.ipynb` in Colab with a T4 GPU. Put `exp2`'s LoRA checkpoints (or Mukul's `project_2.zip`) in `MyDrive/w2w_tanmayi/inputs/`, then choose *Run all*. A full run takes about 3.5 hours, and every image is saved to Drive as it goes, so it resumes after a disconnect.
+Open `notebooks/Tanmayi_exp.ipynb` in Colab with a T4 GPU. Put the LoRA checkpoints from exp2 (or Mukul's `project_2.zip`) in `MyDrive/w2w_tanmayi/inputs/`, then choose *Run all*. A full run takes about 3.5 hours, and every image is saved to Drive as it goes, so it resumes after a disconnect.
