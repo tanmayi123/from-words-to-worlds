@@ -1,0 +1,7 @@
+{
+  "guidance": 7.5,
+  "steps": 10,
+  "config_id": "ddim-leading-s10-g7.5",
+  "chosen_on": "dev_500",
+  "rules": "see the analysis notebook, section 'Selection rules'"
+}
