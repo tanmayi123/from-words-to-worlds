@@ -1,0 +1,11 @@
+config_id,seed_0,seed_1,seed_2,images,captions,flagged,sec_per_image
+ddim-leading-s30-g7.5,500,200,200,900,500,4,5.45
+dpmpp2m-ays-s10-g7.5,500,100,0,600,500,3,2.0
+dpmpp2m-ays-s30-g7.5,200,0,0,200,200,0,5.43
+dpmpp2m-karras-s10-g7.5,500,100,0,600,500,5,2.0
+dpmpp2m-karras-s30-g7.5,200,0,0,200,200,0,5.45
+dpmpp2m-leading-s10-g7.5,500,200,200,900,500,6,1.99
+dpmpp2m-leading-s30-g7.5,200,0,0,200,200,0,5.45
+dpmpp2m-trailing-s10-g7.5,500,100,0,600,500,5,2.0
+dpmpp2m-trailing-s30-g7.5,200,0,0,200,200,0,5.45
+TOTAL,3300,700,400,4400,,23,
