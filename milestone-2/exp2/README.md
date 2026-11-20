@@ -147,10 +147,6 @@ On Kaggle with a T4 GPU, attach [`../protocol`](../protocol) and [`../splits`](.
 | Connector training and samples | 12–16 | — | ~1 h |
 | Zip results (without images) | 17 | — | — |
 
-## Not in the repo
-
-The ~4,400 generated images, the connector weights (`connector_best.pt`, 149 MB, over GitHub's 100 MB limit) and the feature arrays used for KID and FID are on Google Drive. The notebook regenerates the images from the captions and seeds in `m2/images.csv`.
-
 ## Limitations
 
 - **One seed for the schedule comparison.** The KID gaps for trailing and AYS rest on seed 0 only. Seeds 1–2 cover just the anchor and leading-10.
