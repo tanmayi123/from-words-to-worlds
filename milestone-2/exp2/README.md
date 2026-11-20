@@ -1,4 +1,4 @@
-# milestone-2 / exp2: How few steps does Stable Diffusion need, and can BERT replace CLIP?
+# milestone-2 / exp2
 
 **Author:** Mukul Sridar Haladhi · IE 7615 Deep Learning for AI · Northeastern University
 
