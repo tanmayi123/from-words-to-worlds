@@ -1,0 +1,280 @@
+{
+  "settings": {
+    "split": "dev_500",
+    "first": 200,
+    "config_id": "ddim-leading-s30-g7.5",
+    "seed_id": 1,
+    "steps": 30,
+    "commit_r": 0.8,
+    "thresholds": [
+      0.7,
+      0.8,
+      0.9
+    ],
+    "early_steps": 3,
+    "frcnn_th": 0.5,
+    "owl_th": 0.1,
+    "pilot_present_th": 0.5,
+    "pilot_missing_th": 0.3,
+    "bootstrap": 2000,
+    "bootstrap_seed": 0,
+    "protocol_sha": "8b9a21852c0f",
+    "script_sha": "36b6accfe29d"
+  },
+  "captions": 200,
+  "flagged_images": 2,
+  "objects": 221,
+  "objects_in_flagged_images": 2,
+  "rows_painted_before": 0,
+  "primary_population": {
+    "captions": 167,
+    "objects": 219
+  },
+  "judge_counts": {
+    "present": 205,
+    "missing": 14
+  },
+  "missing_rate": 0.0639,
+  "median_commit": {
+    "missing": 17.0,
+    "present": 7.0
+  },
+  "median_commit_timestep": {
+    "missing": 397.0,
+    "present": 727.0
+  },
+  "never_settles": {
+    "missing": 0,
+    "present": 0
+  },
+  "missing_rate_by_commit_step": {
+    "0": 0.0,
+    "1": 0.0,
+    "2": 0.0,
+    "3": 0.0,
+    "4": 0.0,
+    "5": 0.0,
+    "6": 0.0,
+    "7": 0.0909,
+    "8": 0.0833,
+    "9": 0.1,
+    "10": 0.0,
+    "11": 0.0,
+    "12": 0.0,
+    "13": 0.0,
+    "14": 0.0,
+    "15": 0.0,
+    "16": 0.4286,
+    "17": 0.3,
+    "18": 0.2143,
+    "19": 0.1111,
+    "20": 0.0,
+    "21": 0.0,
+    "22": 0.0
+  },
+  "missing_by_class": {
+    "train": 1,
+    "bench": 1,
+    "banana": 1,
+    "bird": 1,
+    "stop sign": 1,
+    "umbrella": 1,
+    "frisbee": 1,
+    "cat": 1,
+    "donut": 1,
+    "motorcycle": 1,
+    "person": 1,
+    "sink": 1,
+    "suitcase": 1,
+    "car": 1
+  },
+  "primary": {
+    "auroc": 0.734,
+    "ci95": [
+      0.653,
+      0.809
+    ],
+    "within_class_auroc": 0.735,
+    "within_class_ci95": [
+      0.608,
+      1.0
+    ],
+    "n_present": 205,
+    "n_missing": 14,
+    "n_captions": 167,
+    "verdict": "TOO_FEW",
+    "label": "primary: commit r>=0.8, group judges"
+  },
+  "secondary": {
+    "auroc": 0.572,
+    "ci95": [
+      0.446,
+      0.701
+    ],
+    "within_class_auroc": 0.725,
+    "within_class_ci95": [
+      0.364,
+      0.898
+    ],
+    "n_present": 205,
+    "n_missing": 14,
+    "n_captions": 167,
+    "verdict": "TOO_FEW",
+    "label": "secondary: early share, group judges"
+  },
+  "sensitivity": [
+    {
+      "auroc": 0.734,
+      "ci95": [
+        0.653,
+        0.809
+      ],
+      "within_class_auroc": 0.735,
+      "within_class_ci95": [
+        0.608,
+        1.0
+      ],
+      "n_present": 205,
+      "n_missing": 14,
+      "n_captions": 167,
+      "verdict": "TOO_FEW",
+      "label": "all captions, including those painted before"
+    },
+    {
+      "auroc": 0.677,
+      "ci95": [
+        0.6,
+        0.751
+      ],
+      "within_class_auroc": 0.9,
+      "within_class_ci95": [
+        0.6,
+        1.0
+      ],
+      "n_present": 198,
+      "n_missing": 17,
+      "n_captions": 166,
+      "verdict": "TOO_FEW",
+      "label": "pilot 4's judges (Faster R-CNN, RetinaNet)"
+    },
+    {
+      "auroc": 0.643,
+      "ci95": [
+        0.544,
+        0.732
+      ],
+      "within_class_auroc": 0.704,
+      "within_class_ci95": [
+        0.521,
+        0.95
+      ],
+      "n_present": 196,
+      "n_missing": 23,
+      "n_captions": 167,
+      "verdict": "TOO_FEW",
+      "label": "Faster R-CNN alone"
+    },
+    {
+      "auroc": 0.741,
+      "ci95": [
+        0.663,
+        0.812
+      ],
+      "within_class_auroc": 0.742,
+      "within_class_ci95": [
+        0.608,
+        1.0
+      ],
+      "n_present": 189,
+      "n_missing": 14,
+      "n_captions": 160,
+      "verdict": "TOO_FEW",
+      "label": "both judges agree"
+    },
+    {
+      "auroc": 0.752,
+      "ci95": [
+        0.668,
+        0.829
+      ],
+      "within_class_auroc": 0.794,
+      "within_class_ci95": [
+        0.678,
+        1.0
+      ],
+      "n_present": 205,
+      "n_missing": 14,
+      "n_captions": 167,
+      "verdict": "TOO_FEW",
+      "label": "commit r>=0.7"
+    },
+    {
+      "auroc": 0.738,
+      "ci95": [
+        0.658,
+        0.811
+      ],
+      "within_class_auroc": 0.76,
+      "within_class_ci95": [
+        0.646,
+        1.0
+      ],
+      "n_present": 205,
+      "n_missing": 14,
+      "n_captions": 167,
+      "verdict": "TOO_FEW",
+      "label": "commit r>=0.9"
+    },
+    {
+      "auroc": 0.92,
+      "ci95": [
+        0.857,
+        0.967
+      ],
+      "within_class_auroc": 0.95,
+      "within_class_ci95": [
+        0.714,
+        1.0
+      ],
+      "n_present": 133,
+      "n_missing": 13,
+      "n_captions": 126,
+      "verdict": "TOO_FEW",
+      "label": "without person"
+    },
+    {
+      "auroc": 0.686,
+      "ci95": [
+        0.591,
+        0.778
+      ],
+      "within_class_auroc": 0.733,
+      "within_class_ci95": [
+        0.617,
+        1.0
+      ],
+      "n_present": 156,
+      "n_missing": 11,
+      "n_captions": 167,
+      "verdict": "TOO_FEW",
+      "label": "first object of each caption only"
+    },
+    {
+      "auroc": 0.734,
+      "ci95": [
+        0.653,
+        0.809
+      ],
+      "within_class_auroc": 0.735,
+      "within_class_ci95": [
+        0.654,
+        0.811
+      ],
+      "n_present": 205,
+      "n_missing": 14,
+      "n_captions": 167,
+      "verdict": "TOO_FEW",
+      "label": "within object-size thirds"
+    }
+  ]
+}

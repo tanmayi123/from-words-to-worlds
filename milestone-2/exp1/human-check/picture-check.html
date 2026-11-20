@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+</head>
+<body>
+<title>Picture Check</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;600&display=swap">
+<style>
+/* Layout: one picture, one question, three large answers; a thin progress line on top. */
+:root {
+  --bg: #f6f7f9; --card: #ffffff; --fg: #14181f; --muted: #5b6472; --line: #dfe3ea;
+  --accent: #2456c9; --yes: #1d7a4d; --no: #b3372f; --unsure: #6a5f1e;
+  --display: "Space Grotesk", system-ui, sans-serif; --body: "Inter", system-ui, sans-serif;
+}
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) {
+  --bg: #11141a; --card: #1a1f28; --fg: #eef1f6; --muted: #9aa4b4; --line: #2c3340;
+  --accent: #8fb0ff; --yes: #58c48e; --no: #f0857d; --unsure: #d9c96a; color-scheme: dark } }
+:root[data-theme="dark"] {
+  --bg: #11141a; --card: #1a1f28; --fg: #eef1f6; --muted: #9aa4b4; --line: #2c3340;
+  --accent: #8fb0ff; --yes: #58c48e; --no: #f0857d; --unsure: #d9c96a; color-scheme: dark }
+body { background: var(--bg); color: var(--fg); font-family: var(--body); font-size: 16px; line-height: 1.5;
+  padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px));
+  padding-block: 20px 40px; }
+main { max-width: 560px; margin: 0 auto; display: flex; flex-direction: column; gap: 16px; }
+h1 { font-family: var(--display); font-size: 1.5rem; font-weight: 600; margin: 0; text-wrap: balance; }
+p { margin: 0; color: var(--muted); }
+.names, .answers { display: grid; gap: 10px; }
+.names { grid-template-columns: 1fr 1fr; }
+.answers { grid-template-columns: 1fr 1fr 1fr; }
+button { font: inherit; font-weight: 600; padding: 14px 10px; border-radius: 10px; border: 1.5px solid var(--line);
+  background: var(--card); color: var(--fg); cursor: pointer; }
+button:focus-visible { outline: 3px solid var(--accent); outline-offset: 2px; }
+button.yes { border-color: var(--yes); color: var(--yes); }
+button.no { border-color: var(--no); color: var(--no); }
+button.unsure { border-color: var(--unsure); color: var(--unsure); }
+button.picked { background: var(--fg); color: var(--bg); border-color: var(--fg); }
+.question { font-family: var(--display); font-size: 1.25rem; font-weight: 600; color: var(--fg); text-wrap: balance; }
+.question b { color: var(--accent); }
+.frame { background: var(--card); border: 1px solid var(--line); border-radius: 12px; overflow: hidden; }
+.frame img { display: block; width: 100%; aspect-ratio: 1; object-fit: contain; }
+.bar { height: 6px; background: var(--line); border-radius: 3px; overflow: hidden; }
+.bar i { display: block; height: 100%; background: var(--accent); width: 0; }
+.row { display: flex; justify-content: space-between; align-items: center; gap: 12px; font-size: 0.875rem; color: var(--muted);
+  font-variant-numeric: tabular-nums; }
+.link { border: 0; background: none; color: var(--accent); padding: 6px 0; font-weight: 500; }
+textarea { width: 100%; min-height: 150px; font: 13px/1.4 ui-monospace, monospace; padding: 10px; border-radius: 10px;
+  border: 1px solid var(--line); background: var(--card); color: var(--fg); box-sizing: border-box; }
+ul { margin: 0; padding-left: 1.2em; color: var(--muted); }
+</style>
+<main>
+  <section id="start">
+    <h1>Picture Check</h1>
+    <p style="margin:10px 0 14px">You'll see 120 generated pictures, one at a time, each with one question. About 15 minutes. Your progress is saved on this device.</p>
+    <ul style="margin-bottom:16px">
+      <li><b>Yes</b> if the object is clearly there, even small or partly hidden.</li>
+      <li><b>No</b> if it isn't there.</li>
+      <li><b>Can't tell</b> if it's a blob, a pattern, or you really aren't sure.</li>
+      <li>Answer for the exact object named. A truck, bus or van is not a car, and a cow is not a horse: say <b>No</b>. If you can't tell which one it is, say <b>Can't tell</b>.</li>
+      <li>Go with your first look. Please don't compare answers with each other.</li>
+    </ul>
+    <p style="margin-bottom:10px;color:var(--fg);font-weight:600">Who are you?</p>
+    <div class="names" id="names"></div>
+  </section>
+  <section id="check" hidden>
+    <div class="bar"><i id="fill"></i></div>
+    <div class="row"><span id="count"></span><button class="link" id="back" type="button">Back one</button></div>
+    <div class="question" id="q"></div>
+    <div class="frame"><img id="pic" alt="Generated picture to check"></div>
+    <div class="answers">
+      <button class="yes" type="button" data-a="y" id="ans-y">Yes</button>
+      <button class="no" type="button" data-a="n" id="ans-n">No</button>
+      <button class="unsure" type="button" data-a="u" id="ans-u">Can't tell</button>
+    </div>
+    <p style="font-size:0.8125rem">Answer for the exact object named: a truck or bus is not a car. On a keyboard: Y, N or U.</p>
+  </section>
+  <section id="done" hidden>
+    <h1>Done. Thank you.</h1>
+    <p style="margin:10px 0 14px">Copy your answers and send them to Santhosh on WhatsApp.</p>
+    <textarea id="out" readonly aria-label="Your answers"></textarea>
+    <div class="row" style="margin-top:10px"><button type="button" id="copy">Copy my answers</button><span id="copied"></span></div>
+    <button class="link" type="button" id="review">Go back and change an answer</button>
+  </section>
+</main>
+<script>
+const ITEMS = [{"id": "p000", "object": "cat", "img": "img/p000.jpg"}, {"id": "p001", "object": "person", "img": "img/p001.jpg"}, {"id": "p002", "object": "bus", "img": "img/p002.jpg"}, {"id": "p003", "object": "zebra", "img": "img/p003.jpg"}, {"id": "p004", "object": "person", "img": "img/p004.jpg"}, {"id": "p005", "object": "person", "img": "img/p005.jpg"}, {"id": "p006", "object": "car", "img": "img/p006.jpg"}, {"id": "p007", "object": "person", "img": "img/p007.jpg"}, {"id": "p008", "object": "kite", "img": "img/p008.jpg"}, {"id": "p009", "object": "truck", "img": "img/p009.jpg"}, {"id": "p010", "object": "airplane", "img": "img/p010.jpg"}, {"id": "p011", "object": "person", "img": "img/p011.jpg"}, {"id": "p012", "object": "clock", "img": "img/p012.jpg"}, {"id": "p013", "object": "airplane", "img": "img/p013.jpg"}, {"id": "p014", "object": "person", "img": "img/p014.jpg"}, {"id": "p015", "object": "toilet", "img": "img/p015.jpg"}, {"id": "p016", "object": "frisbee", "img": "img/p016.jpg"}, {"id": "p017", "object": "person", "img": "img/p017.jpg"}, {"id": "p018", "object": "truck", "img": "img/p018.jpg"}, {"id": "p019", "object": "person", "img": "img/p019.jpg"}, {"id": "p020", "object": "person", "img": "img/p020.jpg"}, {"id": "p021", "object": "person", "img": "img/p021.jpg"}, {"id": "p022", "object": "bottle", "img": "img/p022.jpg"}, {"id": "p023", "object": "laptop", "img": "img/p023.jpg"}, {"id": "p024", "object": "pizza", "img": "img/p024.jpg"}, {"id": "p025", "object": "person", "img": "img/p025.jpg"}, {"id": "p026", "object": "cow", "img": "img/p026.jpg"}, {"id": "p027", "object": "sports ball", "img": "img/p027.jpg"}, {"id": "p028", "object": "hot dog", "img": "img/p028.jpg"}, {"id": "p029", "object": "person", "img": "img/p029.jpg"}, {"id": "p030", "object": "laptop", "img": "img/p030.jpg"}, {"id": "p031", "object": "person", "img": "img/p031.jpg"}, {"id": "p032", "object": "hot dog", "img": "img/p032.jpg"}, {"id": "p033", "object": "parking meter", "img": "img/p033.jpg"}, {"id": "p034", "object": "dog", "img": "img/p034.jpg"}, {"id": "p035", "object": "car", "img": "img/p035.jpg"}, {"id": "p036", "object": "cell phone", "img": "img/p036.jpg"}, {"id": "p037", "object": "refrigerator", "img": "img/p037.jpg"}, {"id": "p038", "object": "cell phone", "img": "img/p038.jpg"}, {"id": "p039", "object": "person", "img": "img/p039.jpg"}, {"id": "p040", "object": "scissors", "img": "img/p040.jpg"}, {"id": "p041", "object": "person", "img": "img/p041.jpg"}, {"id": "p042", "object": "person", "img": "img/p042.jpg"}, {"id": "p043", "object": "bowl", "img": "img/p043.jpg"}, {"id": "p044", "object": "person", "img": "img/p044.jpg"}, {"id": "p045", "object": "person", "img": "img/p045.jpg"}, {"id": "p046", "object": "refrigerator", "img": "img/p046.jpg"}, {"id": "p047", "object": "person", "img": "img/p047.jpg"}, {"id": "p048", "object": "person", "img": "img/p048.jpg"}, {"id": "p049", "object": "hot dog", "img": "img/p049.jpg"}, {"id": "p050", "object": "person", "img": "img/p050.jpg"}, {"id": "p051", "object": "car", "img": "img/p051.jpg"}, {"id": "p052", "object": "spoon", "img": "img/p052.jpg"}, {"id": "p053", "object": "bus", "img": "img/p053.jpg"}, {"id": "p054", "object": "cup", "img": "img/p054.jpg"}, {"id": "p055", "object": "cake", "img": "img/p055.jpg"}, {"id": "p056", "object": "person", "img": "img/p056.jpg"}, {"id": "p057", "object": "skis", "img": "img/p057.jpg"}, {"id": "p058", "object": "umbrella", "img": "img/p058.jpg"}, {"id": "p059", "object": "fork", "img": "img/p059.jpg"}, {"id": "p060", "object": "umbrella", "img": "img/p060.jpg"}, {"id": "p061", "object": "cup", "img": "img/p061.jpg"}, {"id": "p062", "object": "person", "img": "img/p062.jpg"}, {"id": "p063", "object": "person", "img": "img/p063.jpg"}, {"id": "p064", "object": "person", "img": "img/p064.jpg"}, {"id": "p065", "object": "cup", "img": "img/p065.jpg"}, {"id": "p066", "object": "person", "img": "img/p066.jpg"}, {"id": "p067", "object": "person", "img": "img/p067.jpg"}, {"id": "p068", "object": "horse", "img": "img/p068.jpg"}, {"id": "p069", "object": "tv", "img": "img/p069.jpg"}, {"id": "p070", "object": "suitcase", "img": "img/p070.jpg"}, {"id": "p071", "object": "bird", "img": "img/p071.jpg"}, {"id": "p072", "object": "couch", "img": "img/p072.jpg"}, {"id": "p073", "object": "person", "img": "img/p073.jpg"}, {"id": "p074", "object": "bowl", "img": "img/p074.jpg"}, {"id": "p075", "object": "umbrella", "img": "img/p075.jpg"}, {"id": "p076", "object": "cell phone", "img": "img/p076.jpg"}, {"id": "p077", "object": "person", "img": "img/p077.jpg"}, {"id": "p078", "object": "person", "img": "img/p078.jpg"}, {"id": "p079", "object": "spoon", "img": "img/p079.jpg"}, {"id": "p080", "object": "bottle", "img": "img/p080.jpg"}, {"id": "p081", "object": "surfboard", "img": "img/p081.jpg"}, {"id": "p082", "object": "bus", "img": "img/p082.jpg"}, {"id": "p083", "object": "person", "img": "img/p083.jpg"}, {"id": "p084", "object": "person", "img": "img/p084.jpg"}, {"id": "p085", "object": "sheep", "img": "img/p085.jpg"}, {"id": "p086", "object": "person", "img": "img/p086.jpg"}, {"id": "p087", "object": "person", "img": "img/p087.jpg"}, {"id": "p088", "object": "person", "img": "img/p088.jpg"}, {"id": "p089", "object": "laptop", "img": "img/p089.jpg"}, {"id": "p090", "object": "car", "img": "img/p090.jpg"}, {"id": "p091", "object": "chair", "img": "img/p091.jpg"}, {"id": "p092", "object": "person", "img": "img/p092.jpg"}, {"id": "p093", "object": "cell phone", "img": "img/p093.jpg"}, {"id": "p094", "object": "person", "img": "img/p094.jpg"}, {"id": "p095", "object": "suitcase", "img": "img/p095.jpg"}, {"id": "p096", "object": "spoon", "img": "img/p096.jpg"}, {"id": "p097", "object": "person", "img": "img/p097.jpg"}, {"id": "p098", "object": "person", "img": "img/p098.jpg"}, {"id": "p099", "object": "traffic light", "img": "img/p099.jpg"}, {"id": "p100", "object": "car", "img": "img/p100.jpg"}, {"id": "p101", "object": "airplane", "img": "img/p101.jpg"}, {"id": "p102", "object": "elephant", "img": "img/p102.jpg"}, {"id": "p103", "object": "cat", "img": "img/p103.jpg"}, {"id": "p104", "object": "book", "img": "img/p104.jpg"}, {"id": "p105", "object": "chair", "img": "img/p105.jpg"}, {"id": "p106", "object": "cat", "img": "img/p106.jpg"}, {"id": "p107", "object": "zebra", "img": "img/p107.jpg"}, {"id": "p108", "object": "person", "img": "img/p108.jpg"}, {"id": "p109", "object": "skateboard", "img": "img/p109.jpg"}, {"id": "p110", "object": "person", "img": "img/p110.jpg"}, {"id": "p111", "object": "person", "img": "img/p111.jpg"}, {"id": "p112", "object": "car", "img": "img/p112.jpg"}, {"id": "p113", "object": "person", "img": "img/p113.jpg"}, {"id": "p114", "object": "person", "img": "img/p114.jpg"}, {"id": "p115", "object": "bird", "img": "img/p115.jpg"}, {"id": "p116", "object": "bed", "img": "img/p116.jpg"}, {"id": "p117", "object": "person", "img": "img/p117.jpg"}, {"id": "p118", "object": "dog", "img": "img/p118.jpg"}, {"id": "p119", "object": "person", "img": "img/p119.jpg"}, {"id": "p120", "object": "person", "img": "img/p120.jpg"}, {"id": "p121", "object": "kite", "img": "img/p121.jpg"}, {"id": "p122", "object": "airplane", "img": "img/p122.jpg"}, {"id": "p123", "object": "truck", "img": "img/p123.jpg"}, {"id": "p124", "object": "bear", "img": "img/p124.jpg"}, {"id": "p125", "object": "hot dog", "img": "img/p125.jpg"}, {"id": "p126", "object": "person", "img": "img/p126.jpg"}, {"id": "p127", "object": "person", "img": "img/p127.jpg"}, {"id": "p128", "object": "bench", "img": "img/p128.jpg"}, {"id": "p129", "object": "bed", "img": "img/p129.jpg"}, {"id": "p130", "object": "car", "img": "img/p130.jpg"}, {"id": "p131", "object": "bird", "img": "img/p131.jpg"}, {"id": "p132", "object": "bottle", "img": "img/p132.jpg"}, {"id": "p133", "object": "clock", "img": "img/p133.jpg"}, {"id": "p134", "object": "knife", "img": "img/p134.jpg"}, {"id": "p135", "object": "person", "img": "img/p135.jpg"}, {"id": "p136", "object": "umbrella", "img": "img/p136.jpg"}, {"id": "p137", "object": "car", "img": "img/p137.jpg"}, {"id": "p138", "object": "person", "img": "img/p138.jpg"}, {"id": "p139", "object": "toilet", "img": "img/p139.jpg"}, {"id": "p140", "object": "clock", "img": "img/p140.jpg"}, {"id": "p141", "object": "dog", "img": "img/p141.jpg"}, {"id": "p142", "object": "bench", "img": "img/p142.jpg"}, {"id": "p143", "object": "person", "img": "img/p143.jpg"}, {"id": "p144", "object": "person", "img": "img/p144.jpg"}, {"id": "p145", "object": "cell phone", "img": "img/p145.jpg"}, {"id": "p146", "object": "person", "img": "img/p146.jpg"}, {"id": "p147", "object": "person", "img": "img/p147.jpg"}, {"id": "p148", "object": "person", "img": "img/p148.jpg"}, {"id": "p149", "object": "elephant", "img": "img/p149.jpg"}, {"id": "p150", "object": "bottle", "img": "img/p150.jpg"}, {"id": "p151", "object": "zebra", "img": "img/p151.jpg"}, {"id": "p152", "object": "traffic light", "img": "img/p152.jpg"}, {"id": "p153", "object": "person", "img": "img/p153.jpg"}, {"id": "p154", "object": "person", "img": "img/p154.jpg"}, {"id": "p155", "object": "person", "img": "img/p155.jpg"}, {"id": "p156", "object": "suitcase", "img": "img/p156.jpg"}, {"id": "p157", "object": "sink", "img": "img/p157.jpg"}, {"id": "p158", "object": "car", "img": "img/p158.jpg"}, {"id": "p159", "object": "person", "img": "img/p159.jpg"}, {"id": "p160", "object": "suitcase", "img": "img/p160.jpg"}, {"id": "p161", "object": "person", "img": "img/p161.jpg"}, {"id": "p162", "object": "knife", "img": "img/p162.jpg"}, {"id": "p163", "object": "person", "img": "img/p163.jpg"}, {"id": "p164", "object": "baseball bat", "img": "img/p164.jpg"}, {"id": "p165", "object": "bird", "img": "img/p165.jpg"}, {"id": "p166", "object": "person", "img": "img/p166.jpg"}, {"id": "p167", "object": "laptop", "img": "img/p167.jpg"}, {"id": "p168", "object": "bear", "img": "img/p168.jpg"}, {"id": "p169", "object": "sheep", "img": "img/p169.jpg"}, {"id": "p170", "object": "bowl", "img": "img/p170.jpg"}, {"id": "p171", "object": "umbrella", "img": "img/p171.jpg"}, {"id": "p172", "object": "chair", "img": "img/p172.jpg"}, {"id": "p173", "object": "train", "img": "img/p173.jpg"}, {"id": "p174", "object": "bird", "img": "img/p174.jpg"}, {"id": "p175", "object": "bird", "img": "img/p175.jpg"}, {"id": "p176", "object": "bowl", "img": "img/p176.jpg"}, {"id": "p177", "object": "dog", "img": "img/p177.jpg"}, {"id": "p178", "object": "person", "img": "img/p178.jpg"}, {"id": "p179", "object": "laptop", "img": "img/p179.jpg"}, {"id": "p180", "object": "truck", "img": "img/p180.jpg"}, {"id": "p181", "object": "bowl", "img": "img/p181.jpg"}, {"id": "p182", "object": "bear", "img": "img/p182.jpg"}, {"id": "p183", "object": "banana", "img": "img/p183.jpg"}, {"id": "p184", "object": "car", "img": "img/p184.jpg"}, {"id": "p185", "object": "motorcycle", "img": "img/p185.jpg"}, {"id": "p186", "object": "person", "img": "img/p186.jpg"}, {"id": "p187", "object": "umbrella", "img": "img/p187.jpg"}, {"id": "p188", "object": "cell phone", "img": "img/p188.jpg"}, {"id": "p189", "object": "banana", "img": "img/p189.jpg"}, {"id": "p190", "object": "train", "img": "img/p190.jpg"}, {"id": "p191", "object": "person", "img": "img/p191.jpg"}, {"id": "p192", "object": "person", "img": "img/p192.jpg"}, {"id": "p193", "object": "cup", "img": "img/p193.jpg"}, {"id": "p194", "object": "bottle", "img": "img/p194.jpg"}, {"id": "p195", "object": "tv", "img": "img/p195.jpg"}, {"id": "p196", "object": "boat", "img": "img/p196.jpg"}, {"id": "p197", "object": "bowl", "img": "img/p197.jpg"}, {"id": "p198", "object": "umbrella", "img": "img/p198.jpg"}, {"id": "p199", "object": "hot dog", "img": "img/p199.jpg"}, {"id": "p200", "object": "toilet", "img": "img/p200.jpg"}, {"id": "p201", "object": "person", "img": "img/p201.jpg"}, {"id": "p202", "object": "person", "img": "img/p202.jpg"}, {"id": "p203", "object": "person", "img": "img/p203.jpg"}, {"id": "p204", "object": "teddy bear", "img": "img/p204.jpg"}, {"id": "p205", "object": "person", "img": "img/p205.jpg"}, {"id": "p206", "object": "person", "img": "img/p206.jpg"}, {"id": "p207", "object": "person", "img": "img/p207.jpg"}, {"id": "p208", "object": "person", "img": "img/p208.jpg"}, {"id": "p209", "object": "truck", "img": "img/p209.jpg"}, {"id": "p210", "object": "person", "img": "img/p210.jpg"}, {"id": "p211", "object": "train", "img": "img/p211.jpg"}, {"id": "p212", "object": "person", "img": "img/p212.jpg"}, {"id": "p213", "object": "bus", "img": "img/p213.jpg"}, {"id": "p214", "object": "person", "img": "img/p214.jpg"}, {"id": "p215", "object": "bus", "img": "img/p215.jpg"}, {"id": "p216", "object": "person", "img": "img/p216.jpg"}, {"id": "p217", "object": "bird", "img": "img/p217.jpg"}, {"id": "p218", "object": "person", "img": "img/p218.jpg"}, {"id": "p219", "object": "surfboard", "img": "img/p219.jpg"}, {"id": "p220", "object": "traffic light", "img": "img/p220.jpg"}, {"id": "p221", "object": "person", "img": "img/p221.jpg"}, {"id": "p222", "object": "person", "img": "img/p222.jpg"}, {"id": "p223", "object": "cow", "img": "img/p223.jpg"}, {"id": "p224", "object": "tennis racket", "img": "img/p224.jpg"}, {"id": "p225", "object": "parking meter", "img": "img/p225.jpg"}, {"id": "p226", "object": "laptop", "img": "img/p226.jpg"}, {"id": "p227", "object": "person", "img": "img/p227.jpg"}, {"id": "p228", "object": "knife", "img": "img/p228.jpg"}, {"id": "p229", "object": "person", "img": "img/p229.jpg"}, {"id": "p230", "object": "refrigerator", "img": "img/p230.jpg"}, {"id": "p231", "object": "bear", "img": "img/p231.jpg"}, {"id": "p232", "object": "bench", "img": "img/p232.jpg"}, {"id": "p233", "object": "banana", "img": "img/p233.jpg"}, {"id": "p234", "object": "car", "img": "img/p234.jpg"}, {"id": "p235", "object": "cow", "img": "img/p235.jpg"}, {"id": "p236", "object": "skis", "img": "img/p236.jpg"}, {"id": "p237", "object": "bird", "img": "img/p237.jpg"}, {"id": "p238", "object": "teddy bear", "img": "img/p238.jpg"}, {"id": "p239", "object": "person", "img": "img/p239.jpg"}];
+const RATERS = ["Santhosh", "Tanmayi", "Praniti", "Mukul"];
+const store = {
+  get(k) { try { return JSON.parse(localStorage.getItem(k)); } catch (e) { return null; } },
+  set(k, v) { try { localStorage.setItem(k, JSON.stringify(v)); } catch (e) {} }
+};
+let rater = store.get("pc_rater"), answers = {}, mine = [], at = 0;
+const $ = id => document.getElementById(id);
+
+// each picture goes to two of the four people; each person gets 120
+function assigned(r) { return ITEMS.filter((_, i) => i % 4 === r || (i + 1) % 4 === r); }
+
+function begin(name) {
+  rater = name; store.set("pc_rater", name);
+  mine = assigned(RATERS.indexOf(name));
+  answers = store.get("pc_answers_" + name) || {};
+  at = mine.findIndex(it => !answers[it.id]);
+  $("start").hidden = true;
+  if (at < 0) finish(); else show();
+}
+function show() {
+  $("done").hidden = true; $("check").hidden = false;
+  const it = mine[at], n = Object.keys(answers).length;
+  $("q").innerHTML = "Is there a <b></b> in this picture?";
+  $("q").querySelector("b").textContent = it.object;
+  $("pic").src = it.img;
+  $("count").textContent = (at + 1) + " of " + mine.length;
+  $("fill").style.width = (100 * n / mine.length) + "%";
+  for (const a of ["y", "n", "u"]) $("ans-" + a).classList.toggle("picked", answers[it.id] === a);
+  const next = mine[at + 1]; if (next) new Image().src = next.img;
+}
+function answer(a) {
+  answers[mine[at].id] = a; store.set("pc_answers_" + rater, answers);
+  const nxt = mine.findIndex((it, i) => i > at && !answers[it.id]);
+  if (nxt >= 0) { at = nxt; show(); }
+  else if (mine.every(it => answers[it.id])) finish();
+  else { at = mine.findIndex(it => !answers[it.id]); show(); }
+}
+function finish() {
+  $("check").hidden = true; $("done").hidden = false;
+  $("out").value = "PICTURE-CHECK " + rater + " " + mine.map(it => it.id.slice(1) + answers[it.id]).join(" ");
+}
+RATERS.forEach(name => {
+  const b = document.createElement("button"); b.type = "button"; b.textContent = name;
+  if (name === rater) b.classList.add("picked");
+  b.addEventListener("click", () => begin(name)); $("names").appendChild(b);
+});
+document.querySelectorAll("[data-a]").forEach(b => b.addEventListener("click", () => answer(b.dataset.a)));
+$("back").addEventListener("click", () => { if (at > 0) { at--; show(); } });
+$("review").addEventListener("click", () => { at = mine.length - 1; show(); });
+$("copy").addEventListener("click", async () => {
+  try { await navigator.clipboard.writeText($("out").value); $("copied").textContent = "Copied"; }
+  catch (e) { $("out").focus(); $("out").select(); $("copied").textContent = "Select all and copy"; }
+});
+document.addEventListener("keydown", e => {
+  if ($("check").hidden) return;
+  const k = e.key.toLowerCase(); if (k === "y" || k === "n" || k === "u") answer(k);
+});
+</script>
+
+</body>
+</html>

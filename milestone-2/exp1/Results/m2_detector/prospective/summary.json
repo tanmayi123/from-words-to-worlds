@@ -1,0 +1,242 @@
+{
+  "settings": {
+    "split": "eval_2000",
+    "config_id": "ddim-leading-s30-g7.5",
+    "parts": {
+      "development": {
+        "rows": [
+          0,
+          1000
+        ],
+        "seed_ids": [
+          0,
+          1,
+          2
+        ]
+      },
+      "prospective": {
+        "rows": [
+          1000,
+          2000
+        ],
+        "seed_ids": [
+          3,
+          4,
+          5
+        ]
+      }
+    },
+    "decision_steps": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      6,
+      8,
+      10,
+      12,
+      15,
+      20
+    ],
+    "families": {
+      "prompt": [
+        "prompt"
+      ],
+      "attention": [
+        "attention"
+      ],
+      "preview": [
+        "preview"
+      ],
+      "draft": [
+        "draft"
+      ],
+      "prompt+attention": [
+        "prompt",
+        "attention"
+      ],
+      "prompt+preview": [
+        "prompt",
+        "preview"
+      ],
+      "prompt+draft": [
+        "prompt",
+        "draft"
+      ],
+      "full": [
+        "prompt",
+        "attention",
+        "preview"
+      ],
+      "everything": [
+        "prompt",
+        "attention",
+        "preview",
+        "draft"
+      ]
+    },
+    "secondary": "full, boosted trees",
+    "folds": 5,
+    "fold_seed": 0,
+    "bootstrap": 2000,
+    "bootstrap_seed": 0,
+    "flag_share": 0.1,
+    "sklearn": "1.9.1",
+    "protocol_sha": "8b9a21852c0f",
+    "script_sha": "ddb1963022da",
+    "preregistration": "docs/m2_detector_preregistration.md"
+  },
+  "lock": {
+    "locked_at": "2026-11-20 15:12:35 UTC",
+    "models_sha256": "c6770b37fbdd57cad2af9113fa5cb3a9b9cb646c4bfc77d88e14ed56aea949f6"
+  },
+  "runs_logged": 1,
+  "rows": 3433,
+  "missing": 190,
+  "captions": 851,
+  "missing_rate": 0.0553,
+  "ceiling": {
+    "label": "RetinaNet v2 on the finished picture",
+    "auroc": 0.9861,
+    "ci95": [
+      0.9813,
+      0.9901
+    ],
+    "ap": 0.7776
+  },
+  "H1_painting_adds": {
+    "auroc_full_minus_prompt": {
+      "step": 2,
+      "difference": 0.0585,
+      "ci95": [
+        0.0271,
+        0.09
+      ]
+    },
+    "reading": "ADDS",
+    "within_object_full": {
+      "n_discordant": 120,
+      "n_captions": 115,
+      "auroc": 0.693,
+      "ci95": [
+        0.623,
+        0.762
+      ],
+      "mean_difference": 0.04,
+      "mean_difference_ci95": [
+        0.025,
+        0.056
+      ],
+      "share_in_predicted_direction": 0.725,
+      "reading": "SEEN_COMING"
+    },
+    "within_reading": "SEEN_COMING"
+  },
+  "H2_attention_first": {
+    "prompt+attention_minus_prompt+preview": [
+      {
+        "step": 0,
+        "difference": 0.0041,
+        "ci95": [
+          -0.0338,
+          0.0403
+        ]
+      },
+      {
+        "step": 10,
+        "difference": -0.1011,
+        "ci95": [
+          -0.1324,
+          -0.0744
+        ]
+      }
+    ],
+    "by_step": {
+      "0": "no clear difference",
+      "10": "preview ahead"
+    },
+    "reading": "NOT_SHOWN",
+    "first_step_preview_passes_attention": 1
+  },
+  "H3_how_early": {
+    "first_step_full_auroc_at_least_0.90": 6,
+    "first_draft_step_everything_auroc_at_least_0.90": 0,
+    "catch_rate": {
+      "3": {
+        "full": 0.5842,
+        "prompt": 0.3474
+      },
+      "10": {
+        "full": 0.9632,
+        "prompt": 0.3474
+      },
+      "15": {
+        "full": 0.9895,
+        "prompt": 0.3474
+      }
+    },
+    "catch_rate_with_drafts": {
+      "0": {
+        "everything": 0.8579,
+        "prompt+draft": 0.8632,
+        "extra_unet_calls": 5
+      },
+      "2": {
+        "everything": 0.9316,
+        "prompt+draft": 0.9316,
+        "extra_unet_calls": 10
+      },
+      "4": {
+        "everything": 0.9789,
+        "prompt+draft": 0.9789,
+        "extra_unet_calls": 15
+      },
+      "8": {
+        "everything": 0.9947,
+        "prompt+draft": 0.9947,
+        "extra_unet_calls": 20
+      }
+    }
+  },
+  "H4_draft": {
+    "prompt+draft_minus_prompt+preview": [
+      {
+        "step": 0,
+        "difference": 0.1443,
+        "ci95": [
+          0.1116,
+          0.18
+        ]
+      },
+      {
+        "step": 2,
+        "difference": 0.1345,
+        "ci95": [
+          0.1039,
+          0.1685
+        ]
+      }
+    ],
+    "draft_reading": "DRAFT_AHEAD",
+    "everything_minus_prompt+draft": [
+      {
+        "step": 0,
+        "difference": -0.0016,
+        "ci95": [
+          -0.0083,
+          0.0042
+        ]
+      },
+      {
+        "step": 2,
+        "difference": 0.0025,
+        "ci95": [
+          -0.0049,
+          0.0097
+        ]
+      }
+    ],
+    "still_adds_reading": "NOT_SHOWN"
+  }
+}

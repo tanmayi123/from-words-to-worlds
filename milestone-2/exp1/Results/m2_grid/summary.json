@@ -1,0 +1,289 @@
+{
+  "anchor": {
+    "config_id": "ddim-leading-s30-g7.5",
+    "seed_id": 0,
+    "objects": 221,
+    "captions": 169,
+    "missing_rate": 0.0679,
+    "median_commit_step": 9.0,
+    "median_commit_timestep": 661.0,
+    "never_settles": 0.0,
+    "mean_early_share": 0.262
+  },
+  "settings": [
+    {
+      "config_id": "ddim-linspace-s30-g7.5",
+      "seed_id": 0,
+      "axis": "spacing",
+      "objects": 221,
+      "captions": 169,
+      "missing_rate": 0.0633,
+      "median_commit_step": 9.0,
+      "median_commit_timestep": 689.0,
+      "never_settles": 0.0,
+      "mean_early_share": 0.261,
+      "vs_anchor": {
+        "pairs": 221,
+        "missing": {
+          "mean_change": -0.0045,
+          "ci95": [
+            -0.0237,
+            0.0138
+          ],
+          "n": 221
+        },
+        "commit_step": {
+          "mean_change": 0.1765,
+          "ci95": [
+            -0.1215,
+            0.4494
+          ],
+          "n": 221
+        },
+        "commit_timestep": {
+          "mean_change": 20.6063,
+          "ci95": [
+            11.1547,
+            30.784
+          ],
+          "n": 221
+        },
+        "commit_step_spearman": 0.95
+      }
+    },
+    {
+      "config_id": "ddim-trailing-s30-g7.5",
+      "seed_id": 0,
+      "axis": "spacing",
+      "objects": 221,
+      "captions": 169,
+      "missing_rate": 0.0588,
+      "median_commit_step": 9.0,
+      "median_commit_timestep": 699.0,
+      "never_settles": 0.0,
+      "mean_early_share": 0.2609,
+      "vs_anchor": {
+        "pairs": 221,
+        "missing": {
+          "mean_change": -0.009,
+          "ci95": [
+            -0.0314,
+            0.0129
+          ],
+          "n": 221
+        },
+        "commit_step": {
+          "mean_change": 0.0588,
+          "ci95": [
+            -0.2402,
+            0.3503
+          ],
+          "n": 221
+        },
+        "commit_timestep": {
+          "mean_change": 35.7647,
+          "ci95": [
+            26.0832,
+            45.7173
+          ],
+          "n": 221
+        },
+        "commit_step_spearman": 0.95
+      }
+    },
+    {
+      "config_id": "ddim-leading-s30-g3",
+      "seed_id": 0,
+      "axis": "guidance",
+      "objects": 221,
+      "captions": 169,
+      "missing_rate": 0.0724,
+      "median_commit_step": 10.0,
+      "median_commit_timestep": 628.0,
+      "never_settles": 0.0,
+      "mean_early_share": 0.2602,
+      "vs_anchor": {
+        "pairs": 221,
+        "missing": {
+          "mean_change": 0.0045,
+          "ci95": [
+            -0.0273,
+            0.0357
+          ],
+          "n": 221
+        },
+        "commit_step": {
+          "mean_change": 0.9457,
+          "ci95": [
+            0.5069,
+            1.3421
+          ],
+          "n": 221
+        },
+        "commit_timestep": {
+          "mean_change": -31.2081,
+          "ci95": [
+            -44.2896,
+            -16.7284
+          ],
+          "n": 221
+        },
+        "commit_step_spearman": 0.894
+      }
+    },
+    {
+      "config_id": "ddim-leading-s30-g12",
+      "seed_id": 0,
+      "axis": "guidance",
+      "objects": 220,
+      "captions": 168,
+      "missing_rate": 0.0727,
+      "median_commit_step": 7.0,
+      "median_commit_timestep": 727.0,
+      "never_settles": 0.0,
+      "mean_early_share": 0.2642,
+      "vs_anchor": {
+        "pairs": 220,
+        "missing": {
+          "mean_change": 0.0045,
+          "ci95": [
+            -0.0191,
+            0.031
+          ],
+          "n": 220
+        },
+        "commit_step": {
+          "mean_change": -0.7773,
+          "ci95": [
+            -1.1127,
+            -0.457
+          ],
+          "n": 220
+        },
+        "commit_timestep": {
+          "mean_change": 25.65,
+          "ci95": [
+            15.0808,
+            36.7191
+          ],
+          "n": 220
+        },
+        "commit_step_spearman": 0.946
+      }
+    },
+    {
+      "config_id": "ddim-leading-s30-g7.5",
+      "seed_id": 1,
+      "axis": "seed",
+      "objects": 219,
+      "captions": 167,
+      "missing_rate": 0.0639,
+      "median_commit_step": 8.0,
+      "median_commit_timestep": 694.0,
+      "never_settles": 0.0,
+      "mean_early_share": 0.2594,
+      "vs_anchor": {
+        "pairs": 219,
+        "missing": {
+          "mean_change": -0.0046,
+          "ci95": [
+            -0.0457,
+            0.036
+          ],
+          "n": 219
+        },
+        "commit_step": {
+          "mean_change": -0.3242,
+          "ci95": [
+            -0.9128,
+            0.2964
+          ],
+          "n": 219
+        },
+        "commit_timestep": {
+          "mean_change": 10.6986,
+          "ci95": [
+            -9.7797,
+            30.1239
+          ],
+          "n": 219
+        },
+        "commit_step_spearman": 0.765
+      }
+    },
+    {
+      "config_id": "ddim-leading-s30-g7.5",
+      "seed_id": 2,
+      "axis": "seed",
+      "objects": 219,
+      "captions": 168,
+      "missing_rate": 0.0594,
+      "median_commit_step": 9.0,
+      "median_commit_timestep": 661.0,
+      "never_settles": 0.0,
+      "mean_early_share": 0.2631,
+      "vs_anchor": {
+        "pairs": 219,
+        "missing": {
+          "mean_change": -0.0046,
+          "ci95": [
+            -0.0406,
+            0.0312
+          ],
+          "n": 219
+        },
+        "commit_step": {
+          "mean_change": 0.2648,
+          "ci95": [
+            -0.318,
+            0.8388
+          ],
+          "n": 219
+        },
+        "commit_timestep": {
+          "mean_change": -8.7397,
+          "ci95": [
+            -27.6815,
+            10.4941
+          ],
+          "n": 219
+        },
+        "commit_step_spearman": 0.802
+      }
+    }
+  ],
+  "within_object_dev": {
+    "commit": {
+      "n_discordant": 31,
+      "n_captions": 29,
+      "auroc": 0.861,
+      "ci95": [
+        0.758,
+        0.95
+      ],
+      "mean_difference": 5.419,
+      "mean_difference_ci95": [
+        3.437,
+        7.467
+      ],
+      "share_in_predicted_direction": 0.839,
+      "reading": "SEEN_COMING"
+    },
+    "early": {
+      "n_discordant": 31,
+      "n_captions": 29,
+      "auroc": 0.607,
+      "ci95": [
+        0.483,
+        0.733
+      ],
+      "mean_difference": -0.006,
+      "mean_difference_ci95": [
+        -0.015,
+        0.002
+      ],
+      "share_in_predicted_direction": 0.645,
+      "reading": "NOT_SEEN"
+    }
+  }
+}

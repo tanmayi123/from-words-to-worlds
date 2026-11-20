@@ -1,0 +1,241 @@
+item,seed_id,caption_idx,category,word_start,frcnn,owl,retina,group,file,caption
+p000,1,10511,cat,6,0.4388,0.0598,0.4355,both_miss,10511_s1.png,A big chair with a gray cat laying on top of it next to a black dog.
+p001,2,16970,person,2,0.9998,0.3811,0.9913,both_find,16970_s2.png,A young man ridding a small wave on a surfboard.
+p002,1,11852,bus,1,0.9997,0.5361,0.9858,both_find,11852_s1.png,A bus traveling on a road next to cars with building in background.
+p003,0,842,zebra,6,0.9996,0.8325,0.9737,both_find,842_s0.png,The back end view of two zebras standing at a fence.
+p004,1,12881,person,8,0.0,0.0047,0.0589,both_miss,12881_s1.png,An old truck in the field with three men
+p005,2,19902,person,1,0.9645,0.0679,0.935,one_finds,19902_s2.png,"A man holds out his tie, which has writing on it."
+p006,0,9064,car,7,0.0,0.0015,0.0,both_miss,9064_s0.png,many kites flying in the sky with cars parked
+p007,0,19021,person,1,0.9988,0.0994,0.9261,one_finds,19021_s0.png,Three people standing around drinking wine together
+p008,0,22209,kite,9,0.0,0.0663,0.0,both_miss,22209_s0.png,"At the seawall, the gentlemen are holding up the kite"
+p009,0,9223,truck,5,0.2627,0.1112,0.1748,one_finds,9223_s0.png,A girl sitting in a truck is reflected in a mirror.
+p010,1,4196,airplane,3,0.9815,0.8188,0.959,both_find,4196_s1.png,A large passenger jet sitting on top of an airport runway.
+p011,0,11947,person,1,0.7755,0.0052,0.3856,one_finds,11947_s0.png,A person stands at the base ready to hit a ball.
+p012,2,5509,clock,9,0.0905,0.0105,0.0588,both_miss,5509_s2.png,A black and white photo of a building with clocks on the front.
+p013,0,1067,airplane,2,0.1399,0.0147,0.1649,both_miss,1067_s0.png,an air plane in the sky with a three quarter moon out
+p014,2,10786,person,4,0.9657,0.0329,0.3311,one_finds,10786_s2.png,a boat filled with people going down a river
+p015,1,4657,toilet,4,0.0,0.0151,0.0,both_miss,4657_s1.png,There is an old toilet sitting under a sign for this picture.
+p016,0,645,frisbee,6,0.2291,0.4617,0.4806,one_finds,645_s0.png,A group of people playing with Frisbee's on the grass.
+p017,1,492,person,5,0.0,0.0107,0.0,both_miss,492_s1.png,A beautiful bathroom and a guy is in bathroom.
+p018,2,8931,truck,7,0.4639,0.1444,0.4156,one_finds,8931_s2.png,A PICTURE OF A MAN IN A TRUCK DATED 1917
+p019,2,22718,person,6,0.9988,0.38,0.9435,both_find,22718_s2.png,A blue tinted photograph of a man flying a kite on the beach.
+p020,0,3480,person,0,0.0,0.0051,0.1775,both_miss,3480_s0.png,Someone about to cut and birthday cake with blue and yellow frosting.
+p021,1,2635,person,1,0.9995,0.0887,0.9933,one_finds,2635_s1.png,A man sitting on the park bench in the forest
+p022,0,12754,bottle,17,0.1372,0.0397,0.1368,both_miss,12754_s0.png,A sandwich and salad sit on a plate next to a glass of water and a water bottle.
+p023,2,6232,laptop,9,0.0774,0.0378,0.1111,both_miss,6232_s2.png,a woman writing something down on paper while the laptop sits on the table
+p024,2,896,pizza,6,0.9968,0.5271,0.8044,both_find,896_s2.png,a man holding a piece of pizza in front of a kid
+p025,0,13118,person,1,0.9996,0.369,0.9926,both_find,13118_s0.png,A man is on a surfboard riding a wave.
+p026,0,15007,cow,3,0.9186,0.0761,0.4079,one_finds,15007_s0.png,A herd of cattle walking across a sandy beach near the ocean.
+p027,0,7763,sports ball,1,0.0,0.0146,0.0,both_miss,7763_s0.png,A tennis ball sitting on top of a tennis racket.
+p028,1,12195,hot dog,4,0.9517,0.5243,0.8435,both_find,12195_s1.png,Parent serving a plastic hot dog in a bun to their child during play
+p029,1,17084,person,2,0.9778,0.0492,0.7239,one_finds,17084_s1.png,There are people walking down the street that is crowd
+p030,2,3700,laptop,9,0.9991,0.8713,0.9264,both_find,3700_s2.png,A cloth bag is on the keyboard of a laptop.
+p031,1,15115,person,2,0.9996,0.2306,0.9513,both_find,15115_s1.png,A young boy pulls a large brown suitcase.
+p032,0,6277,hot dog,6,0.0,0.0115,0.0,both_miss,6277_s0.png,A man is eating a loaded hot dog with people around him in a line.
+p033,0,23323,parking meter,11,0.0,0.0592,0.1269,both_miss,23323_s0.png,Outside photo of parked cars with a blackbird sitting on a parking meter.
+p034,2,20432,dog,3,0.0,0.0184,0.0,both_miss,20432_s2.png,A German Shepherd dog wearing a helmet sitting by a motor cycle.
+p035,1,9064,car,7,0.0,0.0014,0.0,both_miss,9064_s1.png,many kites flying in the sky with cars parked
+p036,0,2609,cell phone,8,0.3733,0.0601,0.1287,both_miss,2609_s0.png,"TABLE WITH A PLATE OF FOOD A DRINK, CELL PHONE AND A COMPUTER"
+p037,1,21246,refrigerator,8,0.4601,0.1594,0.142,one_finds,21246_s1.png,A kitchen with a cat walking past a refrigerator freezer.
+p038,1,5047,cell phone,8,0.9991,0.5727,0.925,both_find,5047_s1.png,A guy in a green shirt holding his cell phone to take a picture.
+p039,2,4469,person,10,0.0,0.0024,0.0,both_miss,4469_s2.png,A bull is running freely on the beach with other boys.
+p040,2,15168,scissors,4,0.0873,0.0513,0.0,both_miss,15168_s2.png,A giant pair of scissors sitting on top of camera boxes.
+p041,0,10683,person,1,0.9994,0.4879,0.9643,both_find,10683_s0.png,The skateboarder is jumping near a metal fence.
+p042,2,4117,person,2,0.7524,0.0148,0.2983,one_finds,4117_s2.png,The elderly man on skis is making his way down the edge of the snow-covered road.
+p043,2,17350,bowl,4,0.9392,0.1246,0.2752,both_find,17350_s2.png,an image of a bowl of tomatoes and a flower
+p044,1,17000,person,1,0.385,0.0777,0.0639,both_miss,17000_s1.png,Three people live in one room who share a bathroom.
+p045,0,5430,person,1,0.9997,0.2994,0.9975,both_find,5430_s0.png,A man in mid air attempting to catch a frisbee.
+p046,0,23843,refrigerator,9,0.3637,0.055,0.0858,both_miss,23843_s0.png,cereal and juice are placed on top of a fridge
+p047,0,5948,person,1,0.9994,0.3836,0.9597,both_find,5948_s0.png,A woman carrying her dog on a busy city street.
+p048,1,22461,person,1,0.0,0.0041,0.0,both_miss,22461_s1.png,A person and a toilet standing in a room.
+p049,1,17237,hot dog,8,0.9969,0.0966,0.6174,one_finds,17237_s1.png,A BBQ pit filled with lots of cooking hot dogs.
+p050,0,19902,person,1,0.9919,0.2481,0.9098,both_find,19902_s0.png,"A man holds out his tie, which has writing on it."
+p051,0,9554,car,8,0.4624,0.0959,0.499,both_miss,9554_s0.png,"A busy city street with buses, trucks and cars."
+p052,1,22847,spoon,6,0.0,0.3148,0.3328,one_finds,22847_s1.png,A girl in orange sweater using spoon in bowl.
+p053,0,5217,bus,1,0.4119,0.0662,0.1613,both_miss,5217_s0.png,a bus travels down the street with many cars on a sunny day
+p054,2,11075,cup,11,0.0,0.042,0.0,both_miss,11075_s2.png,A doughnut with a bite taken from it next to a cup.
+p055,2,21050,cake,3,0.9817,0.7589,0.5189,both_find,21050_s2.png,A chocolate dessert cake ready on a plate with a fork
+p056,2,1535,person,1,0.9991,0.0228,0.9452,one_finds,1535_s2.png,four men are posing for a picture at an event
+p057,1,4117,skis,4,0.0,0.0168,0.1329,both_miss,4117_s1.png,The elderly man on skis is making his way down the edge of the snow-covered road.
+p058,1,12648,umbrella,1,0.1709,0.0237,0.0651,both_miss,12648_s1.png,An umbrella blocks the sun beside a palm tree.
+p059,0,11292,fork,5,0.0,0.1609,0.2492,one_finds,11292_s0.png,An empty plate with a fork is shown in between two children.
+p060,2,10212,umbrella,7,0.9864,0.4566,0.7586,both_find,10212_s2.png,A lady in a crowd holding an umbrella with a British flag design.
+p061,1,11075,cup,11,0.0,0.2262,0.1361,one_finds,11075_s1.png,A doughnut with a bite taken from it next to a cup.
+p062,1,22251,person,1,0.0,0.0038,0.0,both_miss,22251_s1.png,A man riding skis down a snow covered slope.
+p063,0,19213,person,0,0.9995,0.0562,0.9537,one_finds,19213_s0.png,adult men in baseball uniforms walking in a baseball field
+p064,2,13050,person,3,0.999,0.0854,0.7904,one_finds,13050_s2.png,A group of women sitting on a bench near a light pole.
+p065,2,5551,cup,4,0.0,0.0131,0.0,both_miss,5551_s2.png,a desk with a cup plate laptop monitor and keyboard
+p066,1,11169,person,1,0.9994,0.4247,0.9808,both_find,11169_s1.png,a man with a hat standing close to the tracks
+p067,2,9988,person,2,0.9998,0.0859,0.9939,one_finds,9988_s2.png,A baseball player running to a base during a game at night.
+p068,1,9016,horse,5,0.0,0.007,0.0,both_miss,9016_s1.png,two women in swimsuits riding horses in the water
+p069,0,21997,tv,4,0.9921,0.6095,0.7284,both_find,21997_s0.png,some books shelves a television and a table
+p070,2,12789,suitcase,10,0.8915,0.3303,0.7364,both_find,12789_s2.png,A bowl holding a bottle of champagne below a black suitcase.
+p071,2,21347,bird,6,0.0,0.0033,0.0,both_miss,21347_s2.png,a brown bull and a white bird and a hill
+p072,0,223,couch,8,0.9974,0.3707,0.891,both_find,223_s0.png,"A very simple living area with a chair, sofa and TV."
+p073,2,13443,person,0,0.9995,0.0951,0.9929,one_finds,13443_s2.png,Man in vest and tie standing in room.
+p074,1,4235,bowl,4,0.8281,0.1333,0.608,both_find,4235_s1.png,"A yellow and black bowl holding noodles, beef and broccoli."
+p075,2,3479,umbrella,4,0.9801,0.6714,0.7579,both_find,3479_s2.png,a woman holding an umbrella next to a wall
+p076,2,2329,cell phone,8,0.9978,0.5635,0.9433,both_find,2329_s2.png,A photo of someone holding a fake pink cell phone.
+p077,2,24065,person,1,0.9313,0.047,0.5474,one_finds,24065_s2.png,a person sitting down with a cell phone
+p078,1,13763,person,1,0.9984,0.0691,0.9211,one_finds,13763_s1.png,A man and woman sitting on a couch playing a game.
+p079,0,4917,spoon,5,0.0678,0.1912,0.2016,one_finds,4917_s0.png,A young boy with a spoon looking at a birthday cupcake.
+p080,1,12754,bottle,17,0.995,0.5802,0.8777,both_find,12754_s1.png,A sandwich and salad sit on a plate next to a glass of water and a water bottle.
+p081,2,13841,surfboard,4,0.9955,0.7838,0.7446,both_find,13841_s2.png,"A man on a surfboard, who is riding a wave."
+p082,2,13124,bus,4,0.9998,0.8794,0.9955,both_find,13124_s2.png,A red and white bus on street next to trees.
+p083,2,13763,person,1,0.9997,0.0914,0.9467,one_finds,13763_s2.png,A man and woman sitting on a couch playing a game.
+p084,2,13187,person,9,0.9986,0.2108,0.8829,both_find,13187_s2.png,An organized baseball match between two teams with the batter swinging
+p085,0,589,sheep,1,0.9937,0.3086,0.8527,both_find,589_s0.png,A sheep inspects a big pile of shaved sheep wool.
+p086,1,5047,person,1,0.9996,0.0705,0.9942,one_finds,5047_s1.png,A guy in a green shirt holding his cell phone to take a picture.
+p087,2,6672,person,1,0.9995,0.3056,0.9023,both_find,6672_s2.png,The man and woman are playing a video game.
+p088,1,19791,person,1,0.9989,0.4321,0.9393,both_find,19791_s1.png,A woman poses on front of a large pizza
+p089,2,4999,laptop,8,0.2342,0.0275,0.6874,both_miss,4999_s2.png,A black-spotted cat lying on top of a laptop.
+p090,2,9064,car,7,0.0,0.0004,0.0,both_miss,9064_s2.png,many kites flying in the sky with cars parked
+p091,1,22407,chair,8,0.9792,0.3426,0.759,both_find,22407_s1.png,A cat that is laying down on a chair.
+p092,1,1701,person,1,0.9968,0.0669,0.829,one_finds,1701_s1.png,A man and woman playing a wii game.
+p093,1,24227,cell phone,9,0.0844,0.1816,0.4744,one_finds,24227_s1.png,a person sitting in a meeting room holding their cell phone
+p094,0,19405,person,1,0.9996,0.5323,0.9976,both_find,19405_s0.png,A person in the heavy snow on a snowboard.
+p095,0,19076,suitcase,7,0.6883,0.0883,0.2885,one_finds,19076_s0.png,A cat is laying in an open suitcase on top of some clothes.
+p096,1,4917,spoon,5,0.0,0.079,0.1265,both_miss,4917_s1.png,A young boy with a spoon looking at a birthday cupcake.
+p097,0,1565,person,1,0.9671,0.2342,0.8009,both_find,1565_s0.png,A woman holding a tennis racquet in the air
+p098,1,3155,person,2,0.9998,0.0499,0.9643,one_finds,3155_s1.png,Two young boys sitting on a bench texting on their cell phones.
+p099,2,15603,traffic light,5,0.3399,0.1511,0.1594,one_finds,15603_s2.png,a street corner with a traffic light in front of a Carphone Warehouse store with lots of people on the sidewalk
+p100,2,6044,car,4,0.0,0.0483,0.1226,both_miss,6044_s2.png,some people some buildings cars and a red double decker bus
+p101,0,21363,airplane,11,0.0,0.0529,0.0,both_miss,21363_s0.png,The restored old time car is parked near a four engine airplane.
+p102,0,16485,elephant,8,0.0,0.0272,0.0592,both_miss,16485_s0.png,a pregnant zebra eating grass close to two elephants
+p103,2,7656,cat,7,0.0,0.009,0.1024,both_miss,7656_s2.png,a man using his laptop while his cat looks at the screen
+p104,1,18197,book,6,0.8074,0.0819,0.3173,one_finds,18197_s1.png,"A room witb a statue, bookshelves, books and a vase with flowers in it."
+p105,0,6662,chair,8,0.0,0.0014,0.0,both_miss,6662_s0.png,A ship in the sea on which a chair and carry bags are kept.
+p106,0,6620,cat,1,0.9922,0.7845,0.9007,both_find,6620_s0.png,A cat is sleeping in a window sill.
+p107,1,21353,zebra,0,0.9997,0.8608,0.9855,both_find,21353_s1.png,Zebras gather to drink from a water trough in their compound.
+p108,1,22936,person,2,0.9738,0.2682,0.6741,both_find,22936_s1.png,A little boy drinking milk from a bottle while laying in bed.
+p109,2,3716,skateboard,4,0.8822,0.6903,0.4244,both_find,3716_s2.png,A man on a skateboard performs a trick at the skate park
+p110,1,13001,person,1,0.9994,0.0888,0.9796,one_finds,13001_s1.png,A person looking at their cell phone at another person taking a picture.
+p111,2,15564,person,1,0.98,0.2525,0.8595,both_find,15564_s2.png,A person holding a multicolored umbrella looking at a body of water.
+p112,0,21927,car,10,0.0,0.0216,0.0,both_miss,21927_s0.png,three horses and three jockeys are racing near a silver car
+p113,2,10274,person,1,0.998,0.1454,0.9303,both_find,10274_s2.png,some people and a woman in a pink shirt and a yellow frisbee
+p114,2,21447,person,2,0.9948,0.0972,0.7581,one_finds,21447_s2.png,Group of people standing beside their cars on a pier.
+p115,2,2663,bird,3,0.9675,0.0053,0.228,one_finds,2663_s2.png,A bunch of birds that are around cows.
+p116,2,17402,bed,6,0.121,0.0334,0.0514,both_miss,17402_s2.png,A lamp shining light on a bed with a book on it.
+p117,1,13443,person,0,0.9993,0.0687,0.9899,one_finds,13443_s1.png,Man in vest and tie standing in room.
+p118,0,3328,dog,1,0.9597,0.5696,0.4515,both_find,3328_s0.png,A dog with a bandana sitting on the trunk of a car.
+p119,2,14322,person,1,0.9147,0.0121,0.4503,one_finds,14322_s2.png,Kite surfer in the air on top of a red board.
+p120,1,6531,person,2,0.9992,0.1646,0.9916,both_find,6531_s1.png,A baseball player throwing a pitch onto the field
+p121,1,6968,kite,3,0.8982,0.4488,0.4636,both_find,6968_s1.png,People are flying kites in the park and walking.
+p122,1,9334,airplane,2,0.0,0.0102,0.0869,both_miss,9334_s1.png,A large jet liner flying under the moon.
+p123,2,9554,truck,6,0.6097,0.0789,0.4171,one_finds,9554_s2.png,"A busy city street with buses, trucks and cars."
+p124,0,13297,bear,1,0.9992,0.4773,0.9902,both_find,13297_s0.png,"The bear looks like he is posing, beautifully coiffed."
+p125,0,7794,hot dog,5,0.1001,0.1218,0.1505,one_finds,7794_s0.png,A child is holding two hot dogs up to the photographer.
+p126,1,16052,person,0,0.9856,0.2669,0.8197,both_find,16052_s1.png,Woman standing in a crowd holding a colorful umbrella.
+p127,0,22369,person,1,0.2087,0.0294,0.113,both_miss,22369_s0.png,a man standing next to an elephant next to his trunk
+p128,0,19092,bench,8,0.0,0.1384,0.0,one_finds,19092_s0.png,a person riding a skate board on a bench
+p129,2,15800,bed,5,0.0,0.0882,0.0,both_miss,15800_s2.png,"A room with a sink, bed and toilet in it"
+p130,2,21363,car,4,0.3359,0.4612,0.2639,one_finds,21363_s2.png,The restored old time car is parked near a four engine airplane.
+p131,1,9122,bird,10,0.0,0.0026,0.0,both_miss,9122_s1.png,"A plate topped with bread, greens and pasta and a bird."
+p132,1,4583,bottle,8,0.0726,0.0016,0.0,both_miss,4583_s1.png,Two plates both have food next to a bottle of Wine.
+p133,2,5060,clock,4,0.349,0.0674,0.4312,both_miss,5060_s2.png,A photograph of a clock at an arcade.
+p134,1,4874,knife,4,0.4906,0.1156,0.4167,one_finds,4874_s1.png,Chopped vegetables and a knife sit on the cutting board.
+p135,2,24448,person,1,0.9997,0.0412,0.9921,one_finds,24448_s2.png,A man with a tie is staring at something.
+p136,1,22795,umbrella,4,0.0,0.0509,0.0797,both_miss,22795_s1.png,A sculpture resembling an umbrella stands in the middle of a plaza
+p137,2,3694,car,2,0.5686,0.3029,0.7136,both_find,3694_s2.png,A white car and a white bus parked parallel from one another.
+p138,2,492,person,5,0.0,0.012,0.0,both_miss,492_s2.png,A beautiful bathroom and a guy is in bathroom.
+p139,1,21796,toilet,7,0.0,0.0341,0.0,both_miss,21796_s1.png,"Stylish circular shower stall, next to a toilet in a compact bathroom."
+p140,1,23691,clock,2,0.9982,0.7528,0.9924,both_find,23691_s1.png,A analogue clock is places next to a sign.
+p141,2,6333,dog,4,0.9993,0.7773,0.9641,both_find,6333_s2.png,A man and two dogs on the beach.
+p142,0,1367,bench,8,0.8319,0.3929,0.6436,both_find,1367_s0.png,Someone in orange pants stands on a wooden bench.
+p143,0,12464,person,7,0.0654,0.0295,0.0,both_miss,12464_s0.png,Street sign in the shape of a person riding a horse with a person under.
+p144,2,23631,person,3,0.9946,0.0887,0.828,one_finds,23631_s2.png,a group of people waiting for the metro bus
+p145,1,16584,cell phone,11,0.0,0.0371,0.0,both_miss,16584_s1.png,a security officer sitting on a fence while talking on a cell phone and holding onto a segway
+p146,1,21447,person,2,0.9992,0.2999,0.881,both_find,21447_s1.png,Group of people standing beside their cars on a pier.
+p147,0,1387,person,0,0.0,0.0254,0.1127,both_miss,1387_s0.png,Couple of empty chairs on the beach under an umbrella while people in the ocean
+p148,1,24138,person,1,0.9994,0.3139,0.9889,both_find,24138_s1.png,Young boy on skateboard riding near circular drive.
+p149,2,16485,elephant,8,0.0,0.0334,0.0,both_miss,16485_s2.png,a pregnant zebra eating grass close to two elephants
+p150,0,4583,bottle,8,0.4474,0.0988,0.1791,both_miss,4583_s0.png,Two plates both have food next to a bottle of Wine.
+p151,0,18670,zebra,3,0.0,0.1435,0.0,one_finds,18670_s0.png,Giraffe and a zebra standing side by side
+p152,1,12244,traffic light,9,0.3796,0.2758,0.5215,one_finds,12244_s1.png,Pedestrians walking on a sidewalk by a badly tipped traffic light
+p153,1,1733,person,1,0.9997,0.1737,0.9951,both_find,1733_s1.png,A women tennis player throwing the ball up for a serve.
+p154,2,1102,person,2,0.9995,0.3614,0.9921,both_find,1102_s2.png,A soccer player in uniform runs toward the ball.
+p155,2,11886,person,1,0.0,0.005,0.114,both_miss,11886_s2.png,A person riding a brown horse with blonde hair in a green field.
+p156,2,15382,suitcase,5,0.0,0.043,0.0,both_miss,15382_s2.png,A man standing next to luggage on a railway platform.
+p157,1,12250,sink,9,0.0,0.1624,0.0937,one_finds,12250_s1.png,Black cat with green eyes sitting in a bathroom sink.
+p158,1,6962,car,3,0.9032,0.0305,0.4043,one_finds,6962_s1.png,A line of cars stopped at a red light in a large city.
+p159,2,17552,person,5,0.8463,0.0239,0.664,one_finds,17552_s2.png,Ski slopes filled with many people on or holding their skis.
+p160,0,12789,suitcase,10,0.4872,0.115,0.666,one_finds,12789_s0.png,A bowl holding a bottle of champagne below a black suitcase.
+p161,2,17231,person,3,0.9996,0.0273,0.9285,one_finds,17231_s2.png,A group of men standing around a sidewalk together.
+p162,0,10886,knife,5,0.0,0.0329,0.1089,both_miss,10886_s0.png,Meat and a salad with knife and fork on a plate.
+p163,0,23577,person,1,0.9955,0.0875,0.6214,one_finds,23577_s0.png,Two people sit on a bench with pigeons and other people nearby.
+p164,0,20539,baseball bat,6,0.8198,0.5187,0.5093,both_find,20539_s0.png,A man who is holding a baseball bat.
+p165,2,11416,bird,1,0.0,0.0021,0.0,both_miss,11416_s2.png,A bird walking past a white car in a lot
+p166,0,1124,person,1,0.0,0.0385,0.1085,both_miss,1124_s0.png,A man stands on the backs of two running horses.
+p167,1,3700,laptop,9,0.992,0.6963,0.74,both_find,3700_s1.png,A cloth bag is on the keyboard of a laptop.
+p168,1,16221,bear,3,0.9989,0.5411,0.9981,both_find,16221_s1.png,A baby brown bear standing on top of a rock.
+p169,1,22653,sheep,1,0.9957,0.1926,0.9102,both_find,22653_s1.png,A sheep is being carried up a hill.
+p170,2,12540,bowl,8,0.9824,0.3066,0.7661,both_find,12540_s2.png,A group of oranges are sitting in the bowl
+p171,1,9673,umbrella,13,0.0679,0.0172,0.1127,both_miss,9673_s1.png,"A view of a pair of boots sitting in a corner, with an umbrella."
+p172,2,13940,chair,12,0.193,0.1954,0.3162,one_finds,13940_s2.png,A room with a full wall of windows with multiple sofas and chairs.
+p173,2,9580,train,4,0.9974,0.7525,0.9653,both_find,9580_s2.png,A long row of train carts sitting in a yard of tracks.
+p174,1,21347,bird,6,0.0,0.0256,0.0,both_miss,21347_s1.png,a brown bull and a white bird and a hill
+p175,0,21347,bird,6,0.0,0.0032,0.0,both_miss,21347_s0.png,a brown bull and a white bird and a hill
+p176,0,17350,bowl,4,0.9862,0.0766,0.6117,one_finds,17350_s0.png,an image of a bowl of tomatoes and a flower
+p177,1,3487,dog,1,0.9994,0.8648,0.9691,both_find,3487_s1.png,Three dogs sitting on the levels of an empty tiered garden.
+p178,1,18856,person,7,0.9877,0.2697,0.8441,both_find,18856_s1.png,Retro advertisement for Adidas featuring two tennis players.
+p179,2,11349,laptop,10,0.1369,0.0499,0.3393,both_miss,11349_s2.png,a desk with a monitor and a person holding a laptop
+p180,0,22365,truck,3,0.9796,0.573,0.9368,both_find,22365_s0.png,A white service truck passes a neighborhood intersection.
+p181,2,5592,bowl,1,0.9577,0.0867,0.7383,one_finds,5592_s2.png,A bowl full of meat and vegetables ready to eat.
+p182,2,3977,bear,6,0.8843,0.0134,0.9756,one_finds,3977_s2.png,a close up of a polar bear in front of a camera
+p183,1,24749,banana,3,0.2374,0.0856,0.2114,both_miss,24749_s1.png,A lush green banana tree with a big bunch of bananas.
+p184,1,9948,car,1,0.9997,0.5292,0.9792,both_find,9948_s1.png,A car driving down a street at night.
+p185,1,14819,motorcycle,1,0.9988,0.7306,0.9461,both_find,14819_s1.png,A motorcycle is displayed in an entryway which is covered in graffiti.
+p186,0,24065,person,1,0.9993,0.0867,0.9874,one_finds,24065_s0.png,a person sitting down with a cell phone
+p187,0,22795,umbrella,4,0.0,0.0139,0.051,both_miss,22795_s0.png,A sculpture resembling an umbrella stands in the middle of a plaza
+p188,2,6384,cell phone,11,0.9889,0.0442,0.8765,one_finds,6384_s2.png,A woman taking a picture up at the sky with her phone.
+p189,1,23563,banana,1,0.1479,0.0175,0.2322,both_miss,23563_s1.png,"Apples, bananas and pears in a white bowl."
+p190,1,20913,train,1,0.9966,0.7723,0.2584,both_find,20913_s1.png,Two trains sit idle in a train station
+p191,1,14322,person,1,0.9955,0.0634,0.4314,one_finds,14322_s1.png,Kite surfer in the air on top of a red board.
+p192,0,6769,person,10,0.0,0.0961,0.0778,both_miss,6769_s0.png,An elephant walking with a harness on it's back where people are able to sit.
+p193,0,5551,cup,4,0.2801,0.1498,0.3521,one_finds,5551_s0.png,a desk with a cup plate laptop monitor and keyboard
+p194,0,22936,bottle,7,0.3544,0.271,0.2129,one_finds,22936_s0.png,A little boy drinking milk from a bottle while laying in bed.
+p195,1,223,tv,10,0.6033,0.0939,0.1536,one_finds,223_s1.png,"A very simple living area with a chair, sofa and TV."
+p196,2,20425,boat,9,0.9201,0.3815,0.2272,both_find,20425_s2.png,a man and a woman sitting on a small boat
+p197,0,4235,bowl,4,0.9187,0.0748,0.6409,one_finds,4235_s0.png,"A yellow and black bowl holding noodles, beef and broccoli."
+p198,0,9673,umbrella,13,0.118,0.0183,0.0,both_miss,9673_s0.png,"A view of a pair of boots sitting in a corner, with an umbrella."
+p199,2,17237,hot dog,8,0.9956,0.0672,0.7749,one_finds,17237_s2.png,A BBQ pit filled with lots of cooking hot dogs.
+p200,1,22592,toilet,2,0.0,0.0048,0.0,both_miss,22592_s1.png,a handicap toilet with a foreign language written above it
+p201,1,3433,person,2,0.9996,0.1654,0.9864,both_find,3433_s1.png,A little boy that is standing on a sidewalk with a suitcase.
+p202,2,10414,person,3,0.9964,0.0728,0.8486,one_finds,10414_s2.png,A group of people gather around a glass drinking wine.
+p203,2,21005,person,2,0.0,0.0136,0.0661,both_miss,21005_s2.png,A tennis player is serving a tennis ball.
+p204,1,2223,teddy bear,5,0.0,0.0114,0.0,both_miss,2223_s1.png,A little boy holding a teddy bear walking past purple flowers.
+p205,1,10414,person,3,0.9973,0.0869,0.7834,one_finds,10414_s1.png,A group of people gather around a glass drinking wine.
+p206,0,22915,person,8,0.9968,0.0909,0.8514,one_finds,22915_s0.png,A baseball game is being played before a crowd.
+p207,2,23654,person,5,0.9991,0.1365,0.9642,both_find,23654_s2.png,a close up of a child eating a banana
+p208,1,18689,person,7,0.997,0.0709,0.8299,one_finds,18689_s1.png,A video screen with faces of a couple of guys on it.
+p209,2,9223,truck,5,0.0,0.1009,0.3038,one_finds,9223_s2.png,A girl sitting in a truck is reflected in a mirror.
+p210,2,3480,person,0,0.0,0.0094,0.0,both_miss,3480_s2.png,Someone about to cut and birthday cake with blue and yellow frosting.
+p211,0,6628,train,1,0.0,0.0065,0.0,both_miss,6628_s0.png,A train traveling down the rail road tracks.
+p212,1,22761,person,1,0.9991,0.0628,0.9777,one_finds,22761_s1.png,A man who is skiing performs a trick.
+p213,0,5397,bus,8,0.9709,0.8224,0.8915,both_find,5397_s0.png,A van is on the roof of a bus of the same door.
+p214,2,19213,person,0,0.9994,0.1415,0.9336,both_find,19213_s2.png,adult men in baseball uniforms walking in a baseball field
+p215,0,9554,bus,5,0.9013,0.2862,0.5537,both_find,9554_s0.png,"A busy city street with buses, trucks and cars."
+p216,0,4992,person,1,0.9994,0.0718,0.9226,one_finds,4992_s0.png,Three men are wading in water reaching for a frisbee.
+p217,1,11416,bird,1,0.0,0.0046,0.0,both_miss,11416_s1.png,A bird walking past a white car in a lot
+p218,1,16587,person,1,0.6907,0.0881,0.6509,one_finds,16587_s1.png,A person reaching into an open box of doughnuts
+p219,0,21010,surfboard,4,0.4209,0.5068,0.2338,one_finds,21010_s0.png,Guy falling off his surfboard after losing battle with the wave
+p220,2,12244,traffic light,9,0.1999,0.4524,0.1975,one_finds,12244_s2.png,Pedestrians walking on a sidewalk by a badly tipped traffic light
+p221,1,14453,person,3,0.9992,0.6049,0.9694,both_find,14453_s1.png,Several cross country skiers traveling through the snow.
+p222,2,23000,person,5,0.998,0.0702,0.8221,one_finds,23000_s2.png,There are a group of friends laughing together and licking out there tongue
+p223,1,14242,cow,7,0.6007,0.614,0.2829,both_find,14242_s1.png,A sheepdog runs around a herd of cows in a fenced-in field.
+p224,0,7763,tennis racket,8,0.0,0.0558,0.0,both_miss,7763_s0.png,A tennis ball sitting on top of a tennis racket.
+p225,2,8871,parking meter,9,0.0,0.0041,0.0,both_miss,8871_s2.png,A sign pinned to a tree next to a parking meter.
+p226,1,15704,laptop,9,0.3538,0.1286,0.2723,one_finds,15704_s1.png,An un-attended office desk with multiple monitors and a laptop computer.
+p227,0,2635,person,1,0.9963,0.3007,0.912,both_find,2635_s0.png,A man sitting on the park bench in the forest
+p228,1,10886,knife,5,0.1397,0.0395,0.2958,both_miss,10886_s1.png,Meat and a salad with knife and fork on a plate.
+p229,0,22711,person,1,0.9991,0.4568,0.9496,both_find,22711_s0.png,A man standing beside a display of bananas in boxes.
+p230,2,21246,refrigerator,8,0.9949,0.424,0.9156,both_find,21246_s2.png,A kitchen with a cat walking past a refrigerator freezer.
+p231,1,7487,bear,4,0.1406,0.1325,0.673,one_finds,7487_s1.png,A replica of a bear and her cub in a glass case in an exhibit.
+p232,2,12154,bench,1,0.9972,0.7749,0.9742,both_find,12154_s2.png,A bench that is on the beach by the water.
+p233,2,22501,banana,4,0.0,0.0471,0.0,both_miss,22501_s2.png,The plate has a banana being sliced near cookies.
+p234,2,9554,car,8,0.9769,0.0453,0.6654,one_finds,9554_s2.png,"A busy city street with buses, trucks and cars."
+p235,1,15007,cow,3,0.9976,0.2118,0.8942,both_find,15007_s1.png,A herd of cattle walking across a sandy beach near the ocean.
+p236,1,1513,skis,4,0.4192,0.3511,0.3233,one_finds,1513_s1.png,A young person on skis flying high through the air.
+p237,2,4398,bird,1,0.0,0.0012,0.0,both_miss,4398_s2.png,A bird in a forest looking down towards the ground.
+p238,0,2223,teddy bear,5,0.9959,0.5396,0.8749,both_find,2223_s0.png,A little boy holding a teddy bear walking past purple flowers.
+p239,2,1169,person,4,0.9995,0.0943,0.9028,one_finds,1169_s2.png,A group of young men pose for a picture with some adults.

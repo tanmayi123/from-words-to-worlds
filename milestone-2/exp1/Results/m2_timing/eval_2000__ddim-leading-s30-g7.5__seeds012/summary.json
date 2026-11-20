@@ -1,0 +1,108 @@
+{
+  "settings": {
+    "split": "eval_2000",
+    "config_id": "ddim-leading-s30-g7.5",
+    "seed_ids": [
+      0,
+      1,
+      2
+    ],
+    "rows_painted_before": 432,
+    "min_discordant": 30,
+    "bootstrap": 2000,
+    "bootstrap_seed": 0,
+    "script_sha": "36b6accfe29d"
+  },
+  "objects_in_every_seed": 1785,
+  "objects_by_seeds_missing": {
+    "0": 1589,
+    "1": 115,
+    "2": 55,
+    "3": 26
+  },
+  "per_seed": [
+    {
+      "auroc": 0.678,
+      "ci95": [
+        0.631,
+        0.724
+      ],
+      "within_class_auroc": 0.7,
+      "within_class_ci95": [
+        0.597,
+        0.796
+      ],
+      "n_present": 1710,
+      "n_missing": 91,
+      "n_captions": 1319,
+      "verdict": "PREDICTS",
+      "label": "seed_id 0"
+    },
+    {
+      "auroc": 0.667,
+      "ci95": [
+        0.624,
+        0.709
+      ],
+      "within_class_auroc": 0.692,
+      "within_class_ci95": [
+        0.584,
+        0.791
+      ],
+      "n_present": 1684,
+      "n_missing": 115,
+      "n_captions": 1318,
+      "verdict": "PREDICTS",
+      "label": "seed_id 1"
+    },
+    {
+      "auroc": 0.653,
+      "ci95": [
+        0.609,
+        0.695
+      ],
+      "within_class_auroc": 0.632,
+      "within_class_ci95": [
+        0.504,
+        0.759
+      ],
+      "n_present": 1698,
+      "n_missing": 100,
+      "n_captions": 1320,
+      "verdict": "PREDICTS",
+      "label": "seed_id 2"
+    }
+  ],
+  "within_object_commit": {
+    "n_discordant": 173,
+    "n_captions": 164,
+    "auroc": 0.704,
+    "ci95": [
+      0.647,
+      0.761
+    ],
+    "mean_difference": 3.269,
+    "mean_difference_ci95": [
+      2.472,
+      4.095
+    ],
+    "share_in_predicted_direction": 0.682,
+    "reading": "SEEN_COMING"
+  },
+  "within_object_early": {
+    "n_discordant": 173,
+    "n_captions": 164,
+    "auroc": 0.627,
+    "ci95": [
+      0.571,
+      0.683
+    ],
+    "mean_difference": -0.01,
+    "mean_difference_ci95": [
+      -0.014,
+      -0.006
+    ],
+    "share_in_predicted_direction": 0.665,
+    "reading": "SEEN_COMING"
+  }
+}

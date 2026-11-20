@@ -1,0 +1,95 @@
+{
+  "locked_at": "2026-11-20 15:12:35 UTC",
+  "models": "models.joblib",
+  "models_sha256": "c6770b37fbdd57cad2af9113fa5cb3a9b9cb646c4bfc77d88e14ed56aea949f6",
+  "features_development_sha256": "91d208aea9c14876deb208c2fbe9f4822799acfe923652e64bf70ad9010ba79b",
+  "rows": 3412,
+  "missing": 204,
+  "detectors": 89,
+  "split": "eval_2000",
+  "config_id": "ddim-leading-s30-g7.5",
+  "parts": {
+    "development": {
+      "rows": [
+        0,
+        1000
+      ],
+      "seed_ids": [
+        0,
+        1,
+        2
+      ]
+    },
+    "prospective": {
+      "rows": [
+        1000,
+        2000
+      ],
+      "seed_ids": [
+        3,
+        4,
+        5
+      ]
+    }
+  },
+  "decision_steps": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    6,
+    8,
+    10,
+    12,
+    15,
+    20
+  ],
+  "families": {
+    "prompt": [
+      "prompt"
+    ],
+    "attention": [
+      "attention"
+    ],
+    "preview": [
+      "preview"
+    ],
+    "draft": [
+      "draft"
+    ],
+    "prompt+attention": [
+      "prompt",
+      "attention"
+    ],
+    "prompt+preview": [
+      "prompt",
+      "preview"
+    ],
+    "prompt+draft": [
+      "prompt",
+      "draft"
+    ],
+    "full": [
+      "prompt",
+      "attention",
+      "preview"
+    ],
+    "everything": [
+      "prompt",
+      "attention",
+      "preview",
+      "draft"
+    ]
+  },
+  "secondary": "full, boosted trees",
+  "folds": 5,
+  "fold_seed": 0,
+  "bootstrap": 2000,
+  "bootstrap_seed": 0,
+  "flag_share": 0.1,
+  "sklearn": "1.9.1",
+  "protocol_sha": "8b9a21852c0f",
+  "script_sha": "ddb1963022da",
+  "preregistration": "docs/m2_detector_preregistration.md"
+}
