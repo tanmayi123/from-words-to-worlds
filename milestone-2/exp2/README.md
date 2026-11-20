@@ -135,19 +135,6 @@ milestone-2/exp2/
     └── clip_vs_bert_samples.png            ← same caption and noise: CLIP states vs connector states
 ```
 
-## How to run
-
-On Kaggle with a T4 GPU, attach [`../protocol`](../protocol) and [`../splits`](../splits) as input data, then run `m2_sweep_kaggle.ipynb` from cell 4. Cells 0–3 are an earlier attempt and are superseded.
-
-| Part | Cells | Images | Time on a T4 |
-|---|---|---|---|
-| Install packages, load the protocol and splits | 4 | — | not timed |
-| Anchor, 8 DPM++ settings, seed 1 for diversity | 5 | 3,700 | ~3 h 20 min |
-| Scoring and summary tables | 6–10 | — | not timed |
-| Seeds 1–2 for the anchor and leading-10 | 11 | 700 | ~45 min |
-| Connector training and samples | 12–16 | — | ~1 h |
-| Zip results (without images) | 17 | — | — |
-
 ## Limitations
 
 - **One seed for the schedule comparison.** The KID gaps for trailing and AYS rest on seed 0 only. Seeds 1–2 cover just the anchor and leading-10.
