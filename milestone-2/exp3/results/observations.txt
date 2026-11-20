@@ -1,0 +1,12 @@
+Baseline pass rates (PNDM, guidance 7.5, 3 seeds): Word order 52% (39%-65%); Counting 29% (21%-38%); Spatial 21% (13%-29%); Multi-object 13% (7%-20%); Colour binding 3% (1%-7%)
+Best skill: Word order; worst: Colour binding.
+counting: right number 29%, off by at most one 64%, object present at all 98%
+colour binding verdicts: missing 75%, other 17%, swapped 5%, correct 3%
+Raising guidance 3 -> 12: Multi-object shows no detectable change (-3%, 95% range -10% to +2%).
+Raising guidance 3 -> 12: Counting shows no detectable change (+4%, 95% range -8% to +17%).
+Raising guidance 3 -> 12: Colour binding shows no detectable change (-0%, 95% range -3% to +3%).
+Raising guidance 3 -> 12: Spatial shows no detectable change (-4%, 95% range -12% to +3%).
+Raising guidance 3 -> 12: Word order shows no detectable change (+1%, 95% range -8% to +10%).
+Best setting per skill: Colour binding PNDM g12 (8%); Counting PNDM g7.5 (30%); Multi-object PNDM g3 (8%); Spatial DPMPP g3 (22%); Word order DPMPP g12 (62%)
+Seconds per image: DDIM 5.1 s, DPMPP 5.0 s, PNDM 5.2 s on Tesla T4.
+Images generated: 2200; blacked out by the safety checker: 6 (left out).

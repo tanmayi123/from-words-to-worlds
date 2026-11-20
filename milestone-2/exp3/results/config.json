@@ -1,0 +1,38 @@
+{
+  "seed_eval": 2026,
+  "seed_dev": 2027,
+  "seed_ref": 2028,
+  "seed_stress": 2030,
+  "min_short_side": 256,
+  "n_eval": 2000,
+  "n_dev": 500,
+  "n_ref": 2000,
+  "sd_id": "stable-diffusion-v1-5/stable-diffusion-v1-5",
+  "clip_id": "openai/clip-vit-large-patch14",
+  "steps": 30,
+  "base_guidance": 7.5,
+  "base_scheduler": "pndm",
+  "base_seeds": [
+    0,
+    1,
+    2
+  ],
+  "sweep_guidance": [
+    3.0,
+    7.5,
+    12.0
+  ],
+  "sweep_schedulers": [
+    "ddim",
+    "pndm",
+    "dpmpp"
+  ],
+  "sweep_seed": 0,
+  "sweep_per_family": null,
+  "det_min_score": 0.5,
+  "spatial_margin": 0.05,
+  "run_split_fix": true,
+  "run_baseline": true,
+  "run_sweep": true,
+  "run_encoder_polish": true
+}

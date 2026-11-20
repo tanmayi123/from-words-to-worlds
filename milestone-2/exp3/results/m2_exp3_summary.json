@@ -1,0 +1,514 @@
+{
+  "config": {
+    "seed_eval": 2026,
+    "seed_dev": 2027,
+    "seed_ref": 2028,
+    "seed_stress": 2030,
+    "min_short_side": 256,
+    "n_eval": 2000,
+    "n_dev": 500,
+    "n_ref": 2000,
+    "sd_id": "stable-diffusion-v1-5/stable-diffusion-v1-5",
+    "clip_id": "openai/clip-vit-large-patch14",
+    "steps": 30,
+    "base_guidance": 7.5,
+    "base_scheduler": "pndm",
+    "base_seeds": [
+      0,
+      1,
+      2
+    ],
+    "sweep_guidance": [
+      3.0,
+      7.5,
+      12.0
+    ],
+    "sweep_schedulers": [
+      "ddim",
+      "pndm",
+      "dpmpp"
+    ],
+    "sweep_seed": 0,
+    "sweep_per_family": null,
+    "det_min_score": 0.5,
+    "spatial_margin": 0.05,
+    "run_split_fix": true,
+    "run_baseline": true,
+    "run_sweep": true,
+    "run_encoder_polish": true
+  },
+  "gpu": "Tesla T4",
+  "images": {
+    "total": 2200,
+    "blacked_out": 6,
+    "by_setting": {
+      "ddim_g12_st30": 200,
+      "ddim_g3_st30": 200,
+      "ddim_g7.5_st30": 200,
+      "dpmpp_g12_st30": 200,
+      "dpmpp_g3_st30": 200,
+      "dpmpp_g7.5_st30": 200,
+      "pndm_g12_st30": 200,
+      "pndm_g3_st30": 200,
+      "pndm_g7.5_st30": 600
+    }
+  },
+  "baseline_by_family": {
+    "Multi-object": {
+      "pass rate": 0.1292,
+      "ci_lo": 0.0667,
+      "ci_hi": 0.2042,
+      "prompts": 40.0,
+      "objects_found": 0.5931,
+      "off_by_one": NaN,
+      "present": NaN,
+      "both_present": NaN,
+      "swapped": NaN
+    },
+    "Counting": {
+      "pass rate": 0.2917,
+      "ci_lo": 0.2083,
+      "ci_hi": 0.3833,
+      "prompts": 40.0,
+      "objects_found": NaN,
+      "off_by_one": 0.6417,
+      "present": 0.9833,
+      "both_present": NaN,
+      "swapped": NaN
+    },
+    "Colour binding": {
+      "pass rate": 0.0333,
+      "ci_lo": 0.0083,
+      "ci_hi": 0.0667,
+      "prompts": 40.0,
+      "objects_found": NaN,
+      "off_by_one": NaN,
+      "present": NaN,
+      "both_present": 0.25,
+      "swapped": 0.05
+    },
+    "Spatial": {
+      "pass rate": 0.2083,
+      "ci_lo": 0.1333,
+      "ci_hi": 0.2917,
+      "prompts": 40.0,
+      "objects_found": NaN,
+      "off_by_one": NaN,
+      "present": NaN,
+      "both_present": 0.4417,
+      "swapped": NaN
+    },
+    "Word order": {
+      "pass rate": 0.525,
+      "ci_lo": 0.3917,
+      "ci_hi": 0.65,
+      "prompts": 40.0,
+      "objects_found": NaN,
+      "off_by_one": NaN,
+      "present": NaN,
+      "both_present": 0.25,
+      "swapped": NaN
+    }
+  },
+  "sweep_by_family": [
+    {
+      "family": "colour_binding",
+      "scheduler": "ddim",
+      "guidance": 3.0,
+      "pass": 0.05
+    },
+    {
+      "family": "colour_binding",
+      "scheduler": "ddim",
+      "guidance": 7.5,
+      "pass": 0.05
+    },
+    {
+      "family": "colour_binding",
+      "scheduler": "ddim",
+      "guidance": 12.0,
+      "pass": 0.05
+    },
+    {
+      "family": "colour_binding",
+      "scheduler": "dpmpp",
+      "guidance": 3.0,
+      "pass": 0.05
+    },
+    {
+      "family": "colour_binding",
+      "scheduler": "dpmpp",
+      "guidance": 7.5,
+      "pass": 0.025
+    },
+    {
+      "family": "colour_binding",
+      "scheduler": "dpmpp",
+      "guidance": 12.0,
+      "pass": 0.0
+    },
+    {
+      "family": "colour_binding",
+      "scheduler": "pndm",
+      "guidance": 3.0,
+      "pass": 0.025
+    },
+    {
+      "family": "colour_binding",
+      "scheduler": "pndm",
+      "guidance": 7.5,
+      "pass": 0.025
+    },
+    {
+      "family": "colour_binding",
+      "scheduler": "pndm",
+      "guidance": 12.0,
+      "pass": 0.075
+    },
+    {
+      "family": "counting",
+      "scheduler": "ddim",
+      "guidance": 3.0,
+      "pass": 0.25
+    },
+    {
+      "family": "counting",
+      "scheduler": "ddim",
+      "guidance": 7.5,
+      "pass": 0.2
+    },
+    {
+      "family": "counting",
+      "scheduler": "ddim",
+      "guidance": 12.0,
+      "pass": 0.275
+    },
+    {
+      "family": "counting",
+      "scheduler": "dpmpp",
+      "guidance": 3.0,
+      "pass": 0.15
+    },
+    {
+      "family": "counting",
+      "scheduler": "dpmpp",
+      "guidance": 7.5,
+      "pass": 0.225
+    },
+    {
+      "family": "counting",
+      "scheduler": "dpmpp",
+      "guidance": 12.0,
+      "pass": 0.225
+    },
+    {
+      "family": "counting",
+      "scheduler": "pndm",
+      "guidance": 3.0,
+      "pass": 0.225
+    },
+    {
+      "family": "counting",
+      "scheduler": "pndm",
+      "guidance": 7.5,
+      "pass": 0.3
+    },
+    {
+      "family": "counting",
+      "scheduler": "pndm",
+      "guidance": 12.0,
+      "pass": 0.25
+    },
+    {
+      "family": "multi_object",
+      "scheduler": "ddim",
+      "guidance": 3.0,
+      "pass": 0.075
+    },
+    {
+      "family": "multi_object",
+      "scheduler": "ddim",
+      "guidance": 7.5,
+      "pass": 0.025
+    },
+    {
+      "family": "multi_object",
+      "scheduler": "ddim",
+      "guidance": 12.0,
+      "pass": 0.05
+    },
+    {
+      "family": "multi_object",
+      "scheduler": "dpmpp",
+      "guidance": 3.0,
+      "pass": 0.075
+    },
+    {
+      "family": "multi_object",
+      "scheduler": "dpmpp",
+      "guidance": 7.5,
+      "pass": 0.025
+    },
+    {
+      "family": "multi_object",
+      "scheduler": "dpmpp",
+      "guidance": 12.0,
+      "pass": 0.05
+    },
+    {
+      "family": "multi_object",
+      "scheduler": "pndm",
+      "guidance": 3.0,
+      "pass": 0.0769
+    },
+    {
+      "family": "multi_object",
+      "scheduler": "pndm",
+      "guidance": 7.5,
+      "pass": 0.05
+    },
+    {
+      "family": "multi_object",
+      "scheduler": "pndm",
+      "guidance": 12.0,
+      "pass": 0.025
+    },
+    {
+      "family": "spatial",
+      "scheduler": "ddim",
+      "guidance": 3.0,
+      "pass": 0.2
+    },
+    {
+      "family": "spatial",
+      "scheduler": "ddim",
+      "guidance": 7.5,
+      "pass": 0.15
+    },
+    {
+      "family": "spatial",
+      "scheduler": "ddim",
+      "guidance": 12.0,
+      "pass": 0.2
+    },
+    {
+      "family": "spatial",
+      "scheduler": "dpmpp",
+      "guidance": 3.0,
+      "pass": 0.225
+    },
+    {
+      "family": "spatial",
+      "scheduler": "dpmpp",
+      "guidance": 7.5,
+      "pass": 0.225
+    },
+    {
+      "family": "spatial",
+      "scheduler": "dpmpp",
+      "guidance": 12.0,
+      "pass": 0.175
+    },
+    {
+      "family": "spatial",
+      "scheduler": "pndm",
+      "guidance": 3.0,
+      "pass": 0.2
+    },
+    {
+      "family": "spatial",
+      "scheduler": "pndm",
+      "guidance": 7.5,
+      "pass": 0.15
+    },
+    {
+      "family": "spatial",
+      "scheduler": "pndm",
+      "guidance": 12.0,
+      "pass": 0.125
+    },
+    {
+      "family": "word_order",
+      "scheduler": "ddim",
+      "guidance": 3.0,
+      "pass": 0.525
+    },
+    {
+      "family": "word_order",
+      "scheduler": "ddim",
+      "guidance": 7.5,
+      "pass": 0.525
+    },
+    {
+      "family": "word_order",
+      "scheduler": "ddim",
+      "guidance": 12.0,
+      "pass": 0.55
+    },
+    {
+      "family": "word_order",
+      "scheduler": "dpmpp",
+      "guidance": 3.0,
+      "pass": 0.575
+    },
+    {
+      "family": "word_order",
+      "scheduler": "dpmpp",
+      "guidance": 7.5,
+      "pass": 0.55
+    },
+    {
+      "family": "word_order",
+      "scheduler": "dpmpp",
+      "guidance": 12.0,
+      "pass": 0.625
+    },
+    {
+      "family": "word_order",
+      "scheduler": "pndm",
+      "guidance": 3.0,
+      "pass": 0.575
+    },
+    {
+      "family": "word_order",
+      "scheduler": "pndm",
+      "guidance": 7.5,
+      "pass": 0.525
+    },
+    {
+      "family": "word_order",
+      "scheduler": "pndm",
+      "guidance": 12.0,
+      "pass": 0.5128
+    }
+  ],
+  "guidance_effect": {
+    "Multi-object": {
+      "pass at guidance 3": 0.075,
+      "pass at guidance 12": 0.0417,
+      "change": -0.0333,
+      "ci_lo": -0.1,
+      "ci_hi": 0.025
+    },
+    "Counting": {
+      "pass at guidance 3": 0.2083,
+      "pass at guidance 12": 0.25,
+      "change": 0.0417,
+      "ci_lo": -0.0833,
+      "ci_hi": 0.1667
+    },
+    "Colour binding": {
+      "pass at guidance 3": 0.0417,
+      "pass at guidance 12": 0.0417,
+      "change": -0.0,
+      "ci_lo": -0.0333,
+      "ci_hi": 0.0333
+    },
+    "Spatial": {
+      "pass at guidance 3": 0.2083,
+      "pass at guidance 12": 0.1667,
+      "change": -0.0417,
+      "ci_lo": -0.125,
+      "ci_hi": 0.0333
+    },
+    "Word order": {
+      "pass at guidance 3": 0.5583,
+      "pass at guidance 12": 0.5667,
+      "change": 0.0083,
+      "ci_lo": -0.0833,
+      "ci_hi": 0.1
+    }
+  },
+  "seconds_per_image": {
+    "ddim": 5.088,
+    "dpmpp": 5.044,
+    "pndm": 5.229
+  },
+  "observations": [
+    "Baseline pass rates (PNDM, guidance 7.5, 3 seeds): Word order 52% (39%-65%); Counting 29% (21%-38%); Spatial 21% (13%-29%); Multi-object 13% (7%-20%); Colour binding 3% (1%-7%)",
+    "Best skill: Word order; worst: Colour binding.",
+    "counting: right number 29%, off by at most one 64%, object present at all 98%",
+    "colour binding verdicts: missing 75%, other 17%, swapped 5%, correct 3%",
+    "Raising guidance 3 -> 12: Multi-object shows no detectable change (-3%, 95% range -10% to +2%).",
+    "Raising guidance 3 -> 12: Counting shows no detectable change (+4%, 95% range -8% to +17%).",
+    "Raising guidance 3 -> 12: Colour binding shows no detectable change (-0%, 95% range -3% to +3%).",
+    "Raising guidance 3 -> 12: Spatial shows no detectable change (-4%, 95% range -12% to +3%).",
+    "Raising guidance 3 -> 12: Word order shows no detectable change (+1%, 95% range -8% to +10%).",
+    "Best setting per skill: Colour binding PNDM g12 (8%); Counting PNDM g7.5 (30%); Multi-object PNDM g3 (8%); Spatial DPMPP g3 (22%); Word order DPMPP g12 (62%)",
+    "Seconds per image: DDIM 5.1 s, DPMPP 5.0 s, PNDM 5.2 s on Tesla T4.",
+    "Images generated: 2200; blacked out by the safety checker: 6 (left out)."
+  ],
+  "split_fix": {
+    "eligible": 4958,
+    "test": 2000,
+    "dev": 500,
+    "reference": 2000,
+    "test_dev": 0,
+    "test_ref": 0,
+    "dev_ref": 0,
+    "old_reference_dev_overlap": 353,
+    "file": "/content/drive/MyDrive/w2w_praniti/results/m2_exp3/splits/real_ref_2000_disjoint.csv"
+  },
+  "encoder_comparison": {
+    "CLIP (EOS)": {
+      "paraphrase R@1": 0.3395,
+      "R@1 95%": "0.319-0.360",
+      "scene 10-NN": 0.745,
+      "10-NN 95%": "0.726-0.763",
+      "word order (fixed)": 0.4,
+      "word order 95%": "0.20-0.60",
+      "colour (fixed)": 0.725,
+      "colour 95%": "0.57-0.85"
+    },
+    "CLIP ViT-L/14": {
+      "paraphrase R@1": 0.214,
+      "R@1 95%": "0.196-0.233",
+      "scene 10-NN": 0.6995,
+      "10-NN 95%": "0.679-0.720",
+      "word order (fixed)": 1.0,
+      "word order 95%": "1.00-1.00",
+      "colour (fixed)": 1.0,
+      "colour 95%": "1.00-1.00"
+    },
+    "T5-base": {
+      "paraphrase R@1": 0.1545,
+      "R@1 95%": "0.139-0.171",
+      "scene 10-NN": 0.6845,
+      "10-NN 95%": "0.664-0.705",
+      "word order (fixed)": 0.2,
+      "word order 95%": "0.05-0.40",
+      "colour (fixed)": 0.025,
+      "colour 95%": "0.00-0.07"
+    },
+    "BERT-base": {
+      "paraphrase R@1": 0.13,
+      "R@1 95%": "0.115-0.145",
+      "scene 10-NN": 0.6575,
+      "10-NN 95%": "0.637-0.678",
+      "word order (fixed)": 0.05,
+      "word order 95%": "0.00-0.15",
+      "colour (fixed)": 0.0,
+      "colour 95%": "0.00-0.00"
+    },
+    "GPT-2": {
+      "paraphrase R@1": 0.0335,
+      "R@1 95%": "0.026-0.042",
+      "scene 10-NN": 0.56,
+      "10-NN 95%": "0.538-0.582",
+      "word order (fixed)": 0.3,
+      "word order 95%": "0.10-0.50",
+      "colour (fixed)": 0.25,
+      "colour 95%": "0.12-0.40"
+    },
+    "TF-IDF words": {
+      "paraphrase R@1": 0.1985,
+      "R@1 95%": "0.181-0.215",
+      "scene 10-NN": 0.643,
+      "10-NN 95%": "0.622-0.664",
+      "word order (fixed)": 0.0,
+      "word order 95%": "0.00-0.00",
+      "colour (fixed)": 0.0,
+      "colour 95%": "0.00-0.00"
+    }
+  }
+}

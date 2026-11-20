@@ -1,0 +1,11 @@
+file,family,prompt,verdict,seed,guidance,scheduler,steps
+multi_object_17_pass.png,Multi-object,"a bird, a boat and a cat",pass,0,7.5,pndm,30
+multi_object_00_fail.png,Multi-object,"a horse, a bus and a bottle",fail,0,7.5,pndm,30
+counting_03_pass.png,Counting,five books,pass,0,7.5,pndm,30
+counting_00_fail.png,Counting,four boats,fail,0,7.5,pndm,30
+colour_binding_31_pass.png,Colour binding,an orange bus and a purple suitcase,pass,0,7.5,pndm,30
+colour_binding_00_fail.png,Colour binding,a yellow book and a white truck,fail,0,7.5,pndm,30
+spatial_02_pass.png,Spatial,an apple to the right of a book,pass,0,7.5,pndm,30
+spatial_00_fail.png,Spatial,a bowl to the left of a zebra,fail,0,7.5,pndm,30
+word_order_00_pass.png,Word order,a bear following a sheep on a grassy hill,pass,0,7.5,pndm,30
+word_order_01_fail.png,Word order,a sheep following a bear on a grassy hill,fail,0,7.5,pndm,30

@@ -1,0 +1,401 @@
+prompt_id,family,prompt,category,word,word_start
+word_order_00,word_order,a bear following a sheep on a grassy hill,bear,bear,1
+word_order_00,word_order,a bear following a sheep on a grassy hill,sheep,sheep,4
+word_order_01,word_order,a sheep following a bear on a grassy hill,sheep,sheep,1
+word_order_01,word_order,a sheep following a bear on a grassy hill,bear,bear,4
+word_order_02,word_order,a bear standing next to a sheep in a park,bear,bear,1
+word_order_02,word_order,a bear standing next to a sheep in a park,sheep,sheep,6
+word_order_03,word_order,a sheep standing next to a bear in a park,sheep,sheep,1
+word_order_03,word_order,a sheep standing next to a bear in a park,bear,bear,6
+word_order_04,word_order,a bird sitting behind a cow on a dirt road,bird,bird,1
+word_order_04,word_order,a bird sitting behind a cow on a dirt road,cow,cow,5
+word_order_05,word_order,a cow sitting behind a bird on a dirt road,cow,cow,1
+word_order_05,word_order,a cow sitting behind a bird on a dirt road,bird,bird,5
+word_order_06,word_order,a cat chasing a dog on a dirt road,cat,cat,1
+word_order_06,word_order,a cat chasing a dog on a dirt road,dog,dog,4
+word_order_07,word_order,a dog chasing a cat on a dirt road,dog,dog,1
+word_order_07,word_order,a dog chasing a cat on a dirt road,cat,cat,4
+word_order_08,word_order,a cat looking at a dog in a park,cat,cat,1
+word_order_08,word_order,a cat looking at a dog in a park,dog,dog,5
+word_order_09,word_order,a dog looking at a cat in a park,dog,dog,1
+word_order_09,word_order,a dog looking at a cat in a park,cat,cat,5
+word_order_10,word_order,a cat chasing an elephant on a dirt road,cat,cat,1
+word_order_10,word_order,a cat chasing an elephant on a dirt road,elephant,elephant,4
+word_order_11,word_order,an elephant chasing a cat on a dirt road,elephant,elephant,1
+word_order_11,word_order,an elephant chasing a cat on a dirt road,cat,cat,4
+word_order_12,word_order,a cow sitting behind a dog on a dirt road,cow,cow,1
+word_order_12,word_order,a cow sitting behind a dog on a dirt road,dog,dog,5
+word_order_13,word_order,a dog sitting behind a cow on a dirt road,dog,dog,1
+word_order_13,word_order,a dog sitting behind a cow on a dirt road,cow,cow,5
+word_order_14,word_order,a cow sitting behind a giraffe in a backyard,cow,cow,1
+word_order_14,word_order,a cow sitting behind a giraffe in a backyard,giraffe,giraffe,5
+word_order_15,word_order,a giraffe sitting behind a cow in a backyard,giraffe,giraffe,1
+word_order_15,word_order,a giraffe sitting behind a cow in a backyard,cow,cow,5
+word_order_16,word_order,a dog following a giraffe in a backyard,dog,dog,1
+word_order_16,word_order,a dog following a giraffe in a backyard,giraffe,giraffe,4
+word_order_17,word_order,a giraffe following a dog in a backyard,giraffe,giraffe,1
+word_order_17,word_order,a giraffe following a dog in a backyard,dog,dog,4
+word_order_18,word_order,an elephant chasing a dog on a dirt road,elephant,elephant,1
+word_order_18,word_order,an elephant chasing a dog on a dirt road,dog,dog,4
+word_order_19,word_order,a dog chasing an elephant on a dirt road,dog,dog,1
+word_order_19,word_order,a dog chasing an elephant on a dirt road,elephant,elephant,4
+word_order_20,word_order,an elephant sitting behind a horse on a grassy hill,elephant,elephant,1
+word_order_20,word_order,an elephant sitting behind a horse on a grassy hill,horse,horse,5
+word_order_21,word_order,a horse sitting behind an elephant on a grassy hill,horse,horse,1
+word_order_21,word_order,a horse sitting behind an elephant on a grassy hill,elephant,elephant,5
+word_order_22,word_order,an elephant chasing a sheep in a field,elephant,elephant,1
+word_order_22,word_order,an elephant chasing a sheep in a field,sheep,sheep,4
+word_order_23,word_order,a sheep chasing an elephant in a field,sheep,sheep,1
+word_order_23,word_order,a sheep chasing an elephant in a field,elephant,elephant,4
+word_order_24,word_order,a giraffe sitting behind a bear in a backyard,giraffe,giraffe,1
+word_order_24,word_order,a giraffe sitting behind a bear in a backyard,bear,bear,5
+word_order_25,word_order,a bear sitting behind a giraffe in a backyard,bear,bear,1
+word_order_25,word_order,a bear sitting behind a giraffe in a backyard,giraffe,giraffe,5
+word_order_26,word_order,a giraffe sitting behind a bear on a dirt road,giraffe,giraffe,1
+word_order_26,word_order,a giraffe sitting behind a bear on a dirt road,bear,bear,5
+word_order_27,word_order,a bear sitting behind a giraffe on a dirt road,bear,bear,1
+word_order_27,word_order,a bear sitting behind a giraffe on a dirt road,giraffe,giraffe,5
+word_order_28,word_order,a horse looking at a cow in a field,horse,horse,1
+word_order_28,word_order,a horse looking at a cow in a field,cow,cow,5
+word_order_29,word_order,a cow looking at a horse in a field,cow,cow,1
+word_order_29,word_order,a cow looking at a horse in a field,horse,horse,5
+word_order_30,word_order,a horse standing next to a cow in a backyard,horse,horse,1
+word_order_30,word_order,a horse standing next to a cow in a backyard,cow,cow,6
+word_order_31,word_order,a cow standing next to a horse in a backyard,cow,cow,1
+word_order_31,word_order,a cow standing next to a horse in a backyard,horse,horse,6
+word_order_32,word_order,a sheep chasing a bird in a field,sheep,sheep,1
+word_order_32,word_order,a sheep chasing a bird in a field,bird,bird,4
+word_order_33,word_order,a bird chasing a sheep in a field,bird,bird,1
+word_order_33,word_order,a bird chasing a sheep in a field,sheep,sheep,4
+word_order_34,word_order,a sheep standing next to an elephant on a dirt road,sheep,sheep,1
+word_order_34,word_order,a sheep standing next to an elephant on a dirt road,elephant,elephant,6
+word_order_35,word_order,an elephant standing next to a sheep on a dirt road,elephant,elephant,1
+word_order_35,word_order,an elephant standing next to a sheep on a dirt road,sheep,sheep,6
+word_order_36,word_order,a zebra looking at a cow in a park,zebra,zebra,1
+word_order_36,word_order,a zebra looking at a cow in a park,cow,cow,5
+word_order_37,word_order,a cow looking at a zebra in a park,cow,cow,1
+word_order_37,word_order,a cow looking at a zebra in a park,zebra,zebra,5
+word_order_38,word_order,a zebra looking at an elephant in a field,zebra,zebra,1
+word_order_38,word_order,a zebra looking at an elephant in a field,elephant,elephant,5
+word_order_39,word_order,an elephant looking at a zebra in a field,elephant,elephant,1
+word_order_39,word_order,an elephant looking at a zebra in a field,zebra,zebra,5
+counting_00,counting,four boats,boat,boats,1
+counting_01,counting,three zebras,zebra,zebras,1
+counting_02,counting,five bottles,bottle,bottles,1
+counting_03,counting,five books,book,books,1
+counting_04,counting,two trucks,truck,trucks,1
+counting_05,counting,five cups,cup,cups,1
+counting_06,counting,three buses,bus,buses,1
+counting_07,counting,four bears,bear,bears,1
+counting_08,counting,five bowls,bowl,bowls,1
+counting_09,counting,four laptops,laptop,laptops,1
+counting_10,counting,five zebras,zebra,zebras,1
+counting_11,counting,two cats,cat,cats,1
+counting_12,counting,five cars,car,cars,1
+counting_13,counting,four bowls,bowl,bowls,1
+counting_14,counting,two cars,car,cars,1
+counting_15,counting,four clocks,clock,clocks,1
+counting_16,counting,five boats,boat,boats,1
+counting_17,counting,three chairs,chair,chairs,1
+counting_18,counting,two dogs,dog,dogs,1
+counting_19,counting,two apples,apple,apples,1
+counting_20,counting,two zebras,zebra,zebras,1
+counting_21,counting,four books,book,books,1
+counting_22,counting,three birds,bird,birds,1
+counting_23,counting,three suitcases,suitcase,suitcases,1
+counting_24,counting,five bicycles,bicycle,bicycles,1
+counting_25,counting,five benches,bench,benches,1
+counting_26,counting,four buses,bus,buses,1
+counting_27,counting,two buses,bus,buses,1
+counting_28,counting,five umbrellas,umbrella,umbrellas,1
+counting_29,counting,two pizzas,pizza,pizzas,1
+counting_30,counting,two cows,cow,cows,1
+counting_31,counting,four trucks,truck,trucks,1
+counting_32,counting,four suitcases,suitcase,suitcases,1
+counting_33,counting,four bicycles,bicycle,bicycles,1
+counting_34,counting,three sheep,sheep,sheep,1
+counting_35,counting,three bowls,bowl,bowls,1
+counting_36,counting,two chairs,chair,chairs,1
+counting_37,counting,five backpacks,backpack,backpacks,1
+counting_38,counting,two backpacks,backpack,backpacks,1
+counting_39,counting,two cakes,cake,cakes,1
+colour_binding_00,colour_binding,a yellow book and a white truck,book,book,2
+colour_binding_00,colour_binding,a yellow book and a white truck,truck,truck,6
+colour_binding_01,colour_binding,a green bicycle and a white vase,bicycle,bicycle,2
+colour_binding_01,colour_binding,a green bicycle and a white vase,vase,vase,6
+colour_binding_02,colour_binding,a white clock and a yellow bench,clock,clock,2
+colour_binding_02,colour_binding,a white clock and a yellow bench,bench,bench,6
+colour_binding_03,colour_binding,a black laptop and an orange car,laptop,laptop,2
+colour_binding_03,colour_binding,a black laptop and an orange car,car,car,6
+colour_binding_04,colour_binding,a red chair and an orange bottle,chair,chair,2
+colour_binding_04,colour_binding,a red chair and an orange bottle,bottle,bottle,6
+colour_binding_05,colour_binding,a purple clock and a black boat,clock,clock,2
+colour_binding_05,colour_binding,a purple clock and a black boat,boat,boat,6
+colour_binding_06,colour_binding,a black backpack and a blue bus,backpack,backpack,2
+colour_binding_06,colour_binding,a black backpack and a blue bus,bus,bus,6
+colour_binding_07,colour_binding,a red cup and a black umbrella,cup,cup,2
+colour_binding_07,colour_binding,a red cup and a black umbrella,umbrella,umbrella,6
+colour_binding_08,colour_binding,a white suitcase and an orange bus,suitcase,suitcase,2
+colour_binding_08,colour_binding,a white suitcase and an orange bus,bus,bus,6
+colour_binding_09,colour_binding,a yellow pizza and an orange clock,pizza,pizza,2
+colour_binding_09,colour_binding,a yellow pizza and an orange clock,clock,clock,6
+colour_binding_10,colour_binding,a white clock and an orange car,clock,clock,2
+colour_binding_10,colour_binding,a white clock and an orange car,car,car,6
+colour_binding_11,colour_binding,an orange umbrella and a red car,umbrella,umbrella,2
+colour_binding_11,colour_binding,an orange umbrella and a red car,car,car,6
+colour_binding_12,colour_binding,a purple laptop and a black pizza,laptop,laptop,2
+colour_binding_12,colour_binding,a purple laptop and a black pizza,pizza,pizza,6
+colour_binding_13,colour_binding,a blue cup and a green umbrella,cup,cup,2
+colour_binding_13,colour_binding,a blue cup and a green umbrella,umbrella,umbrella,6
+colour_binding_14,colour_binding,a yellow laptop and a white book,laptop,laptop,2
+colour_binding_14,colour_binding,a yellow laptop and a white book,book,book,6
+colour_binding_15,colour_binding,a green vase and a purple backpack,vase,vase,2
+colour_binding_15,colour_binding,a green vase and a purple backpack,backpack,backpack,6
+colour_binding_16,colour_binding,a blue pizza and a red suitcase,pizza,pizza,2
+colour_binding_16,colour_binding,a blue pizza and a red suitcase,suitcase,suitcase,6
+colour_binding_17,colour_binding,a yellow clock and a blue suitcase,clock,clock,2
+colour_binding_17,colour_binding,a yellow clock and a blue suitcase,suitcase,suitcase,6
+colour_binding_18,colour_binding,an orange chair and a black bowl,chair,chair,2
+colour_binding_18,colour_binding,an orange chair and a black bowl,bowl,bowl,6
+colour_binding_19,colour_binding,a yellow umbrella and a red clock,umbrella,umbrella,2
+colour_binding_19,colour_binding,a yellow umbrella and a red clock,clock,clock,6
+colour_binding_20,colour_binding,a yellow bench and a red backpack,bench,bench,2
+colour_binding_20,colour_binding,a yellow bench and a red backpack,backpack,backpack,6
+colour_binding_21,colour_binding,a black laptop and a yellow bowl,laptop,laptop,2
+colour_binding_21,colour_binding,a black laptop and a yellow bowl,bowl,bowl,6
+colour_binding_22,colour_binding,a red truck and an orange backpack,truck,truck,2
+colour_binding_22,colour_binding,a red truck and an orange backpack,backpack,backpack,6
+colour_binding_23,colour_binding,a black clock and a yellow pizza,clock,clock,2
+colour_binding_23,colour_binding,a black clock and a yellow pizza,pizza,pizza,6
+colour_binding_24,colour_binding,a blue backpack and a white suitcase,backpack,backpack,2
+colour_binding_24,colour_binding,a blue backpack and a white suitcase,suitcase,suitcase,6
+colour_binding_25,colour_binding,a black pizza and a purple car,pizza,pizza,2
+colour_binding_25,colour_binding,a black pizza and a purple car,car,car,6
+colour_binding_26,colour_binding,a blue boat and a green vase,boat,boat,2
+colour_binding_26,colour_binding,a blue boat and a green vase,vase,vase,6
+colour_binding_27,colour_binding,a black bicycle and a purple bench,bicycle,bicycle,2
+colour_binding_27,colour_binding,a black bicycle and a purple bench,bench,bench,6
+colour_binding_28,colour_binding,a purple umbrella and an orange car,umbrella,umbrella,2
+colour_binding_28,colour_binding,a purple umbrella and an orange car,car,car,6
+colour_binding_29,colour_binding,a blue truck and a purple pizza,truck,truck,2
+colour_binding_29,colour_binding,a blue truck and a purple pizza,pizza,pizza,6
+colour_binding_30,colour_binding,a blue boat and a yellow apple,boat,boat,2
+colour_binding_30,colour_binding,a blue boat and a yellow apple,apple,apple,6
+colour_binding_31,colour_binding,an orange bus and a purple suitcase,bus,bus,2
+colour_binding_31,colour_binding,an orange bus and a purple suitcase,suitcase,suitcase,6
+colour_binding_32,colour_binding,a purple clock and a blue chair,clock,clock,2
+colour_binding_32,colour_binding,a purple clock and a blue chair,chair,chair,6
+colour_binding_33,colour_binding,a red bench and a black bus,bench,bench,2
+colour_binding_33,colour_binding,a red bench and a black bus,bus,bus,6
+colour_binding_34,colour_binding,a red truck and a black suitcase,truck,truck,2
+colour_binding_34,colour_binding,a red truck and a black suitcase,suitcase,suitcase,6
+colour_binding_35,colour_binding,a blue bottle and a black bus,bottle,bottle,2
+colour_binding_35,colour_binding,a blue bottle and a black bus,bus,bus,6
+colour_binding_36,colour_binding,a red car and a blue backpack,car,car,2
+colour_binding_36,colour_binding,a red car and a blue backpack,backpack,backpack,6
+colour_binding_37,colour_binding,a blue suitcase and a red umbrella,suitcase,suitcase,2
+colour_binding_37,colour_binding,a blue suitcase and a red umbrella,umbrella,umbrella,6
+colour_binding_38,colour_binding,a blue apple and a white umbrella,apple,apple,2
+colour_binding_38,colour_binding,a blue apple and a white umbrella,umbrella,umbrella,6
+colour_binding_39,colour_binding,a yellow book and a green truck,book,book,2
+colour_binding_39,colour_binding,a yellow book and a green truck,truck,truck,6
+spatial_00,spatial,a bowl to the left of a zebra,bowl,bowl,1
+spatial_00,spatial,a bowl to the left of a zebra,zebra,zebra,7
+spatial_01,spatial,a car to the right of a boat,car,car,1
+spatial_01,spatial,a car to the right of a boat,boat,boat,7
+spatial_02,spatial,an apple to the right of a book,apple,apple,1
+spatial_02,spatial,an apple to the right of a book,book,book,7
+spatial_03,spatial,a pizza to the right of a sheep,pizza,pizza,1
+spatial_03,spatial,a pizza to the right of a sheep,sheep,sheep,7
+spatial_04,spatial,a book on top of an umbrella,book,book,1
+spatial_04,spatial,a book on top of an umbrella,umbrella,umbrella,6
+spatial_05,spatial,a bear to the right of a backpack,bear,bear,1
+spatial_05,spatial,a bear to the right of a backpack,backpack,backpack,7
+spatial_06,spatial,a book to the right of a clock,book,book,1
+spatial_06,spatial,a book to the right of a clock,clock,clock,7
+spatial_07,spatial,an elephant to the right of a boat,elephant,elephant,1
+spatial_07,spatial,an elephant to the right of a boat,boat,boat,7
+spatial_08,spatial,a chair to the right of a sheep,chair,chair,1
+spatial_08,spatial,a chair to the right of a sheep,sheep,sheep,7
+spatial_09,spatial,an elephant to the right of a chair,elephant,elephant,1
+spatial_09,spatial,an elephant to the right of a chair,chair,chair,7
+spatial_10,spatial,a sheep to the left of a clock,sheep,sheep,1
+spatial_10,spatial,a sheep to the left of a clock,clock,clock,7
+spatial_11,spatial,a book to the right of a vase,book,book,1
+spatial_11,spatial,a book to the right of a vase,vase,vase,7
+spatial_12,spatial,a bottle to the right of a bench,bottle,bottle,1
+spatial_12,spatial,a bottle to the right of a bench,bench,bench,7
+spatial_13,spatial,a dog to the left of a bottle,dog,dog,1
+spatial_13,spatial,a dog to the left of a bottle,bottle,bottle,7
+spatial_14,spatial,a zebra on top of a book,zebra,zebra,1
+spatial_14,spatial,a zebra on top of a book,book,book,6
+spatial_15,spatial,a chair to the left of a bench,chair,chair,1
+spatial_15,spatial,a chair to the left of a bench,bench,bench,7
+spatial_16,spatial,a bear to the left of a boat,bear,bear,1
+spatial_16,spatial,a bear to the left of a boat,boat,boat,7
+spatial_17,spatial,an elephant on top of a truck,elephant,elephant,1
+spatial_17,spatial,an elephant on top of a truck,truck,truck,6
+spatial_18,spatial,a pizza below a boat,pizza,pizza,1
+spatial_18,spatial,a pizza below a boat,boat,boat,4
+spatial_19,spatial,a bottle to the left of a cow,bottle,bottle,1
+spatial_19,spatial,a bottle to the left of a cow,cow,cow,7
+spatial_20,spatial,a car to the left of an apple,car,car,1
+spatial_20,spatial,a car to the left of an apple,apple,apple,7
+spatial_21,spatial,a horse to the right of a bus,horse,horse,1
+spatial_21,spatial,a horse to the right of a bus,bus,bus,7
+spatial_22,spatial,a horse on top of a bowl,horse,horse,1
+spatial_22,spatial,a horse on top of a bowl,bowl,bowl,6
+spatial_23,spatial,a giraffe to the left of a bicycle,giraffe,giraffe,1
+spatial_23,spatial,a giraffe to the left of a bicycle,bicycle,bicycle,7
+spatial_24,spatial,a bicycle to the right of a bear,bicycle,bicycle,1
+spatial_24,spatial,a bicycle to the right of a bear,bear,bear,7
+spatial_25,spatial,a clock to the right of a car,clock,clock,1
+spatial_25,spatial,a clock to the right of a car,car,car,7
+spatial_26,spatial,a cat below a book,cat,cat,1
+spatial_26,spatial,a cat below a book,book,book,4
+spatial_27,spatial,a horse on top of a chair,horse,horse,1
+spatial_27,spatial,a horse on top of a chair,chair,chair,6
+spatial_28,spatial,a sheep below a clock,sheep,sheep,1
+spatial_28,spatial,a sheep below a clock,clock,clock,4
+spatial_29,spatial,a pizza to the left of a cup,pizza,pizza,1
+spatial_29,spatial,a pizza to the left of a cup,cup,cup,7
+spatial_30,spatial,a horse on top of a dog,horse,horse,1
+spatial_30,spatial,a horse on top of a dog,dog,dog,6
+spatial_31,spatial,a giraffe to the right of a vase,giraffe,giraffe,1
+spatial_31,spatial,a giraffe to the right of a vase,vase,vase,7
+spatial_32,spatial,a cat to the left of a boat,cat,cat,1
+spatial_32,spatial,a cat to the left of a boat,boat,boat,7
+spatial_33,spatial,a bear below a cow,bear,bear,1
+spatial_33,spatial,a bear below a cow,cow,cow,4
+spatial_34,spatial,an elephant on top of a book,elephant,elephant,1
+spatial_34,spatial,an elephant on top of a book,book,book,6
+spatial_35,spatial,a dog below a cat,dog,dog,1
+spatial_35,spatial,a dog below a cat,cat,cat,4
+spatial_36,spatial,a car to the left of a bench,car,car,1
+spatial_36,spatial,a car to the left of a bench,bench,bench,7
+spatial_37,spatial,a cup on top of a cow,cup,cup,1
+spatial_37,spatial,a cup on top of a cow,cow,cow,6
+spatial_38,spatial,a bench below a car,bench,bench,1
+spatial_38,spatial,a bench below a car,car,car,4
+spatial_39,spatial,a cow to the right of a horse,cow,cow,1
+spatial_39,spatial,a cow to the right of a horse,horse,horse,7
+multi_object_00,multi_object,"a horse, a bus and a bottle",horse,horse,1
+multi_object_00,multi_object,"a horse, a bus and a bottle",bus,bus,3
+multi_object_00,multi_object,"a horse, a bus and a bottle",bottle,bottle,6
+multi_object_01,multi_object,"a giraffe, a dog and a chair",giraffe,giraffe,1
+multi_object_01,multi_object,"a giraffe, a dog and a chair",dog,dog,3
+multi_object_01,multi_object,"a giraffe, a dog and a chair",chair,chair,6
+multi_object_02,multi_object,"a bicycle, a cow and a car",bicycle,bicycle,1
+multi_object_02,multi_object,"a bicycle, a cow and a car",cow,cow,3
+multi_object_02,multi_object,"a bicycle, a cow and a car",car,car,6
+multi_object_03,multi_object,"a laptop, an elephant and a boat",laptop,laptop,1
+multi_object_03,multi_object,"a laptop, an elephant and a boat",elephant,elephant,3
+multi_object_03,multi_object,"a laptop, an elephant and a boat",boat,boat,6
+multi_object_04,multi_object,"a chair, a suitcase and a truck",chair,chair,1
+multi_object_04,multi_object,"a chair, a suitcase and a truck",suitcase,suitcase,3
+multi_object_04,multi_object,"a chair, a suitcase and a truck",truck,truck,6
+multi_object_05,multi_object,"a giraffe, a boat and an apple",giraffe,giraffe,1
+multi_object_05,multi_object,"a giraffe, a boat and an apple",boat,boat,3
+multi_object_05,multi_object,"a giraffe, a boat and an apple",apple,apple,6
+multi_object_06,multi_object,"a cake, a backpack and a bench",cake,cake,1
+multi_object_06,multi_object,"a cake, a backpack and a bench",backpack,backpack,3
+multi_object_06,multi_object,"a cake, a backpack and a bench",bench,bench,6
+multi_object_07,multi_object,"a chair, a laptop and a bottle",chair,chair,1
+multi_object_07,multi_object,"a chair, a laptop and a bottle",laptop,laptop,3
+multi_object_07,multi_object,"a chair, a laptop and a bottle",bottle,bottle,6
+multi_object_08,multi_object,"a bench, an umbrella and a cake",bench,bench,1
+multi_object_08,multi_object,"a bench, an umbrella and a cake",umbrella,umbrella,3
+multi_object_08,multi_object,"a bench, an umbrella and a cake",cake,cake,6
+multi_object_09,multi_object,"a bird, a bicycle and a bus",bird,bird,1
+multi_object_09,multi_object,"a bird, a bicycle and a bus",bicycle,bicycle,3
+multi_object_09,multi_object,"a bird, a bicycle and a bus",bus,bus,6
+multi_object_10,multi_object,"a truck, a bicycle and a laptop",truck,truck,1
+multi_object_10,multi_object,"a truck, a bicycle and a laptop",bicycle,bicycle,3
+multi_object_10,multi_object,"a truck, a bicycle and a laptop",laptop,laptop,6
+multi_object_11,multi_object,"an umbrella, a vase and a car",umbrella,umbrella,1
+multi_object_11,multi_object,"an umbrella, a vase and a car",vase,vase,3
+multi_object_11,multi_object,"an umbrella, a vase and a car",car,car,6
+multi_object_12,multi_object,"a bicycle, a bottle and a cup",bicycle,bicycle,1
+multi_object_12,multi_object,"a bicycle, a bottle and a cup",bottle,bottle,3
+multi_object_12,multi_object,"a bicycle, a bottle and a cup",cup,cup,6
+multi_object_13,multi_object,"a horse, a book and a car",horse,horse,1
+multi_object_13,multi_object,"a horse, a book and a car",book,book,3
+multi_object_13,multi_object,"a horse, a book and a car",car,car,6
+multi_object_14,multi_object,"a backpack, a sheep and a giraffe",backpack,backpack,1
+multi_object_14,multi_object,"a backpack, a sheep and a giraffe",sheep,sheep,3
+multi_object_14,multi_object,"a backpack, a sheep and a giraffe",giraffe,giraffe,6
+multi_object_15,multi_object,"a backpack, a cake and a clock",backpack,backpack,1
+multi_object_15,multi_object,"a backpack, a cake and a clock",cake,cake,3
+multi_object_15,multi_object,"a backpack, a cake and a clock",clock,clock,6
+multi_object_16,multi_object,"a bench, a zebra and a sheep",bench,bench,1
+multi_object_16,multi_object,"a bench, a zebra and a sheep",zebra,zebra,3
+multi_object_16,multi_object,"a bench, a zebra and a sheep",sheep,sheep,6
+multi_object_17,multi_object,"a bird, a boat and a cat",bird,bird,1
+multi_object_17,multi_object,"a bird, a boat and a cat",boat,boat,3
+multi_object_17,multi_object,"a bird, a boat and a cat",cat,cat,6
+multi_object_18,multi_object,"a bear, a pizza and a bus",bear,bear,1
+multi_object_18,multi_object,"a bear, a pizza and a bus",pizza,pizza,3
+multi_object_18,multi_object,"a bear, a pizza and a bus",bus,bus,6
+multi_object_19,multi_object,"a horse, a bird and a backpack",horse,horse,1
+multi_object_19,multi_object,"a horse, a bird and a backpack",bird,bird,3
+multi_object_19,multi_object,"a horse, a bird and a backpack",backpack,backpack,6
+multi_object_20,multi_object,"a chair, an elephant and an apple",chair,chair,1
+multi_object_20,multi_object,"a chair, an elephant and an apple",elephant,elephant,3
+multi_object_20,multi_object,"a chair, an elephant and an apple",apple,apple,6
+multi_object_21,multi_object,"an umbrella, a cat and a sheep",umbrella,umbrella,1
+multi_object_21,multi_object,"an umbrella, a cat and a sheep",cat,cat,3
+multi_object_21,multi_object,"an umbrella, a cat and a sheep",sheep,sheep,6
+multi_object_22,multi_object,"a backpack, a bottle and a bear",backpack,backpack,1
+multi_object_22,multi_object,"a backpack, a bottle and a bear",bottle,bottle,3
+multi_object_22,multi_object,"a backpack, a bottle and a bear",bear,bear,6
+multi_object_23,multi_object,"a pizza, a backpack and a cat",pizza,pizza,1
+multi_object_23,multi_object,"a pizza, a backpack and a cat",backpack,backpack,3
+multi_object_23,multi_object,"a pizza, a backpack and a cat",cat,cat,6
+multi_object_24,multi_object,"a horse, a sheep and a cake",horse,horse,1
+multi_object_24,multi_object,"a horse, a sheep and a cake",sheep,sheep,3
+multi_object_24,multi_object,"a horse, a sheep and a cake",cake,cake,6
+multi_object_25,multi_object,"a bird, a backpack and a sheep",bird,bird,1
+multi_object_25,multi_object,"a bird, a backpack and a sheep",backpack,backpack,3
+multi_object_25,multi_object,"a bird, a backpack and a sheep",sheep,sheep,6
+multi_object_26,multi_object,"a bird, a cat and a suitcase",bird,bird,1
+multi_object_26,multi_object,"a bird, a cat and a suitcase",cat,cat,3
+multi_object_26,multi_object,"a bird, a cat and a suitcase",suitcase,suitcase,6
+multi_object_27,multi_object,"a bird, a sheep and a truck",bird,bird,1
+multi_object_27,multi_object,"a bird, a sheep and a truck",sheep,sheep,3
+multi_object_27,multi_object,"a bird, a sheep and a truck",truck,truck,6
+multi_object_28,multi_object,"a backpack, a bear and a vase",backpack,backpack,1
+multi_object_28,multi_object,"a backpack, a bear and a vase",bear,bear,3
+multi_object_28,multi_object,"a backpack, a bear and a vase",vase,vase,6
+multi_object_29,multi_object,"a clock, an apple and a suitcase",clock,clock,1
+multi_object_29,multi_object,"a clock, an apple and a suitcase",apple,apple,3
+multi_object_29,multi_object,"a clock, an apple and a suitcase",suitcase,suitcase,6
+multi_object_30,multi_object,"a bowl, a truck and an apple",bowl,bowl,1
+multi_object_30,multi_object,"a bowl, a truck and an apple",truck,truck,3
+multi_object_30,multi_object,"a bowl, a truck and an apple",apple,apple,6
+multi_object_31,multi_object,"an elephant, an apple and a cup",elephant,elephant,1
+multi_object_31,multi_object,"an elephant, an apple and a cup",apple,apple,3
+multi_object_31,multi_object,"an elephant, an apple and a cup",cup,cup,6
+multi_object_32,multi_object,"an apple, a bear and a chair",apple,apple,1
+multi_object_32,multi_object,"an apple, a bear and a chair",bear,bear,3
+multi_object_32,multi_object,"an apple, a bear and a chair",chair,chair,6
+multi_object_33,multi_object,"a bowl, a vase and a bottle",bowl,bowl,1
+multi_object_33,multi_object,"a bowl, a vase and a bottle",vase,vase,3
+multi_object_33,multi_object,"a bowl, a vase and a bottle",bottle,bottle,6
+multi_object_34,multi_object,"a suitcase, a sheep and a bus",suitcase,suitcase,1
+multi_object_34,multi_object,"a suitcase, a sheep and a bus",sheep,sheep,3
+multi_object_34,multi_object,"a suitcase, a sheep and a bus",bus,bus,6
+multi_object_35,multi_object,"a chair, an apple and a bench",chair,chair,1
+multi_object_35,multi_object,"a chair, an apple and a bench",apple,apple,3
+multi_object_35,multi_object,"a chair, an apple and a bench",bench,bench,6
+multi_object_36,multi_object,"an umbrella, a cup and a bird",umbrella,umbrella,1
+multi_object_36,multi_object,"an umbrella, a cup and a bird",cup,cup,3
+multi_object_36,multi_object,"an umbrella, a cup and a bird",bird,bird,6
+multi_object_37,multi_object,"a bottle, a vase and a pizza",bottle,bottle,1
+multi_object_37,multi_object,"a bottle, a vase and a pizza",vase,vase,3
+multi_object_37,multi_object,"a bottle, a vase and a pizza",pizza,pizza,6
+multi_object_38,multi_object,"a horse, a cup and a sheep",horse,horse,1
+multi_object_38,multi_object,"a horse, a cup and a sheep",cup,cup,3
+multi_object_38,multi_object,"a horse, a cup and a sheep",sheep,sheep,6
+multi_object_39,multi_object,"a backpack, a bird and a bottle",backpack,backpack,1
+multi_object_39,multi_object,"a backpack, a bird and a bottle",bird,bird,3
+multi_object_39,multi_object,"a backpack, a bird and a bottle",bottle,bottle,6
