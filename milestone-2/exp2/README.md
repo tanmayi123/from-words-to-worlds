@@ -82,7 +82,7 @@ Training loss ended at 0.22, and held-out loss never rose, so the connector gene
 
 For four dev captions with the same starting noise, SD draws the same subject, layout and colours from the connector's states as from CLIP's, with no image training (`connector/clip_vs_bert_samples.png`). Secondary details drop out, such as a magnifying glass and a train's windows.
 
-**Conclusion.** The default 30 DDIM steps are more than SD 1.5 needs: DPM++ 2M with leading spacing reaches the same recall, KID and CLIPScore in 10 steps, at about a third of the cost. The schedule matters for KID but not for whether objects appear. BERT can drive SD's UNet after caption-only training, with close but imperfect agreement with CLIP. Stage 2, training against images, is the next step to close that gap.
+**Conclusion.** The default 30 DDIM steps are more than SD 1.5 needs: DPM++ 2M with leading spacing reaches the same recall, KID and CLIPScore in 10 steps, at about a third of the cost. The schedule matters for KID but not for whether objects appear. BERT can drive SD's UNet after caption-only training, with close but imperfect agreement with CLIP. Stage 2 of the connector is the next step to close that gap.
 
 ## Settings
 
@@ -91,7 +91,7 @@ For four dev captions with the same starting noise, SD draws the same subject, l
 | Model | `stable-diffusion-v1-5/stable-diffusion-v1-5`, float16, guidance 7.5 |
 | Anchor | DDIM, leading spacing, 30 steps (identical to the shared protocol anchor) |
 | Sweep | DPM++ 2M (DPMSolverMultistep) × leading / trailing / Karras / AYS × 10 steps (500 captions) and 30 steps (first 200) |
-| Seeds | Protocol rule: seed = 100000 × seed_id + caption_idx, noise drawn on the CPU; seed 0 everywhere, plus seeds 1–2 for the anchor and leading-10 |
+| Seeds | Protocol rule: seed = 100000 × seed_id + caption key, float32 noise drawn on the CPU. Seed 0 for every setting; seed 1 on the first 100 captions for the four 10-step schedules (for diversity); seeds 1–2 on the first 200 captions for the anchor and leading-10 |
 | Captions | `dev_500`; reference photos for KID and FID from `ref_2000_v2` |
 | Hardware | Kaggle, Tesla T4 |
 | Software | Protocol m2-v1, PyTorch 2.11, diffusers 0.42.1 |
@@ -103,7 +103,7 @@ For four dev captions with the same starting noise, SD draws the same subject, l
 | Object recall | Share of the objects named in the caption that the shared object judges detect in the image (higher is better) |
 | CLIPScore | How well the image matches its caption, by CLIP ViT-L/14 (higher is better) |
 | KID, FID | How close the set of images is to real COCO photos (`ref_2000_v2`, lower is better) |
-| LPIPS, CLIP distance | Diversity between images of the same caption (10-step settings) |
+| LPIPS, CLIP distance | Diversity: how different the seed-0 and seed-1 images of the same caption are (10-step settings, first 100 captions) |
 
 - **Shared scoring code:** all four metrics come from the group's scoring code, so the numbers are comparable with the other exp folders.
 - **Intervals:** 95% intervals are bootstrapped over captions, and differences are paired on the same caption and starting noise.
@@ -123,9 +123,9 @@ milestone-2/exp2/
 │   ├── runs.csv, images.csv                ← protocol logs: every run and every image
 │   ├── image_counts.csv                    ← images, flagged and seconds per image, per setting and seed
 │   └── scores/
-│       ├── objects/                        ← per-image detections and recall, one file per setting
+│       ├── objects/                        ← per-image detections and recall, one file per setting, plus the real photos
 │       ├── images/                         ← per-image CLIPScore
-│       ├── diversity/                      ← LPIPS and CLIP distance for the 10-step settings
+│       ├── diversity/                      ← LPIPS and CLIP distance between seeds 0 and 1, 10-step settings
 │       ├── mukul_schedules_500.csv         ← summary, all settings on 500 captions
 │       ├── mukul_s10_vs_s30_200.csv        ← summary, 10 vs 30 steps on 200 captions
 │       └── mukul_paired.csv                ← paired differences with intervals
@@ -141,9 +141,10 @@ On Kaggle with a T4 GPU, attach [`../protocol`](../protocol) and [`../splits`](.
 
 | Part | Cells | Images | Time on a T4 |
 |---|---|---|---|
-| Anchor + 8 DPM++ settings | 4–5 | 3,300 | ~3 h |
-| Scoring and summary tables | 6–10 | — | ~20 min |
-| Extra seeds (anchor, leading-10) | 11 | 800 | ~1 h |
+| Install packages, load the protocol and splits | 4 | — | not timed |
+| Anchor, 8 DPM++ settings, seed 1 for diversity | 5 | 3,700 | ~3 h 20 min |
+| Scoring and summary tables | 6–10 | — | not timed |
+| Seeds 1–2 for the anchor and leading-10 | 11 | 700 | ~45 min |
 | Connector training and samples | 12–16 | — | ~1 h |
 | Zip results (without images) | 17 | — | — |
 
@@ -152,5 +153,5 @@ On Kaggle with a T4 GPU, attach [`../protocol`](../protocol) and [`../splits`](.
 - **One seed for the schedule comparison.** The KID gaps for trailing and AYS rest on seed 0 only. Seeds 1–2 cover just the anchor and leading-10.
 - **Only large effects detectable.** The 30-step check uses 200 captions, so step-count effects smaller than about 3 recall points would go undetected.
 - **Guidance held at 7.5.** Schedule and guidance may interact, and that was not tested here.
-- **Connector image check is illustrative.** It uses four captions, not a measurement; stage 1 matches CLIP's states, not image quality directly.
-- **Extra seed-1 runs not scored.** 100 seed-1 images each for Karras, AYS and trailing are logged in `m2/image_counts.csv` but not used in the results.
+- **Connector image check is illustrative.** It uses four captions, so it is a sanity check, not a measurement. Stage 1 is trained to match CLIP's states, not image quality directly.
+- **Diversity on 100 captions.** The LPIPS and CLIP-distance diversity scores use one pair of seeds on the first 100 captions, so they are not reported as differences between schedules.
