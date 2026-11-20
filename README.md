@@ -7,6 +7,8 @@ Tanmayi Shurpali · Santhoshkumar Chandrasekar · Praniti Sunil Kale · Mukul Sr
 
 📄 **Proposal:** [milestone-1/proposal/IE7615_P2_M1_Group7_proposal.pdf](milestone-1/proposal/IE7615_P2_M1_Group7_proposal.pdf)
 
+📄 **Milestone 2 report:** [milestone-2/report/IE7615_P2_M2_Group7_report.pdf](milestone-2/report/IE7615_P2_M2_Group7_report.pdf)
+
 ---
 
 ## I. Question
@@ -36,7 +38,7 @@ Earlier work shows that cross-attention maps fix an image's layout in the first 
 - **Text encoder:** **CLIP ViT-L/14** turns each prompt into a 77 × 768 matrix. The UNet denoises a 64 × 64 × 4 latent over 20–50 steps, reading that matrix through cross-attention, and a VAE decodes the result.
 - **Our own sampling loop** controls classifier-free guidance, the DDPM and DDIM samplers, and attention recording.
 - **Word timing:** each word's cross-attention heatmap is recorded at every step. A word **commits** at the first step after which its heatmap stays correlated (Pearson r ≥ 0.8) with its final layout.
-- **Encoder comparison:** BERT and GPT-2 reach the UNet through a connector with 77 learned query slots. It is trained first on captions to reproduce CLIP's states, then on image–caption pairs, with an identical CLIP connector as the control.
+- **Encoder comparison:** BERT and T5 (in place of GPT-2, see Milestone 2) reach the UNet through a connector with 77 learned query slots. It is trained first on captions to reproduce CLIP's states, then on image–caption pairs, with an identical CLIP connector as the control.
 
 ## IV. Evaluation
 
@@ -53,7 +55,11 @@ Earlier work shows that cross-attention maps fix an image's layout in the first 
 | `milestone-1/exp2/` | LoRA fine-tuning; CLIP vs BERT through a connector | Mukul |
 | `milestone-1/exp3/` | evaluation sets, object labels, stress prompts, training-free encoder comparison, re-captioning study | Praniti |
 | `milestone-1/exp4/` | combined evaluation: FID/KID/IS against the real-photo floor, object judges calibrated on real photos, word timing under LoRA; initial training-subset run | Tanmayi |
-| `milestone-2/` | Measurement | |
+| `milestone-2/` | Measurement: the shared generation protocol, caption sets, merged generation and training logs, and the report ([README](milestone-2/README.md)) | all |
+| `milestone-2/exp1/` | word timing on 2,000 test captions; seeing a missing object coming (pre-registered, tested once on new paintings); human check of the judges | Santhoshkumar |
+| `milestone-2/exp2/` | noise schedules on DPM-Solver++ 2M; BERT connector, stage 1 | Mukul |
+| `milestone-2/exp3/` | stress-prompt benchmark; sampler and guidance grid | Praniti |
+| `milestone-2/exp4/` | guidance and step-count sweeps; the shared scoring code (FID, KID, IS, CLIPScore, both judges) | Tanmayi |
 | `milestone-3/` | Intervention | |
 | `milestone-4/` | Final report | |
 
@@ -71,6 +77,20 @@ Each experiment folder has its own README with what it tests, how to run it and 
 | Image quality (exp4) | FID vs real reference: real photos 77.1, base 91.1, LoRA 88.4; LoRA does not measurably change KID |
 | Object judges (exp4) | calibrated on real photos: the two detectors find 98.4% of named objects there, 93.8% in base SD images |
 | Other directions | LoRA gave a small CLIPScore gain; BERT trails CLIP without training; longer recaptions gave no detectable gain in objects drawn |
+
+## Milestone 2 results
+
+All four members generated through one shared protocol (same captions, same starting noise, same judges, same log): 23,673 images in 47 runs. Intervals are 95% bootstrap intervals over captions.
+
+| Question | Result |
+|---|---|
+| Guidance and step count (exp4) | only guidance 3 lowers object recall detectably (−2.0 points); on 500 test captions, DDIM at 10 steps keeps recall (+0.0 points [−1.0, +1.0]) at 1.7 s per image instead of 4.7 s |
+| Noise schedule (exp2) | DPM-Solver++ 2M with leading spacing at 10 steps matches the 30-step DDIM anchor on recall and KID at 37% of the time |
+| Stress prompts (exp3) | colour binding passes 3%, multi-object 13%, spatial 21%, counting 29%; the usual failure is an object never drawn, and no sampler or guidance setting fixes it |
+| Text encoder (exp2) | the BERT connector reaches held-out loss 0.24 and cosine 0.90 to CLIP's states; T5 replaces GPT-2 as the third encoder |
+| When words are painted (exp1) | a word's commit step predicts whether its object goes missing (AUROC 0.68 under each of 3 seeds); only 26 of 196 lost objects are lost under every seed |
+| Seeing a missing object coming (exp1) | pre-registered, sealed, tested once on 2,553 new paintings: a 5-step draft after the first step scores AUROC 0.947 against a ceiling of 0.986 |
+| Are the judges right? (exp1) | 240 judge calls labelled blind by two of us: people agree 95% of the time (kappa 0.90); the rule's "missing" is right 97% of the time |
 
 ## V. Plan
 
